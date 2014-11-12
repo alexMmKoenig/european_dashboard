@@ -1,5 +1,6 @@
 d3.select("#plus").on("click", addGroup);
 d3.select("#minus").on("click", subtractGroup);
+d3.select("circle").on("click", selectGroup);
 subGroups();
 
 function addGroup() {
@@ -18,16 +19,17 @@ function addGroup() {
 
 function subtractGroup() {
 
-
 	if (activeSubgroups != 1){
 		activeSubgroups.pop();
 		active.pop();
 	}
 
-	//currentGroup = 1;
-
 	subGroups();
-	//activate(currentGroup);
+
+	currentGroup = activeSubgroups.length-1;
+	activate(currentGroup);
+	
+	drawChart();
 }
 
 function subGroups(){
@@ -43,18 +45,19 @@ function subGroups(){
 		.attr("cy", function(d){return d*22})
 		.attr("cx", 20)
 		.attr("r", 10)
-		.on("click", activate(this.number));
+		//.on("click", console.log("taz"));
 
 	circle.exit().remove();
 }
 
+function selectGroup(){
+
+	
+}
+
 function activate(vnum){
-
-	currentGroup = vnum;
+	//currentGroup = vnum;
 	svg4.selectAll("circle").attr("fill", "white");
-
-	svg4.select("#circle"+currentGroup).attr("fill", "#219A55");
-
-
+	svg4.select("#circle"+vnum).attr("fill", "#219A55");
 }
 

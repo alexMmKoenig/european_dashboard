@@ -10,17 +10,16 @@ for (var i=0; i < data[0].child[0].values.length; i++){
 }
 
 var activeCountry = "Germany";
-var activeIndicators = ["B1GM"];
 var activeNames = ["Gross domestic product at market prices"];
 
 var activeSubgroups = [1];
 var currentGroup = "0";
-var active =[{subgroup:1, child: [{indicator:"B1GM"}]}];
-var indicatorIndexList = [5];
+var active =[{subgroup:1, child: [{indicator:"B1GM", name:"GDP"}]}];
+//var indicatorIndexList = [5];
 var subgroups = ["1"];
 
 var tip = d3.tip().attr("class", "d3-tip").html(function(d) { 
-    return "activeIndicators:" +activeIndicators+ "<br>currentGroup:" +currentGroup+ "<br>activeSubgroups:" +activeSubgroups+ "<br>subgroups:" +subgroups+ "<br>" });
+    return "<br>currentGroup:" +currentGroup+ "<br>activeSubgroups:" +activeSubgroups+ "<br>subgroups:" +subgroups+ "<br>" });
 
 drawChart();
 
@@ -39,10 +38,11 @@ function drawChart(){
             return {
                 subgroup: l.subgroup,
                 child: temp.map(function(s,z){
-                    console.log(i,m,z)
+                    //console.log(i,m,z)
                     return {
                     subgroup: l.subgroup,
                     indicator: s.indicator,
+                    name: s.name,
                     val: data1[i].values[indicatorList.indexOf(s.indicator)].val,
                     y0: y0,
                     y1: y0 += +data1[i].values[indicatorList.indexOf(s.indicator)].val
@@ -71,12 +71,11 @@ function drawChart(){
     
     axis();
     
-    barchart(activeIndicators, countryIndex, data1);
+    barchart("B1GM", countryIndex, data1);
     
     label(activeCountry);
-    info(activeNames);
+    info();
     mouseoverInfo();
-
 }
 
 function barchart(activeIndicators, countryIndex, data1){
@@ -116,24 +115,48 @@ function barchart(activeIndicators, countryIndex, data1){
         .attr("width", x1.rangeBand())
         .attr("height", function(d) { return y(d.y0) - y(d.y1); })
         .attr("y", function(d) { return y(d.y1); })
-        .style("fill", function(d,i) { return col(activeIndicators.indexOf(d.indicator)); });
+        .style("fill", function(d,i) { return col(d.subgroup-1); })
+        .style("fill-opacity", function(d,i) { return (1/(i+1)) })
 
 }
 
-function info(activeNames){
-       
-    var info = d3.select("#legend").selectAll("text")
-        .data(activeNames);
+function info(){
+    
+    boot = active.map(function(d,i){
+        
+        memp = d.child;
+        return memp.map(function(s,z){
+            return s.name
+        });
+    });
+
+    console.log(boot);
+
+    var legendGroup = d3.select("#legend").selectAll("g")
+        .data(boot);
+    console.log(legendGroup);
+    
+    legendGroup.enter().append("g");
+    legendGroup.exit().remove();
+    
+    legendGroup
+      .attr("id",function(d) {return d})
+      //.attr("class", function(d) { return d.year; })
+      //.attr("transform", function(d,i) { return "translate(0, " + i*10 + ")"; });
+      //.attr("width", x.rangeBand());
+
+    var info = legendGroup.selectAll("text")
+        .data(boot)
    
+    console.log(info);
     info.enter().append("text");
    
     info.exit().remove();
 
-    info.text(function(d,i) { return d })
+    info.text(function(d) { return d })
         .attr("y", function(d, i) { return 10+i*10})
         .style("font-size", "10")
-        //.style("text-anchor", "end")
-        .style("fill", function(d,i) { return col(activeNames.indexOf(d)); })
+        .style("fill", function(d,i) { return col(i); })
         .style("letter-spacing", 1.5);
 }
 

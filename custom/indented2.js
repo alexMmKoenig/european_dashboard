@@ -55,8 +55,8 @@ function update(source) {
       // names enter
   var nameEnter = nodeEnter.append("g")
       .attr("class", "nameEnter")
-      .on("click", click)
-      .on("mouseover", description);
+      .on("mouseover", description)
+      .on("click", click);
 
   nameEnter.append("rect")
       .attr("id", function(d) {return d.indicator})
@@ -66,6 +66,7 @@ function update(source) {
       .attr("fill", color);
    
   nameEnter.append("text")
+      .attr("id", "nameEnter")
       .attr("dy", 3.5)
       .attr("dx", 5.5)
       .text(function(d) {return d.name} );
@@ -102,6 +103,7 @@ function click(d) {
     d._children = null;
   }
   update(d);
+  svg3.selectAll("#nameEnter").attr("fill", colorName);
 }
 
 function description(d) { 
@@ -130,35 +132,33 @@ function changeState(d){
 function pushActives(d) {
 
   if (d.state === true) {
-
-    activeIndicators.push(d.indicator);
-    activeNames.push(d.name);
-
-    //addGroup();
-    active[currentGroup].child.push({indicator: d.indicator});
+    active[currentGroup].child.push({indicator: d.indicator, name: d.name});
   }
 
   else {
-
-    activeIndicators.splice(activeIndicators.indexOf(d.indicator),1);
-    activeNames.splice(activeNames.indexOf(d.name),1);
-
-    active[d.group].child.splice(active[currentGroup].child.indexOf(d.indicator),1);
-
+    active[d.group].child.splice(active[d.group].child.indexOf(d.indicator),1);
   }
 }
 
 function dlick(d) {
-  
   changeState(d);
 
   pushActives(d);
 
   drawChart();
+ 
+svg3.selectAll("#nameEnter").attr("fill", colorName);
+  
 
 }
 
 
 function color(d) {
-  return d._children ? "#c6dbef" : d.children ? "white" : "white";
+  if (d.state != true) {return d._children ? "#c6dbef" : d.children ? "white" : "white"}
+  else {return d._children ? "#c6dbef" : d.children ? "white" : "white"};
+}
+
+function colorName(d) {
+  if (d.state != true) {return d._children ? "black" : d.children ? "black" : "black"}
+  else {return d._children ? "red" : d.children ? "red" : "red"};
 }
