@@ -1,0 +1,644 @@
+indicators =  
+[
+{"name": "System of national accounts (ESA)",							
+"children": [
+{"name": "GDP and main components", "description": "GDP and main aggregates. The data are recorded at current and constant prices and include the corresponding implicit price indices.",
+  "children": [													
+	{"state": true, "indicator": "B1GM", "name":  "Gross domestic product at market prices",  "description": "GDP at market prices is the final result of the production activity of resident producer units (ESA95, 8.89). It can be defined in three ways:",								
+	  "children": [												
+		{"name": "a. GDP Output approach",  "description": "From the production point of view GDP can be measured as the sum of the following components: GDP = Total gross value added (B1G) + Taxes less subsidies on products (D.21 less D.31)",
+		  "children": [											
+			{"state": false, "indicator": "B1G", "name":  "Gross value added (at basic prices)",  "description": "Gross Value Added (GVA) (ESA95, 8.11) is the net result of output valued at basic prices less intermediate consumption valued at purchasers' prices. Output (ESA95, 3.14) consists of the products created during the accounting period. Intermediate consumption (ESA95, 3.69) consists of the value of the goods and services consumed as inputs by a process of production, excluding fixed assets whose consumption is recorded as consumption of fixed capital. The goods and services may be either transformed or used up by the production process. GVA is also available broken down by industries according to NACE Rev. 1.1 in the breakdowns collection. GVA is calculated before consumption of fixed capital.",
+			  "children": [										
+				{"state": false, "indicator": "P1", "name":  "Output",  "description": "",
+				  "children": [									
+					{"state": false, "indicator": "P11_P12", "name":  "Market output and output for own final use"},				
+					{"state": false, "indicator": "P13", "name":  "Other non-market output",				
+					  "children": [								
+						{"state": false, "indicator": "P131", "name":  "Payments for other non-market output"},			
+						{"state": false, "indicator": "P132", "name":  "Other non-market output, other"}			
+					  ]
+				    }								
+				  ]
+				},									
+				{"state": false, "indicator": "P2", "name":  "Intermediate consumption", "description": ""}					
+			  ]
+			},										
+			{"state": false, "indicator": "D21_M_D31", "name":  "Taxes less subsidies on products", "description": "Taxes less subsidies on products (ESA95, 4.16, 9.47) are taxes or subsidies payable (resp. receivable) per unit of some good or service produced or transacted. They include in particular value added taxes, taxes and duties on imports, and taxes such as stamp taxes on the sale of alcohol and tobacco. When calculating value added, output is valued at basic prices whereas intermediate consumption is valued at purchaser's prices, and thus the difference between taxes and subsidies on products has to be put on top of value added. The GDP resulting is then valued at market prices."}						
+		  ]
+		},											
+		{"name": "b. GDP Expenditure approach", "description": "From the expenditure side, GDP can be measured as follows: GDP = private final consumption expenditure (P3 in S14+S15) + government final consumption expenditure (P3 in S13) + gross fixed capital formation (P.51) + changes in inventories (P.52) + acquisition less disposal of valuables (P.53) + exports (P.6) - imports (P.7)",									
+	      "children": [											
+			{"state": false, "indicator": "P3_P5", "name":  "Domestic demand", "description": "",						
+		      "children": [										
+				{"state": false, "indicator": "P3", "name":  "Final consumption expenditure", "description": "Final consumption expenditure (ESA95, 3.75-3.99) consists of expenditure incurred by residential institutional units on goods or services that are used for the direct satisfaction of the individual needs or wants or the collective needs of members of the community.",					
+			      "children": [									
+					{"state": false, "indicator": "P3_S13", "name":  "Final consumption expenditure of general government", "description": "Government final consumption expenditure (ESA95, 3.79) consists of expenditure, including imputed expenditure, incurred by general government on both individual consumption goods and services, net sales of goods and services. The expenditure may be divided into government expenditure on individual consumption goods and services and government expenditure on collective consumption services.",				
+				      "children": [								
+						{"state": false, "indicator": "P31_S13", "name":  "Individual consumption expenditure of general government", "description": ""},			
+						{"state": false, "indicator": "P32_S13", "name":  "Collective consumption expenditure of general government", "description": ""}			
+					  ]
+					},								
+					{"state": false, "indicator": "P31_S14_S15", "name":  "Household and NPISH final consumption expenditure", "description": "Private final consumption expenditure includes NPISH's and households' final consumption expenditure. The household sector (ESA95, 2.75) consists of individuals or groups of individuals as consumers and possibly also as entrepreneurs producing market goods and non-financial and financial services (market producers) provided that, in the latter case, the corresponding activities are not those of separate entities treated as quasi-corporations. It also includes individuals or groups of individuals as producers of goods or non-financial services for exclusively own final use. Non-profit institutions serving households (NPISH, ESA95, 3.78 and 2.87) are separate legal entities serving households. They include for example trade unions, professional societies, political parties, churches, charities, sports clubs etc.",				
+				      "children": [								
+						{"state": false, "indicator": "P31_S14", "name":  "Final consumption expenditure of households", "description": ""},			
+						{"state": false, "indicator": "P31_S15", "name":  "Final consumption expenditure of NPISH", "description": ""}			
+					  ]
+					}
+				  ]
+				},								
+				{"state": false, "indicator": "P5", "name":  "Gross capital formation", "description": "Gross capital formation (ESA95, 3.102-3.116) consists of gross fixed capital formation, plus changes in inventories plus acquisition less disposal of valuables. It is measured gross of consumption of fixed capital (i.e. depreciation of capital stock; see definition below).",					
+			      "children": [									
+					{"state": false, "indicator": "P51", "name":  "Gross fixed capital formation", "description": "Gross fixed capital formation - GFCF (ESA95, 3.102) consists of resident producers' acquisitions, less disposals, of fixed assets during a given period plus certain additions to the value of non-produced assets realised by the productive activity of producer or institutional units. Fixed assets are tangible or intangible assets produced as outputs from processes of production that are themselves used repeatedly, or continuously, in processes of production for more than one year. Disposals of fixed assets are treated as negative acquisitions.",				
+				      "children": [								
+						{"state": false, "indicator": "P51_S14_S15", "name":  "Gross fixed capital formation by private sector", "description": ""}			
+					  ]
+					},								
+					{"state": false, "indicator": "P52_P53", "name":  "Changes in inventories and acquisitions less disposals of valuables", "description": "Changes in inventories (ESA95, 3.117-3.124) are measured by the values of the entries into inventories less the value of the withdrawals and the value of any recurrent losses of goods held in inventories. Valuables (ESA95, 3.125-3.127) are produced assets that are not used primarily for production or consumption, that are expected to be appreciated or at least not to decline in real value, that do not deteriorate over time under normal conditions and that are acquired and held primarily as stores of values. Valuables consist of precious metals and stones, antiques and other art objects and other valuables, such as collections and jewellery of significant value fashioned out of precious stones and metals. Since acquisition less disposal of valuables usually is much smaller than changes in inventories, only the sum of the two may be available for some countries.",				
+				      "children": [								
+						{"state": false, "indicator": "P52", "name":  "Changes in inventories", "description": "Changes in inventories (ESA95, 3.117-3.124) are measured by the values of the entries into inventories less the value of the withdrawals and the value of any recurrent losses of goods held in inventories."},			
+						{"state": false, "indicator": "P53", "name":  "Acquisitions less disposals of valuables", "description": "Valuables (ESA95, 3.125-3.127) are produced assets that are not used primarily for production or consumption, that are expected to be appreciated or at least not to decline in real value, that do not deteriorate over time under normal conditions and that are acquired and held primarily as stores of values. Valuables consist of precious metals and stones, antiques and other art objects and other valuables, such as collections and jewellery of significant value fashioned out of precious stones and metals. Since acquisition less disposal of valuables usually is much smaller than changes in inventories, only the sum of the two may be available for some countries."}			
+					  ]
+					}	
+				  ]
+				}
+			  ]
+			},								
+			{"state": false, "indicator": "B11", "name":  "External balance of goods and services", "description": "The External balance of goods and services (ESA95, 8.68) is the difference between exports and imports of goods and services (ESA93, 3.128-3.146). It may be calculated separately for transactions in goods and in services.  Exports of goods and services consist of transactions in goods and services (sales, barter, gifts or grants) from residents to non-residents (ESA95, 3.128). Imports of goods and services consist of transactions in goods and services (purchases, barter, gifts or grants) from non-residents to residents (ESA95, 3.129). Imports and exports of goods are to be valued free on board (f.o.b.) at the border of the exporting country. Imports of services are to be valued at purchasers' prices and exports of services at basic prices.",						
+		      "children": 
+		      [										
+				{"state": false, "indicator": "B111", "name":  "External balance - Goods", "description": ""},					
+				{"state": false, "indicator": "B112", "name":  "External balance - Services", "description": ""}					
+			  ]
+			}	
+		  ]
+		},										
+		{"name": "c. GDP Income approach", "description": "GDP income components and other income measures are only available at current prices, because purely monetary flows can not naturally be decomposed into a price and a volume component. They may, however, be converted to real terms by applying an appropriate deflator. The central variables given are related with each other according to the following equations: GDP = compensation of employees (D.1) + gross operating surplus and mixed income (B.2g and B.3g) + taxes less subsidies on production and imports (D.2 and D.3)",									
+	      "children": 
+	      [											
+			{"state": false, "indicator": "D1", "name":  "Compensation of employees", "description": "Compensation of employees (at current prices) (ESA95, 4.02) is defined as the total remuneration, in cash or in kind, payable by an employer to an employee in return for work done by the latter during the accounting period. Compensation of employees consists of wages and salaries, and of employers' social contributions."},						
+			{"state": false, "indicator": "B2G_B3G", "name":  "Gross operating surplus and gross mixed income", "description": "Gross operating surplus and mixed income: operating surplus (ESA95, 8.18) is the surplus (or deficit) on production activities before the interest, rents or charges which the production units must pay or receive as borrowers or owners of assets have been taken into account . It corresponds to the income which units obtain from their own use of production facilities. Mixed income (ESA95, 8.19) is the remuneration for the work carried out by the owner (or members of his family) of an unincorporated enterprise. This is referred to as 'mixed income' as it cannot be distinguished from the entrepreneurial profit of the owner."},						
+			{"state": false, "indicator": "D2_M_D3", "name":  "Taxes on production and imports less subsidies", "description": ""}						
+		  ]
+		},											
+		{"name": "statistical error",									
+	      "children": 
+	      [											
+			{"state": false, "indicator": "B1GM_XE", "name":  "Statistical discrepancy: expenditure side", "description": ""},						
+			{"state": false, "indicator": "B1GM_XI", "name":  "Statistical discrepancy: income side", "description": ""},						
+			{"state": false, "indicator": "B1GM_XO", "name":  "Statistical discrepancy: output side", "description": ""}						
+		  ]
+		}	
+	  ]
+	}	
+  ]
+},							
+		{"state": false, "indicator" : "P","name" : "Transactions in products","description" : "Production is an activity carried out under the control, responsibility and management of an institutional unit that uses inputs of labour, capital and goods and services to produce outputs of goods and services."	,			
+		"children": [					
+			{"state": false, "indicator" : "P1","name" : "Output ","description" : "Output is the total of products created during the accounting period.",			
+			"children": [				
+				{"state": false, "indicator" : "P11","name" : "Market output ","description" : "",		
+				"children": [			
+					{"state": false, "indicator" : "P119","name" : "Financial intermediation services indirectly measured (FISIM)","description" : ""}	
+				]},			
+				{"state": false, "indicator" : "P12","name" : "Output for own final use ","description" : ""},		
+				{"state": false, "indicator" : "P13","name" : "Non-market output ","description" : ""}		
+			]},				
+			{"state": false, "indicator" : "P2","name" : "Intermediate consumption ","description" : "Intermediate consumption consists of goods and services consumed as inputs by a process of production, excluding fixed assets whose consumption is recorded as consumption of fixed capital. The goods and services are either transformed or used up by the production process."},			
+			{"state": false, "indicator" : "P3","name" : "Final consumption expenditure ","description" : "Final consumption expenditure consists of expenditure incurred by resident institutional units on goods or services that are used for the direct satisfaction of individual needs or wants or the collective needs of members of the community.",			
+			"children": [				
+				{"state": false, "indicator" : "P31","name" : "Individual consumption expenditure ","description" : ""},		
+				{"state": false, "indicator" : "P32","name" : "Collective consumption expenditure ","description" : ""}		
+			]},				
+			{"state": false, "indicator" : "P4","name" : "Actual final consumption ","description" : "Actual final consumption consists of the goods or services that are acquired by resident institutional units for the direct satisfaction of human needs, whether individual or collective.",			
+			"children": [				
+				{"state": false, "indicator" : "P41","name" : "Actual individual consumption ","description" : ""},		
+				{"state": false, "indicator" : "P42","name" : "Actual collective consumption ","description" : ""}		
+			]},				
+			{"state": false, "indicator" : "P5","name" : "Capital formation ","description" : "",			
+			"children": [				
+				{"state": false, "indicator" : "P51g","name" : "Gross fixed capital formation ","description" : "",		
+				"children": [			
+					{"state": false, "indicator" : "P511","name" : "Acquisitions less disposals of fixed assets","description" : "",	
+					"children": [		
+						{"state": false, "indicator" : "P5111","name" : "Acquisitions of new fixed assets","description" : ""},
+						{"state": false, "indicator" : "P5112","name" : "Acquisitions of existing fixed assets","description" : ""},
+						{"state": false, "indicator" : "P5113","name" : "Disposals of existing fixed assets","description" : ""}
+					]},		
+					{"state": false, "indicator" : "P512","name" : "Costs of ownership transfer on non-produced assets","description" : ""}	
+				]},			
+				{"state": false, "indicator" : "P51c","name" : "Consumption of fixed capital (–)","description" : "",		
+				"children": [			
+					{"state": false, "indicator" : "P51c1 ","name" : "Consumption of fixed capital on gross operating surplus (–)","description" : ""},	
+					{"state": false, "indicator" : "P51c2","name" : "Consumption of fixed capital on gross mixed income (–)","description" : ""}	
+				]},			
+				{"state": false, "indicator" : "P51n","name" : "Net fixed capital formation","description" : ""},		
+				{"state": false, "indicator" : "P52","name" : "Changes in inventories ","description" : ""},		
+				{"state": false, "indicator" : "P53","name" : "Acquisitions less disposals of valuables ","description" : ""}		
+			]},				
+			{"state": false, "indicator" : "P6","name" : "Exports of goods and services ","description" : "Exports of goods and services consist of transactions in goods and services (sales, barter, and gifts) from residents to non-residents.",			
+			"children": [				
+				{"state": false, "indicator" : "P61","name" : "Exports of goods ","description" : ""},		
+				{"state": false, "indicator" : "P62","name" : "Exports of services ","description" : ""}		
+			]},				
+			{"state": false, "indicator" : "P7","name" : "Imports of goods and services ","description" : "Imports of goods and services consist of transactions in goods and services (purchases, barter, and gifts) from non-residents to residents.",			
+			"children": [				
+				{"state": false, "indicator" : "P71","name" : "Imports of goods ","description" : ""},		
+				{"state": false, "indicator" : "P72","name" : "Imports of services ","description" : ""}		
+			]}
+		]},					
+		{"state": false, "indicator" : "D","name" : "Distributive transactions ","description" : "Distributive transactions are transactions whereby the value added generated by production is distributed to labour, capital and government, and transactions redistributing income and wealth.",				
+		"children": [					
+			{"state": false, "indicator" : "D1","name" : "Compensation of employees ","description" : "Compensation of employees D1 is defined as the total remuneration, in cash or in kind, payable by an employer to an employee in return for work done by the latter during an accounting period.",			
+			"children": [				
+				{"state": false, "indicator" : "D11","name" : "Wages and salaries ","description" : ""},		
+				{"state": false, "indicator" : "D12","name" : "Employers’ social contributions ","description" : "",		
+				"children": [			
+					{"state": false, "indicator" : "D121","name" : "Employers’ actual social contributions ","description" : "",	
+					"children": [		
+						{"state": false, "indicator" : "D1211","name" : "Employers’ actual pension contributions ","description" : ""},
+						{"state": false, "indicator" : "D1212","name" : "Employers’ actual non-pension contributions","description" : ""}
+					]},		
+					{"state": false, "indicator" : "D122","name" : "Employers’ imputed social contributions ","description" : "",	
+					"children": [		
+						{"state": false, "indicator" : "D1221","name" : "Employers’ imputed pension contributions ","description" : ""},
+						{"state": false, "indicator" : "D1222","name" : "Employers’ imputed non-pension contributions ","description" : ""}
+					]}		
+				]}			
+			]},				
+			{"state": false, "indicator" : "D2","name" : "Taxes on production and imports ","description" : "Taxes on production and imports (D.2) consist of compulsory, unrequited payments, in cash or in kind, which are levied by general government, or by the institutions of the European Union, in respect of the production and importation of goods and services, the employment of labour, the ownership or use of land, buildings or other assets used in production. Such taxes are payable irrespective of profits made.",			
+			"children": [				
+				{"state": false, "indicator" : "D21","name" : "Taxes on products ","description" : "",		
+				"children": [			
+					{"state": false, "indicator" : "D211","name" : "Value added type taxes (VAT) ","description" : ""},	
+					{"state": false, "indicator" : "D212","name" : "Taxes and duties on imports excluding VAT ","description" : "",	
+					"children": [		
+						{"state": false, "indicator" : "D2121","name" : "Import duties ","description" : ""},
+						{"state": false, "indicator" : "D2122","name" : "Taxes on imports excluding VAT and duties ","description" : ""}
+					]},		
+					{"state": false, "indicator" : "D213","name" : "Export taxes ","description" : ""},	
+					{"state": false, "indicator" : "D214","name" : "Taxes on products except VAT, import and export taxes ","description" : ""}	
+				]},			
+				{"state": false, "indicator" : "D29","name" : "Other taxes on production ","description" : ""}		
+			]},				
+			{"state": false, "indicator" : "D3","name" : "Subsidies ","description" : "Subsidies (D.3) are current unrequited payments which general government or the institutions of the European Union make to resident producers.",			
+			"children": [				
+				{"state": false, "indicator" : "D31","name" : "Subsidies on products ","description" : "",		
+				"children": [			
+					{"state": false, "indicator" : "D311","name" : "Import subsidies ","description" : ""},	
+					{"state": false, "indicator" : "D312","name" : "Export subsidies ","description" : ""},	
+					{"state": false, "indicator" : "D319","name" : "Other subsidies on products ","description" : ""}	
+				]},			
+				{"state": false, "indicator" : "D39","name" : "Other subsidies on production ","description" : ""}			
+			]},				
+			{"state": false, "indicator" : "D4","name" : "Property income ","description" : "Property income (D.4) accrues when the owners of financial assets and natural resources put them at the disposal of other institutional units. The income payable for the use of financial assets is called investment income, while that payable for the use of a natural resource is called rent. Property income is the sum of investment income and rent.",			
+			"children": [				
+				{"state": false, "indicator" : "D41","name" : "Interest ","description" : ""},			
+				{"state": false, "indicator" : "D42","name" : "Distributed income of corporations ","description" : "",		
+				"children": [			
+					{"state": false, "indicator" : "D421","name" : "Dividends ","description" : ""},	
+					{"state": false, "indicator" : "D422","name" : "Withdrawals from income of quasi-corporations ","description" : ""}
+				]},			
+				{"state": false, "indicator" : "D43","name" : "Reinvested earnings on foreign direct investment ","description" : ""},		
+				{"state": false, "indicator" : "D44","name" : "Investment income disbursements ","description" : "",		
+				"children": [			
+					{"state": false, "indicator" : "D441","name" : "Investment income attributable to insurance policyholders ","description" : ""},	
+					{"state": false, "indicator" : "D442","name" : "Investment income payable on pension entitlements ","description" : ""},	
+					{"state": false, "indicator" : "D443","name" : "Investment income attributable to collective investment fund share holders ","description" : "",	
+					"children": [		
+						{"state": false, "indicator" : "D4431","name" : "Dividends attributable to collective investment fund shareholders","description" : ""},
+						{"state": false, "indicator" : "D4432","name" : "Retained earnings attributable to collective investment fund shareholders","description" : ""}
+					]}		
+				]},			
+				{"state": false, "indicator" : "D45","name" : "Rent ","description" : ""}			
+			]},				
+			{"state": false, "indicator" : "D5","name" : "Current taxes on income, wealth, etc ","description" : "Current taxes on income, wealth, etc. (D.5) cover all compulsory, unrequited payments, in cash or in kind, levied periodically by general government and by the rest of the world on the income and wealth of institutional units, and some periodic taxes which are assessed neither on that income nor that wealth.",			
+			"children": [				
+				{"state": false, "indicator" : "D51","name" : "Taxes on income ","description" : ""},		
+				{"state": false, "indicator" : "D59","name" : "Other current taxes ","description" : ""}		
+			]},				
+			{"state": false, "indicator" : "D6","name" : "Social contributions and benefits","description" : "Social benefits are transfers to households, in cash or in kind, intended to relieve them from the financial burden of a number of risks or needs, made through collectively organised schemes, or outside such schemes by government units and NPISHs; they include payments from general government to producers which individually benefit households and which are made in the context of social risks or needs.",			
+			"children": [				
+				{"state": false, "indicator" : "D61","name" : "Net social contributions ","description" : "",		
+				"children": [	{"state": false, "indicator" : "D611","name" : "Employers’ actual social contributions ","description" : "",	
+					"children": [		
+						{"state": false, "indicator" : "D6111","name" : "Employers’ actual pension contributions ","description" : ""},
+						{"state": false, "indicator" : "D6112","name" : "Employers’ actual non-pension contributions ","description" : ""}
+					]},		
+					{"state": false, "indicator" : "D612","name" : "Employers' imputed social contributions ","description" : "",	
+					"children": [		
+						{"state": false, "indicator" : "D6121","name" : "Employers’ imputed pension contributions ","description" : ""},
+						{"state": false, "indicator" : "D6122","name" : "Employers’ imputed non-pension contributions ","description" : ""}
+					]},		
+					{"state": false, "indicator" : "D613","name" : "Households’ actual social contributions ","description" : "",	
+					"children": [		
+						{"state": false, "indicator" : "D6131","name" : "Households’ actual pension contributions ","description" : ""},
+						{"state": false, "indicator" : "D6132","name" : "Households’ actual non-pension contributions ","description" : ""}
+					]},		
+					{"state": false, "indicator" : "D614","name" : "Households’ social contribution supplements ","description" : "",	
+					"children": [		
+						{"state": false, "indicator" : "D6141","name" : "Households’ pension contribution supplements ","description" : ""},
+						{"state": false, "indicator" : "D6142","name" : "Households’ non-pension contribution supplements ","description" : ""}
+					]},		
+					{"state": false, "indicator" : "D61SC","name" : "Social insurance scheme service charges (–)","description" : ""}	
+				]},			
+				{"state": false, "indicator" : "D62","name" : "Social benefits other than social transfers in kind ","description" : "",		
+				"children": [			
+					{"state": false, "indicator" : "D621","name" : "Social security benefits in cash ","description" : "",	
+					"children": [		
+						{"state": false, "indicator" : "D6211","name" : "Social security pension benefits ","description" : ""},
+						{"state": false, "indicator" : "D6212","name" : "Social security non-pension benefits in cash ","description" : ""}
+					]},		
+					{"state": false, "indicator" : "D622","name" : "Other social insurance benefits ","description" : "",	
+					"children": [		
+						{"state": false, "indicator" : "D6221","name" : "Other social insurance pension benefits ","description" : ""},
+						{"state": false, "indicator" : "D6222","name" : "Other social insurance non-pension benefits ","description" : ""}
+					]},		
+					{"state": false, "indicator" : "D623","name" : "Social assistance benefits in cash ","description" : ""}	
+				]},			
+				{"state": false, "indicator" : "D63","name" : "Social transfers in kind","description" : "",		
+				"children": [			
+					{"state": false, "indicator" : "D631","name" : "Social transfers in kind — non-market production","description" : ""},	
+					{"state": false, "indicator" : "D632","name" : "Social transfers in kind — purchased market production","description" : ""}	
+				]}			
+			]},				
+			{"state": false, "indicator" : "D7","name" : "Other current transfers ","description" : "",			
+			"children": [				
+				{"state": false, "indicator" : "D71","name" : "Net non-life insurance premiums ","description" : "",		
+				"children": [			
+					{"state": false, "indicator" : "D711","name" : "Net non-life direct insurance premiums ","description" : ""},	
+					{"state": false, "indicator" : "D712","name" : "Net non-life reinsurance premiums ","description" : ""}	
+				]},			
+				{"state": false, "indicator" : "D72","name" : "Non-life insurance claims ","description" : "",		
+				"children": [			
+					{"state": false, "indicator" : "D721","name" : "Non-life direct insurance claims ","description" : ""},	
+					{"state": false, "indicator" : "D722","name" : "Non-life reinsurance claims ","description" : ""}	
+				]},			
+				{"state": false, "indicator" : "D73","name" : "Current transfers within general government ","description" : ""},		
+				{"state": false, "indicator" : "D74","name" : "Current international cooperation ","description" : ""},		
+				{"state": false, "indicator" : "D75","name" : "Miscellaneous current transfers ","description" : "",		
+				"children": [			
+					{"state": false, "indicator" : "D751","name" : "Current transfers to NPISHs ","description" : ""},	
+					{"state": false, "indicator" : "D752","name" : "Current transfers between resident and non-resident households ","description" : ""},	
+					{"state": false, "indicator" : "D759","name" : "Other miscellaneous current transfers ","description" : ""}	
+				]},			
+				{"state": false, "indicator" : "D76","name" : "VAT- and GNI-based EU own resources","description" : ""}		
+			]},				
+			{"state": false, "indicator" : "D8","name" : "Adjustment for the change in pension entitlements ","description" : "The adjustment for the change in pension entitlements (D.8) represents the adjustment needed to make appear in the saving of households the change in the pension entitlements on which households have a definite claim. The pension entitlement change comes from contributions and benefits recorded in the secondary distribution of income account."},			
+			{"state": false, "indicator" : "D9","name" : "Capital transfers ","description" : "Capital transfers require the acquisition or disposal of an asset, or assets, by at least one of the parties to the transaction. Whether made in cash or in kind, they result in a commensurate change in the financial, or non-financial, assets shown in the balance sheets of one or both parties to the transaction.",			
+			"children": [				
+				{"state": false, "indicator" : "D9r","name" : "Capital transfers, receivable ","description" : "",		
+				"children": [			
+					{"state": false, "indicator" : "D91r","name" : "Capital taxes ","description" : ""},	
+					{"state": false, "indicator" : "D92r","name" : "Investment grants ","description" : ""},	
+					{"state": false, "indicator" : "D99r","name" : "Other capital transfers ","description" : ""}	
+				]},			
+				{"state": false, "indicator" : "D9p","name" : "Capital transfers, payable ","description" : "",		
+				"children": [			
+					{"state": false, "indicator" : "D91p","name" : "Capital taxes ","description" : ""},	
+					{"state": false, "indicator" : "D92p","name" : "Investment grants ","description" : ""},	
+					{"state": false, "indicator" : "D99p","name" : "Other capital transfers ","description" : ""}	
+				]}			
+			]}
+		]},					
+		{"state": false, "indicator" : "F","name" : "Transactions in financial assets and liabilities ","description" : "Financial transactions (F) are transactions in financial assets (AF) and liabilities between resident institutional units, and between them and non-resident institutional units.",				
+		"children": [					
+			{"state": false, "indicator" : "F1","name" : "Monetary gold and SDRs ","description" : "",			
+			"children": [				
+				{"state": false, "indicator" : "F11","name" : "Monetary gold ","description" : ""},		
+				{"state": false, "indicator" : "F12","name" : "SDRs ","description" : ""}		
+			]},				
+			{"state": false, "indicator" : "F2","name" : "Currency and deposits ","description" : "Currency and deposits are currency in circulation and deposits, both in national currency and in foreign currencies.",			
+			"children": [				
+				{"state": false, "indicator" : "F21","name" : "Currency ","description" : ""},		
+				{"state": false, "indicator" : "F22","name" : "Transferable deposits ","description" : "",		
+				"children": [			
+					{"state": false, "indicator" : "F221","name" : "Inter-bank positions ","description" : ""},	
+					{"state": false, "indicator" : "F229","name" : "Other transferable deposits ","description" : ""}	
+				]},			
+				{"state": false, "indicator" : "F29","name" : "Other deposits ","description" : ""}		
+			]},				
+			{"state": false, "indicator" : "F3","name" : "Debt securities ","description" : "Debt securities are negotiable financial instruments serving as evidence of debt.",			
+			"children": [				
+				{"state": false, "indicator" : "F31","name" : "Short-term ","description" : ""},		
+				{"state": false, "indicator" : "F32","name" : "Long-term ","description" : ""}		
+			]},				
+			{"state": false, "indicator" : "F4","name" : "Loans ","description" : "Loans are created when creditors lend funds to debtors.",			
+			"children": [				
+				{"state": false, "indicator" : "F41","name" : "Short-term ","description" : ""},		
+				{"state": false, "indicator" : "F42","name" : "Long-term","description" : ""}		
+			]},				
+			{"state": false, "indicator" : "F5","name" : "Equity and investment fund shares ","description" : "Equity and investment fund shares or units are residual claims on the assets of the institutional units that issued the shares or units.",			
+			"children": [				
+				{"state": false, "indicator" : "F51","name" : "Equity ","description" : "",		
+				"children": [			
+					{"state": false, "indicator" : "F511","name" : "Listed shares ","description" : ""},	
+					{"state": false, "indicator" : "F512","name" : "Unlisted shares ","description" : ""},	
+					{"state": false, "indicator" : "F519","name" : "Other equity ","description" : ""}	
+				]},			
+				{"state": false, "indicator" : "F52","name" : "Investment fund shares/units ","description" : "",		
+				"children": [			
+					{"state": false, "indicator" : "F521","name" : "Money market fund shares/units ","description" : ""},	
+					{"state": false, "indicator" : "F522","name" : "Non-MMF investment fund shares/units ","description" : ""}	
+				]}			
+			]},				
+			{"state": false, "indicator" : "F6","name" : "Insurance, pension and standardized guarantee schemes ","description" : "",			
+			"children": [				
+				{"state": false, "indicator" : "F61","name" : "Non-life insurance technical provisions ","description" : ""},		
+				{"state": false, "indicator" : "F62","name" : "Life insurance and annuity entitlements ","description" : ""},		
+				{"state": false, "indicator" : "F63","name" : "Pension entitlements ","description" : ""},		
+				{"state": false, "indicator" : "F64","name" : "Claims of pension funds on pension managers ","description" : ""},		
+				{"state": false, "indicator" : "F65","name" : "Entitlements to non-pension benefits ","description" : ""},		
+				{"state": false, "indicator" : "F66","name" : "Provisions for calls under standardized guarantees ","description" : ""}		
+			]},				
+			{"state": false, "indicator" : "F7","name" : "Financial derivatives and employee stock options ","description" : "",			
+			"children": [				
+				{"state": false, "indicator" : "F71","name" : "Financial derivatives ","description" : "",		
+				"children": [			
+					{"state": false, "indicator" : "F711","name" : "Options ","description" : ""},	
+					{"state": false, "indicator" : "F712","name" : "Forwards ","description" : ""},	
+					{"state": false, "indicator" : "F713","name" : "Swaps","description" : ""},	
+					{"state": false, "indicator" : "F714","name" : "FRAs","description" : ""},	
+					{"state": false, "indicator" : "F715","name" : "Credit derivatives","description" : ""},	
+					{"state": false, "indicator" : "F716","name" : "Credit default swaps","description" : ""}	
+				]},			
+				{"state": false, "indicator" : "F72","name" : "Employee stock options ","description" : ""}		
+			]},				
+			{"state": false, "indicator" : "F8","name" : "Other accounts receivable/payable ","description" : "Other accounts receivable/payable are financial assets and liabilities created as counterparts to transactions where there is a timing difference between these transactions and the corresponding payments.",			
+			"children": [				
+				{"state": false, "indicator" : "F81","name" : "Trade credits and advances ","description" : ""},		
+				{"state": false, "indicator" : "F89","name" : "Other accounts receivable/payable ","description" : ""}		
+			]}
+		]},	
+		{"state": false, "indicator" : "K","name" : "Entries in the other changes in assets account ","description" : "Other changes in assets and liabilities are economic flows, other than those that occur through transactions recorded in the capital and financial accounts, that change the value of assets and liabilities."	,					
+		"children": [						
+			{"state": false, "indicator" : "K1","name" : "Economic appearance of assets ","description" : "Economic appearance of assets is the increase in the volume of produced and non-produced assets that is not the result of production."	},				
+			{"state": false, "indicator" : "K2","name" : "Economic disappearance of non-produced assets ","description" : ""	,				
+			"children": [					
+				{"state": false, "indicator" : "K21","name" : "Depletion of natural resources ","description" : ""	},			
+				{"state": false, "indicator" : "K22","name" : "Other economic disappearance of non-produced assets ","description" : ""	}			
+			]},					
+			{"state": false, "indicator" : "K3","name" : "Catastrophic losses ","description" : ""	},				
+			{"state": false, "indicator" : "K4","name" : "Uncompensated seizures ","description" : ""	},				
+			{"state": false, "indicator" : "K5","name" : "Other changes in volume nec ","description" : ""	},				
+			{"state": false, "indicator" : "K6","name" : "Changes in classification ","description" : ""	,				
+			"children": [					
+				{"state": false, "indicator" : "K61","name" : "Changes in sector classification and structure ","description" : ""	},			
+				{"state": false, "indicator" : "K62","name" : "Changes in classification of assets and liabilities ","description" : ""	}			
+			]},					
+			{"state": false, "indicator" : "K7","name" : "Nominal holding gains and losses ","description" : "The nominal holding gains and losses (K.7) that relate to an asset are the increases or decreases in the asset’s value accruing to its economic owner as a result of increases or decreases in its price. The nominal holding gains and losses that relate to a financial liability are the decreases or increases in the liability’s valuation as a result of decreases or increases to its price."	,				
+			"children": [					
+				{"state": false, "indicator" : "K71","name" : "Neutral holding gains and losses ","description" : ""	},			
+				{"state": false, "indicator" : "K72","name" : "Real holding gains and losses ","description" : ""	}			
+			]}					
+		]},						
+		{"state": false, "indicator" : "B","name" : "Balancing and net worth items ","description" : ""	,					
+		"children": [						
+			{"state": false, "indicator" : "B1G","name" : "Value added, gross / Gross domestic product ","description" : ""	},				
+			{"state": false, "indicator" : "B2G","name" : "Operating surplus, gross ","description" : ""	},				
+			{"state": false, "indicator" : "B3G","name" : "Mixed income, gross ","description" : ""	},				
+			{"state": false, "indicator" : "B4G","name" : "Entrepreneurial income","description" : ""	},				
+			{"state": false, "indicator" : "B5G","name" : "Balance of primary incomes, gross / National income, gross ","description" : ""	},				
+			{"state": false, "indicator" : "B6G","name" : "Disposable income, gross ","description" : ""	},				
+			{"state": false, "indicator" : "B7G","name" : "Adjusted disposable income, gross ","description" : ""	},				
+			{"state": false, "indicator" : "B8G","name" : "Saving, gross ","description" : ""	},				
+			{"state": false, "indicator" : "B9","name" : "Net lending  (+)/net borrowing (–)","description" : ""	,				
+			"children": [					
+				{"state": false, "indicator" : "B9N","name" : "Net lending  (+)/net borrowing (–) of the non-financial accounts","description" : ""	},			
+				{"state": false, "indicator" : "B9F","name" : "Net lending  (+)/net borrowing (–) of the financial accounts","description" : ""	}			
+			]},					
+			{"state": false, "indicator" : "B10","name" : "Changes in net worth ","description" : ""	,				
+			"children": [					
+				{"state": false, "indicator" : "B101","name" : "Changes in net worth due to saving and capital transfers ","description" : ""	},			
+				{"state": false, "indicator" : "B102","name" : "Changes in net worth due to other changes in volume of assets ","description" : ""	},			
+				{"state": false, "indicator" : "B103","name" : "Changes in net worth due to nominal holding gains and losses","description" : ""	,			
+				"children": [				
+					{"state": false, "indicator" : "B1031","name" : "Changes in net worth due to neutral holding gains and losses ","description" : ""	},		
+					{"state": false, "indicator" : "B1032","name" : "Changes in net worth due to real holding gains and losses ","description" : ""	}		
+				]}				
+			]},					
+			{"state": false, "indicator" : "B11","name" : "External balance of goods and services ","description" : ""	},				
+			{"state": false, "indicator" : "B12","name" : "Current external balance ","description" : ""	},				
+			{"state": false, "indicator" : "B90","name" : "Net worth ","description" : ""	},				
+			{"state": false, "indicator" : "BF90","name" : "Financial net worth","description" : ""	}				
+		]},						
+		{"state": false, "indicator" : "AN","name" : "Non-financial assets ","description" : ""	,					
+		"children": [						
+			{"state": false, "indicator" : "AN1","name" : "Produced non-financial assets ","description" : "Produced non-financial assets (AN.1) are outputs from production processes."	,				
+			"children": [					
+				{"state": false, "indicator" : "AN11","name" : "Fixed assets by type of asset ","description" : ""	,			
+				"children": [				
+					{"state": false, "indicator" : "AN111","name" : "Dwellings ","description" : ""	},		
+					{"state": false, "indicator" : "AN112","name" : "Other buildings and structures ","description" : ""	,		
+					"children": [			
+						{"state": false, "indicator" : "AN1121","name" : "Buildings other than dwellings ","description" : ""	},	
+						{"state": false, "indicator" : "AN1122","name" : "Other structures ","description" : ""	},	
+						{"state": false, "indicator" : "AN1123","name" : "Land improvements ","description" : ""	}	
+					]},			
+					{"state": false, "indicator" : "AN113","name" : "Machinery and equipment ","description" : ""	,		
+					"children": [			
+						{"state": false, "indicator" : "AN1131","name" : "Transport equipment ","description" : ""	},	
+						{"state": false, "indicator" : "AN1132","name" : "ICT equipment ","description" : ""	},	
+						{"state": false, "indicator" : "AN1133","name" : "Other machinery and equipment","description" : ""	}	
+					]},			
+					{"state": false, "indicator" : "AN114","name" : "Weapons systems ","description" : ""	},		
+					{"state": false, "indicator" : "AN115","name" : "Cultivated biological resources ","description" : ""	,		
+					"children": [			
+						{"state": false, "indicator" : "AN1151","name" : "Animal resources yielding repeat products ","description" : ""	},	
+						{"state": false, "indicator" : "AN1152","name" : "Tree, crop and plant resources yielding repeat products ","description" : ""	}	
+					]},			
+					{"state": false, "indicator" : "AN116","name" : "Costs of ownership transfer on non-produced assets ","description" : ""	},		
+					{"state": false, "indicator" : "AN117","name" : "Intellectual property products ","description" : ""	,		
+					"children": [			
+						{"state": false, "indicator" : "AN1171","name" : "Research and development ","description" : ""	},	
+						{"state": false, "indicator" : "AN1172","name" : "Mineral exploration and evaluation ","description" : ""	},	
+						{"state": false, "indicator" : "AN1173","name" : "Computer software and databases ","description" : ""	,	
+						"children": [		
+							{"state": false, "indicator" : "AN11731","name" : "Computer software ","description" : ""	},
+							{"state": false, "indicator" : "AN11732","name" : "Databases","description" : ""	}
+						]},		
+						{"state": false, "indicator" : "AN1174","name" : "Entertainment, literary or artistic originals ","description" : ""	},	
+						{"state": false, "indicator" : "AN1179","name" : "Other intellectual property products ","description" : ""	}	
+					]}			
+				]},				
+				{"state": false, "indicator" : "AN12","name" : "Inventories by type of inventory ","description" : ""	,			
+				"children": [				
+					{"state": false, "indicator" : "AN121","name" : "Materials and supplies ","description" : ""	},		
+					{"state": false, "indicator" : "AN122","name" : "Work-in-progress ","description" : ""	,		
+					"children": [			
+						{"state": false, "indicator" : "AN1221","name" : "Work-in-progress on cultivated biological assets ","description" : ""	},	
+						{"state": false, "indicator" : "AN1222","name" : "Other work-in-progress ","description" : ""	}	
+					]},			
+					{"state": false, "indicator" : "AN123","name" : "Finished goods ","description" : ""	},		
+					{"state": false, "indicator" : "AN124","name" : "Military inventories ","description" : ""	},		
+					{"state": false, "indicator" : "AN125","name" : "Goods for resale ","description" : ""	}		
+				]},				
+				{"state": false, "indicator" : "AN13","name" : "Valuables ","description" : ""	,			
+				"children": [				
+					{"state": false, "indicator" : "AN131","name" : "Precious metals and stones ","description" : ""	},		
+					{"state": false, "indicator" : "AN132","name" : "Antiques and other art objects ","description" : ""	},		
+					{"state": false, "indicator" : "AN133","name" : "Other valuables ","description" : ""	}		
+				]}				
+			]},					
+			{"state": false, "indicator" : "AN2","name" : "Non-produced non-financial assets ","description" : "Non-produced non-financial assets (AN.2) are economic assets that come into existence other than through processes of production. They consist of natural assets, contracts, leases, licences, permits, and goodwill and marketing assets."	,				
+			"children": [					
+				{"state": false, "indicator" : "AN21","name" : "Natural resources ","description" : ""	,			
+				"children": [				
+					{"state": false, "indicator" : "AN211","name" : "Land ","description" : ""	,		
+					"children": [			
+						{"state": false, "indicator" : "AN2111","name" : "Land underlying buildings and structures","description" : ""	},	
+						{"state": false, "indicator" : "AN2112","name" : "Land under cultivation","description" : ""	},	
+						{"state": false, "indicator" : "AN2113","name" : "Recreational land and associated surface water","description" : ""	},	
+						{"state": false, "indicator" : "AN2119","name" : "Other land and associated surface water","description" : ""	}	
+					]},			
+					{"state": false, "indicator" : "AN212","name" : "Mineral and energy reserves ","description" : ""	},		
+					{"state": false, "indicator" : "AN213","name" : "Non-cultivated biological resources ","description" : ""	},		
+					{"state": false, "indicator" : "AN214","name" : "Water resources ","description" : ""	},		
+					{"state": false, "indicator" : "AN215","name" : "Other natural resources ","description" : ""	,		
+					"children": [			
+						{"state": false, "indicator" : "AN2151","name" : "Radio spectra ","description" : ""	},	
+						{"state": false, "indicator" : "AN2159","name" : "Other ","description" : ""	}	
+					]}			
+				]},				
+				{"state": false, "indicator" : "AN22","name" : "Contracts, leases and licences ","description" : ""	,			
+				"children": [				
+					{"state": false, "indicator" : "AN221","name" : "Marketable operating leases ","description" : ""	},		
+					{"state": false, "indicator" : "AN222","name" : "Permissions to use natural resources ","description" : ""	},		
+					{"state": false, "indicator" : "AN223","name" : "Permissions to undertake specific activities ","description" : ""	},		
+					{"state": false, "indicator" : "AN224","name" : "Entitlement to future goods and services on an exclusive basis ","description" : ""	}		
+				]},				
+				{"state": false, "indicator" : "AN23","name" : "Purchases less sales of goodwill and marketing assets ","description" : ""	}			
+			]}					
+		]},						
+		{"state": false, "indicator" : "AF","name" : "Financial assets ","description" : "Financial assets (AF) are economic assets, comprising all financial claims, equity and the gold bullion component of monetary gold (paragraph 5.03). Liabilities are established when debtors are obliged to provide a payment or a series of payments to creditors (paragraph 5.06)."	,					
+		"children": [						
+			{"state": false, "indicator" : "AF1","name" : "Monetary gold and SDRs ","description" : ""	,				
+			"children": [					
+				{"state": false, "indicator" : "AF11","name" : "Monetary gold","description" : ""	},			
+				{"state": false, "indicator" : "AF12","name" : "SDRs","description" : ""	}			
+			]},					
+			{"state": false, "indicator" : "AF2","name" : "Currency and deposits ","description" : ""	,				
+			"children": [					
+				{"state": false, "indicator" : "AF21","name" : "Currency","description" : ""	},			
+				{"state": false, "indicator" : "AF22","name" : "Transferable deposits","description" : ""	,			
+				"children": [				
+					{"state": false, "indicator" : "AF221","name" : "Inter-bank positions","description" : ""	},		
+					{"state": false, "indicator" : "AF229","name" : "Other transferable deposits","description" : ""	}		
+				]},				
+				{"state": false, "indicator" : "AF29","name" : "Other deposits","description" : ""	}			
+			]},					
+			{"state": false, "indicator" : "AF3","name" : "Debt securities ","description" : ""	,				
+			"children": [					
+				{"state": false, "indicator" : "AF31","name" : "Short-term","description" : ""	},			
+				{"state": false, "indicator" : "AF32","name" : "Long-term","description" : ""	}			
+			]},					
+			{"state": false, "indicator" : "AF4","name" : "Loans ","description" : ""	,				
+			"children": [					
+				{"state": false, "indicator" : "AF41","name" : "Short-term","description" : ""	},			
+				{"state": false, "indicator" : "AF42","name" : "Long-term","description" : ""	}			
+			]},					
+			{"state": false, "indicator" : "AF5","name" : "Equity and investment fund shares/units ","description" : ""	,				
+			"children": [					
+				{"state": false, "indicator" : "AF51","name" : "Equity","description" : ""	,			
+				"children": [				
+					{"state": false, "indicator" : "AF511","name" : "Listed shares","description" : ""	},		
+					{"state": false, "indicator" : "AF512","name" : "Unlisted shares","description" : ""	},		
+					{"state": false, "indicator" : "AF519","name" : "Other equity","description" : ""	}		
+				]},				
+				{"state": false, "indicator" : "AF52","name" : "Investment fund shares/units","description" : ""	,			
+				"children": [				
+					{"state": false, "indicator" : "AF521","name" : "Money Market Fund shares/units","description" : ""	},		
+					{"state": false, "indicator" : "AF522","name" : "Non-MMF investment fund shares/units","description" : ""	}		
+				]}				
+			]},					
+			{"state": false, "indicator" : "AF6","name" : "Insurance, pension and standardized guarantee schemes ","description" : ""	,				
+			"children": [					
+				{"state": false, "indicator" : "AF61","name" : "Non-life insurance technical reserves","description" : ""	},			
+				{"state": false, "indicator" : "AF62","name" : "Life insurance and annuity entitlements","description" : ""	},			
+				{"state": false, "indicator" : "AF63","name" : "Pension entitlements","description" : ""	},			
+				{"state": false, "indicator" : "AF64","name" : "Claims of pension funds on pension managers","description" : ""	},			
+				{"state": false, "indicator" : "AF65","name" : "Entitlements to non-pension benefits","description" : ""	},			
+				{"state": false, "indicator" : "AF66","name" : "Provisions for calls under standardised guarantees","description" : ""	}			
+			]},					
+			{"state": false, "indicator" : "AF7","name" : "Financial derivatives and employee stock options ","description" : ""	,				
+			"children": [					
+				{"state": false, "indicator" : "AF71","name" : "Financial derivatives","description" : ""	},			
+				{"state": false, "indicator" : "F711","name" : "Options","description" : ""	},			
+				{"state": false, "indicator" : "F712","name" : "Forwards","description" : ""	},			
+				{"state": false, "indicator" : "AF72","name" : "Employee stock options","description" : ""	}			
+			]},					
+			{"state": false, "indicator" : "AF8","name" : "Other accounts receivable/payable ","description" : ""	,				
+			"children": [					
+				{"state": false, "indicator" : "AF81","name" : "Trade credits and advances","description" : ""	},			
+				{"state": false, "indicator" : "AF89","name" : "Other accounts receivable/payable, excluding trade credits and advances","description" : ""	}			
+			]}					
+		]},						
+{"name": "Government revenue, expenditure and subsidies",											
+      "children": 
+      [													
+	{"state": false, "indicator": "TR", "name":  "Total general government revenue"},								
+	{"state": false, "indicator": "TE", "name":  "Total general government expenditure"},								
+	{"state": false, "indicator": "D3", "name":  "Subsidies"}								
+  ]
+},													
+{"name": "Government deficit and debt",											
+  "children": 
+  [													
+	{"state": false, "indicator": "GD", "name":  "Government consolidated gross debt",								
+      "children": 
+      [	
+      	{"state": false, "indicator": "GD_F2", "name":  "Government consolidated gross debt - Currency and deposits"},							
+		{"state": false, "indicator": "GD_F33", "name":  "Government consolidated gross debt - Securities other than shares, excluding financial derivatives",							
+	      "children": 
+	      [											
+			{"state": false, "indicator": "GD_F331", "name":  "Government consolidated gross debt - Short term securities other than shares, excluding financial derivatives"},						
+			{"state": false, "indicator": "GD_F332", "name":  "Government consolidated gross debt - Long-term securities other than shares, excluding financial derivatives"}						
+		  ]
+		},										
+		{"state": false, "indicator": "GD_F4", "name":  "Government consolidated gross debt - Loans",							
+	      "children": 
+	      [											
+			{"state": false, "indicator": "GD_F41", "name":  "Government consolidated gross debt - Short-term loans"},						
+			{"state": false, "indicator": "GD_F42", "name":  "Government consolidated gross debt - Long-term loans"}						
+		  ]
+		}	
+	  ]
+	},											
+	{"name": "Intergovernmental lending",										
+      "children": 
+      [												
+		{"state": false, "indicator": "IGL_F4_EA16", "name":  "Intergovernmental lending within EA16 in the context of the financial crisis"},							
+		{"state": false, "indicator": "IGL_F4_EA17", "name":  "Intergovernmental lending within EA17 in the context of the financial crisis"},							
+		{"state": false, "indicator": "IGL_F4_EA18", "name":  "Intergovernmental lending within EA18 in the context of the financial crisis"},							
+		{"state": false, "indicator": "IGL_F4_EU25", "name":  "Intergovernmental lending within EU25 in the context of the financial crisis"},							
+		{"state": false, "indicator": "IGL_F4_EU27", "name":  "Intergovernmental lending within EU27 in the context of the financial crisis"},							
+		{"state": false, "indicator": "IGL_F4_EU28", "name":  "Intergovernmental lending within EU28 in the context of the financial crisis"}							
+	  ]
+	},												
+	{"state": false, "indicator": "D41", "name":  "Interest"},								
+	{"state": false, "indicator": "EDP_B9", "name":  "Net lending (+)/Net borrowing (-) under the EDP (Excessive Deficit Procedure)"},								
+	{"state": false, "indicator": "EDP_D41", "name":  "Interest including flows on swaps and FRAs (Forward Rate Agreements)"},								
+	{"state": false, "indicator": "F71_LI_TR", "name":  "Trade credits and advances - Liabilities"},								
+	{"state": false, "indicator": "P51", "name":  "Gross fixed capital formation"}								
+  ]
+},													
+{"name": "Key Indicators",											
+  "children": 
+  [													
+	{"state": false, "indicator": "B2G_B3G_RAT_S11", "name":  "Gross profit share of non-financial corporations (B2G_B3G/B1G*100)"},								
+	{"state": false, "indicator": "DIR_S11", "name":  "Net debt-to-income ratio, after taxes, of non-financial corporations: (AF2+AF33+AF4, liab - assets)/(B4N-D5PAY) "},								
+	{"state": false, "indicator": "DIR_S14_S15", "name":  "Gross debt-to-income ratio of households: (AF4, liab)/(B6G+D8net)"},								
+	{"state": false, "indicator": "IRG_S11", "name":  "Gross investment rate of non-financial corporations (P51/B1G*100)"},								
+	{"state": false, "indicator": "IRG_S14_S15", "name":  "Gross investment rate of households (P51/(B6G+D8Net)*100)"},								
+	{"state": false, "indicator": "NFW_S14_S15", "name":  "Household net financial assets ratio (BF90/(B6G+D8net))"},								
+	{"state": false, "indicator": "P51_RAT_GDP_BUS", "name":  "Business investment to GDP ratio (S11_S12_P51/B1GM*100)"},								
+	{"state": false, "indicator": "P51_RAT_GDP_S1", "name":  "Total investment to GDP ratio (S1_P51/B1GM*100)"},								
+	{"state": false, "indicator": "P51_RAT_GDP_S13", "name":  "Government investment to GDP ratio (S13_P51/B1GM*100)"},								
+	{"state": false, "indicator": "P51_RAT_GDP_S1M", "name":  "Households investment to GDP ratio (S14_S15_P51/B1GM*100)"},								
+	{"state": false, "indicator": "ROCE_S11", "name":  "Gross return on capital employed, before taxes, of non-financial corporations: B2G_B3G/(AF2+AF33+AF4+AF5, liab - assets)"},								
+	{"state": false, "indicator": "ROE_S11", "name":  "Net return on equity, after taxes, of non-financial corporations: (B4N-D5PAY)/(AF5, liab - assets)"},								
+	{"state": false, "indicator": "SRG_S14_S15", "name":  "Gross household saving rate (B8G/(B6G+D8Net)*100)"}								
+  ]
+}													
+	]}	
+]						
