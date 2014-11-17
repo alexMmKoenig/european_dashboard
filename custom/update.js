@@ -45,7 +45,6 @@ function subGroups(){
 		.attr("cy", function(d){return d*22})
 		.attr("cx", 20)
 		.attr("r", 10)
-		//.on("click", console.log("taz"));
 
 	circle.exit().remove();
 }
@@ -61,3 +60,31 @@ function activate(vnum){
 	svg4.select("#circle"+vnum).attr("fill", "#219A55");
 }
 
+function goChart(d){
+  
+  if (d.state === false){
+    d.state = true;
+    d.group = currentGroup;
+    active[currentGroup].child.push({indicator: d.indicator, name: d.name});
+  }
+
+  else if (d.state === true){
+    d.state = false;
+    active[d.group].child.splice(active[d.group].child.indexOf(d.indicator),1);
+    //d.group = false;
+  }
+
+  drawChart();
+ 
+  svg3.selectAll("#nameEnter").attr("fill", colorName);
+}
+
+function color(d) {
+  if (d.state != true) {return d._children ? "#c6dbef" : d.children ? "white" : "white"}
+  else {return d._children ? "#c6dbef" : d.children ? "white" : "white"};
+}
+
+function colorName(d) {
+  if (d.state != true) {return d._children ? "black" : d.children ? "black" : "black"}
+  else {return d._children ? "red" : d.children ? "red" : "red"};
+}

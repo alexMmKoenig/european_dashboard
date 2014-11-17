@@ -41,10 +41,10 @@ function update(source) {
       .attr("class", "node")
       .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; });
 
-      // indicators enter
+  // indicators enter
   var indicatorEnter = nodeEnter.append("g")
       .attr("class", "indicatorEnter")
-      .on("click", dlick);
+      .on("click", goChart);
 
   indicatorEnter.append("text")
       .attr("transform", "translate(-18, 0)")
@@ -52,7 +52,7 @@ function update(source) {
       .attr("dx", -5.5)
       .text(function(d) { if (d.indicator) {return d.indicator} });
 
-      // names enter
+  // names enter
   var nameEnter = nodeEnter.append("g")
       .attr("class", "nameEnter")
       .on("mouseover", description)
@@ -106,59 +106,3 @@ function click(d) {
   svg3.selectAll("#nameEnter").attr("fill", colorName);
 }
 
-function description(d) { 
-
-    var heading = d.name;
-    var description = d.description;
-
-    $( "h4.panel-title" ).replaceWith( "<h4 class = panel-title>"+ heading+"</h4>" );
-    $( ".panel-body" ).replaceWith( "<div class = panel-body>"+ description+"</div>" );
-  
-}
-
-function changeState(d){
-  
-  if (d.state === false){
-    d.state = true;
-    d.group = currentGroup;
-  }
-
-  else if (d.state === true){
-    d.state = false;
-    //d.group = false;
-  }
-}
-
-function pushActives(d) {
-
-  if (d.state === true) {
-    active[currentGroup].child.push({indicator: d.indicator, name: d.name});
-  }
-
-  else {
-    active[d.group].child.splice(active[d.group].child.indexOf(d.indicator),1);
-  }
-}
-
-function dlick(d) {
-  changeState(d);
-
-  pushActives(d);
-
-  drawChart();
- 
-svg3.selectAll("#nameEnter").attr("fill", colorName);
-  
-
-}
-
-
-function color(d) {
-  if (d.state != true) {return d._children ? "#c6dbef" : d.children ? "white" : "white"}
-  else {return d._children ? "#c6dbef" : d.children ? "white" : "white"};
-}
-
-function colorName(d) {
-  if (d.state != true) {return d._children ? "black" : d.children ? "black" : "black"}
-  else {return d._children ? "red" : d.children ? "red" : "red"};
-}

@@ -1,7 +1,7 @@
-  var legend = d3.select("#countryLegend").selectAll("g.legend")
+var legend = d3.select("#countryLegend").selectAll("g.legend")
     .data(data)
 
-  var legendEnter = legend.enter().append("g")
+var legendEnter = legend.enter().append("g")
     .attr("class", "legend")
 
     legendEnter
