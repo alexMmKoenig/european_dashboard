@@ -1,75 +1,58 @@
-    body {
-    margin-top: 100px;
-      background: white;
-      font: 12px sans-serif;
-      color: black;
-    }
-    .navbar-fixed-top .nav {
-      padding: px 0;
-    } 
-    footer {
-      padding: 30px 0;  
-    }
+body {
+  margin-top: 250px;
+  background: url(../paper/bg-1.jpg) no-repeat center top; 
+  background-color: #85898C;
+  font: 12px sans-serif;
+  color: black;
+}
+footer {
+  padding: 30px 0;  
+}
 
-    #content.panel {
-      margin-bottom: 20px;
-      background-color: white;
-      border: 1px solid transparent;
-      border-radius: 4px;
-      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-      box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-    }
-    #content.panel-heading{
-      padding: 15px;
-      color: black;
-      background-color: rgba(245, 245, 245, 0.1);
-    }
-    #content.panel-default, #content.panel-body {
-      padding: 15px;
-      color: black;
-      background-color: rgba(245, 245, 245, 0.4);
-    }
+.panel {
+  margin-top: 15px;
+  padding-right: 30px;
+  padding-left: 26px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.panel-heading{
+  color: black;
+}
+.panel-body{
+  margin-top: 2px;
+  background-color: rgba(0, 0, 0, .1);
+}
 
-    .bars {
-      rx : 5px;
-    }
-    #countryLegend {
-      cursor: pointer;
-      font: 11px sans-serif;
-      fill : steelblue;
-    }
-    #labelMaximum {
-      font: 12px sans-serif;
-      fill : white;
-      letter-spacing : 1;
-    }
-    .node {
-      cursor: pointer;
-      font: 11px sans-serif;
-    }
-    .node rect {
-      cursor: pointer;
-      fill-opacity: 1;
-      stroke: white;
-      stroke-width: 1.5px;
-    }
-    .node text {
-      cursor: pointer;
-      font: 11px sans-serif;
-      color : white;
-    }
-    .node circle {
-      cursor: pointer;
-    }
+#countryLegend {
+  cursor: pointer;
+  font: 11px sans-serif;
+  fill : steelblue;  
+  padding-right: 15px;
+ 
+}
+#labelMaximum {
+  font: 12px sans-serif;
+  fill : white;
+  letter-spacing : 1;
+}
+.node {
+  cursor: pointer;
+  font: 14px sans-serif;
+}
+.node rect {
+  fill-opacity: 0.5;
+  stroke: none;
+  stroke-width: 1.5px;
+}
+.node text {
+  font: 14px sans-serif;
+  color : white;
+}
+.node circle {
+  cursor: pointer;
+}
+.btn {
+  fill: white;
+  background-color: grey;
+}
 
-  .false { fill:black; }
-  .true { fill:#65B3D9; }
-  .c-1 { fill:white; }
-  .c0 { fill:#219A55; }
-  .c1 { fill:#FABB00; }
-  .c2 { fill:#65B3D9; }
-  .c3 { fill:#F13610; }
-  .c4 { fill:#219A55; }
-  .c5 { fill:#FABB00; }
-  .c6 { fill:#65B3D9; }
-  .c7 { fill:#F13610; }

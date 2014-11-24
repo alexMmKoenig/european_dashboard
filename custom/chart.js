@@ -1,6 +1,6 @@
 // global
 
-var farbe = [["#648888","#64FD88","#538045", "#34723F"], ["#FC8888","#6489FE",  "#B0A474"], ["#FC8888","#FA89FD","#F13610"], ["#F13610"]];
+var farbe = [["#648888","#64FD88","#538045", "#34723F"], ["#FC8888","#6489FE","#B0A474"], ["#648864","#FA89FD","#F13610"], ["#F13610"]];
 
 var indicatorList = [];
 for (var i=0; i < data[0].child[0].values.length; i++){
@@ -96,10 +96,7 @@ function barchart(){
         .attr("width", x1.rangeBand())
         .attr("height", function(d) { return y(d.y0) - y(d.y1); })
         .attr("y", function(d) { return y(d.y1); })
-        //.style("stroke", "black")
-        //.style("stroke-opacity", "0.5")
         .style("fill", function(d,i) { return farbe[(d.subgroup-1)][i]; });
-        //.style("fill-opacity", function(d,i) { return (1/(i+1)) })
 
 }
 
@@ -113,19 +110,7 @@ function legendIndicators(){
         });
     });
 
-    var legendGroup = d3.select("#legend").selectAll("g")
-        .data(boot);
-    
-    legendGroup.enter().append("g");
-    legendGroup.exit().remove();
-    
-    legendGroup
-      .attr("id",function(d) {return d});
-      //.attr("class", function(d) { return d.year; })
-      //.attr("transform", function(d,i) { return "translate(0, " + i*10 + ")"; });
-      //.attr("width", x.rangeBand());
-
-    var info = legendGroup.selectAll("text")
+    var info = d3.select("#legend").selectAll("text")
         .data(boot);
    
     info.enter().append("text");
@@ -133,9 +118,9 @@ function legendIndicators(){
     info.exit().remove();
 
     info.text(function(d) { return d })
-        .attr("y", function(d, i) { return 10+i*10})
-        .style("font-size", "10")
-        .style("fill", function(d,i) { return col(i); })
+        .attr("y", function(d, i) { return 10+i*12})
+        .style("font-size", "12")
+        .style("fill", function(d,i) { return farbe[i][i]; })
         .style("letter-spacing", 1.5);
 }
 

@@ -80,8 +80,8 @@ function goChart(d){
 }
 
 function color(d) {
-  if (d.state != true) {return d._children ? "#c6dbef" : d.children ? "white" : "white"}
-  else {return d._children ? "#c6dbef" : d.children ? "white" : "white"};
+  if (d.state != true) {return d._children ? "#c6dbef" : d.children ? "none" : "none"}
+  else {return d._children ? "#c6dbef" : d.children ? "none" : "none"};
 }
 
 function colorName(d) {

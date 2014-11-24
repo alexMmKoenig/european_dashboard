@@ -3,7 +3,7 @@ var i = 0,
     root;
 
 var tree = d3.layout.tree()
-    .nodeSize([0, 30]);
+    .nodeSize([0, 29]);
   
 var root = indicators[0];
 
@@ -28,10 +28,10 @@ function update(source) {
   d3.select(self.frameElement)
     .transition()
     .duration(duration)
-    .style("height", height + "px");
+    .style("height", height3 + "px");
 
   nodes.forEach(function(n, i) {
-    n.x = i * barHeight +20;
+    n.x = i * barHeight +15;
   });
 
   var node = svg3.selectAll("g.node")
@@ -47,9 +47,9 @@ function update(source) {
       .on("click", goChart);
 
   indicatorEnter.append("text")
-      .attr("transform", "translate(-18, 0)")
+      //.attr("transform", "translate(-18, 0)")
       .attr("dy", 3.5)
-      .attr("dx", -5.5)
+      .attr("dx",  function(d) {return -source.y0-25} )
       .text(function(d) { if (d.indicator) {return d.indicator} });
 
   // names enter
@@ -61,7 +61,7 @@ function update(source) {
   nameEnter.append("rect")
       .attr("id", function(d) {return d.indicator})
       .attr("y", -barHeight / 2)
-      .attr("height", barHeight)
+      .attr("height", barHeight-2)
       .attr("width", barWidth)
       .attr("fill", color);
    
