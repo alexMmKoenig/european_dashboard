@@ -43,5 +43,5 @@ var legendEnter = legend.enter().append("g")
                 .style("fill", function(d) { if (d === activeCountry) {return "black"} else {return "steelblue"} })
                 .style("font-size", function(d) { if (d === activeCountry) {return "14px"} else {return "11px"} })
       
-            drawChart();
+            drawChart(activeCountry, active, activeSubgroups);
         });

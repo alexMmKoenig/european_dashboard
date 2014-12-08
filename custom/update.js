@@ -7,14 +7,17 @@ function addGroup() {
 
 	activeSubgroups.push(activeSubgroups[activeSubgroups.length-1]+1);
 
-	subGroups();
-	currentGroup = activeSubgroups.length-1;
-	activate(currentGroup);
 
 	active.push({
 		subgroup: activeSubgroups.length,
 		child: []
 	})
+	currentGroup = activeSubgroups.length-1;
+	
+	subGroups();
+	activate(currentGroup);
+
+	drawChart();
 }
 
 function subtractGroup() {
@@ -24,9 +27,10 @@ function subtractGroup() {
 		active.pop();
 	}
 
-	subGroups();
 
 	currentGroup = activeSubgroups.length-1;
+	
+	subGroups();
 	activate(currentGroup);
 	
 	drawChart();
@@ -61,15 +65,16 @@ function activate(vnum){
 }
 
 function goChart(d){
-  
+  console.log(d);
   if (d.state === false){
     d.state = true;
     d.group = currentGroup;
-    active[currentGroup].child.push({indicator: d.indicator, name: d.name});
+    active[d.group].child.push({indicator: d.indicator, name: d.name});
   }
 
   else if (d.state === true){
     d.state = false;
+    d.group = currentGroup;
     active[d.group].child.splice(active[d.group].child.indexOf(d.indicator),1);
     //d.group = false;
   }

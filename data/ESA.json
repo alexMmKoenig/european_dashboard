@@ -4,7 +4,7 @@ indicators =
 "children": [
 {"name": "GDP and main components", "description": "GDP and main aggregates. The data are recorded at current and constant prices and include the corresponding implicit price indices.",
   "children": [													
-	{"state": true, "indicator": "B1GM", "name":  "Gross domestic product at market prices",  "description": "GDP at market prices is the final result of the production activity of resident producer units (ESA95, 8.89). It can be defined in three ways:",								
+	{"state": true, "group": 0, "indicator": "B1GM", "name":  "Gross domestic product at market prices",  "description": "GDP at market prices is the final result of the production activity of resident producer units (ESA95, 8.89). It can be defined in three ways:",								
 	  "children": [												
 		{"name": "a. GDP Output approach",  "description": "From the production point of view GDP can be measured as the sum of the following components: GDP = Total gross value added (B1G) + Taxes less subsidies on products (D.21 less D.31)",
 		  "children": [											

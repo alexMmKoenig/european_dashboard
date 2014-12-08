@@ -1,7 +1,7 @@
 // global
 
-var farbe = [["#648888","#64FD88","#538045", "#34723F"], ["#FC8888","#6489FE","#B0A474"], ["#648864","#FA89FD","#F13610"], ["#F13610"]];
-
+//var farbe = [["#648888","#64FD88","#538045", "#34723F"], ["#FC8888","#6489FE","#B0A474"], ["#648864","#FA89FD","#F13610"], ["#F13610"]];
+var farbe = [["#648888","#C5D1D1","#2D6060"], ["#FFB0B0","#FC8888","#FFD5D5"], ["#64FD88","#CDFFD8","#91FEA9"], ["#F13610"]];
 
 var activeCountry = "Germany";
 
@@ -9,18 +9,38 @@ var activeSubgroups = [1];
 var currentGroup = "0";
 var active =[{subgroup:1, child: [{indicator:"B1GM", name:"GDP"}]}];
 
-var tip = d3.tip().attr("class", "d3-tip").html(function(d) { 
-    return "<br>currentGroup:" +currentGroup+ "<br>activeSubgroups:" +activeSubgroups+ "<br>" });
+//countryLegend(activeCountry, active, activeSubgroups);
 
-drawChart();
+subGroups(activeSubgroups);
+drawChart(activeCountry, active, activeSubgroups);
 
-function drawChart(){
+d3.select("#plus").on("click", addGroup);
+d3.select("#minus").on("click", subtractGroup);
+//d3.select("circle").on("click", selectGroup);
+
+ 
+function drawChart(activeCountry, active, activeSubgroups){
 
 var countryIndex = findIndexByKeyValue(data, "country", activeCountry);
-var indicatorList = [];
-for (var i=0; i < data[countryIndex].child[0].values.length; i++){
-    indicatorList.push(data[countryIndex].child[0].values[i].indicator);
+
+    goData(activeCountry, active, countryIndex);
+
+    axis(activeSubgroups);
+    
+    barchart();
+    
+    label(activeCountry);
+    legendIndicators(active);
+    
 }
+
+function goData(activeCountry, active, countryIndex){
+
+var indicatorList = [];
+
+    for (var i=0; i < data[countryIndex].child[0].values.length; i++){
+        indicatorList.push(data[countryIndex].child[0].values[i].indicator);
+    }
 
     data1 = data[countryIndex].child;
 
@@ -34,7 +54,7 @@ for (var i=0; i < data[countryIndex].child[0].values.length; i++){
                 subgroup: l.subgroup,
                 child: temp.map(function(s,z){
                     //console.log(i,m,z)
-                    console.log(s.indicator);
+                    //console.log(s.indicator);
                     return {
                     subgroup: l.subgroup,
                     indicator: s.indicator,
@@ -46,18 +66,18 @@ for (var i=0; i < data[countryIndex].child[0].values.length; i++){
                 })
             }
         })
-
-        d.total = d.xaz[0].child[d.xaz[0].child.length - 1].y1;
-
+        d.maximum = [];
+        for (a = 0; a < d.xaz.length; a++){
+          //  console.log(a);
+           // console.log(d.xaz[a].child.length);
+        //if (d.xaz[a].child.length > 0) {console.log(d.xaz[a].child[0].val);}
+        if (d.xaz[a].child.length > 0) {d.maximum.push(d.xaz[a].child[0].val);}
+        }
+        //console.log("max:"+d.maximum);
+        d.aximum = d3.max(d.maximum);
+        //console.log("ax:"+d.aximum);
     })
-    
-    axis();
-    
-    barchart();
-    
-    label(activeCountry);
-    legendIndicators();
-    mouseoverInfo();
+
 }
 
 function barchart(){
@@ -90,7 +110,7 @@ function barchart(){
     
     barStack.enter().append("rect");
     barStack.exit().remove();
-    console.log(barStack);
+    //console.log(barStack);
  
     barStack.transition().duration(500)
         
@@ -102,7 +122,7 @@ function barchart(){
 
 }
 
-function legendIndicators(){
+function legendIndicators(active){
     
     boot = active.map(function(d,i){
         
@@ -111,24 +131,25 @@ function legendIndicators(){
             return s.name
         });
     });
-
     var info = d3.select("#legend").selectAll("text")
         .data(boot);
    
     info.enter().append("text");
    
     info.exit().remove();
+    
+    console.log(info);
 
     info.text(function(d) { return d })
         .attr("y", function(d, i) { return 10+i*12})
         .style("font-size", "12")
-        .style("fill", function(d,i) { return farbe[i][i]; })
+        .style("fill", function(d,i) { return farbe[i][0]; })
         .style("letter-spacing", 1.5);
 }
 
-function axis(){
+function axis(activeSubgroups){
 
-    max = d3.max(data1, function(d,i) { return d.total });
+    max = d3.max(data1, function(d,i) { return d.aximum });
 
     x = d3.scale.ordinal()
         .domain(data1.map(function(d,i) { return d.year; }))
@@ -177,9 +198,86 @@ function label(activeCountry){
         .style("stroke", "black");
 }
 
-function mouseoverInfo() {
-    var info = d3.select("#label")
-        info.call(tip)
-            .on('mouseover', tip.show)
-            .on('mouseout', tip.hide)
+function addGroup() {
+
+    activeSubgroups.push(activeSubgroups[activeSubgroups.length-1]+1);
+
+    active.push({
+        subgroup: activeSubgroups.length,
+        child: []
+    })
+    currentGroup = activeSubgroups.length-1;
+    
+    subGroups(activeSubgroups);
+    activate(currentGroup);
+
+    drawChart(activeCountry, active, activeSubgroups);
+}
+
+function subtractGroup() {
+
+    if (activeSubgroups != 1){
+        activeSubgroups.pop();
+        active.pop();
+    }
+
+    currentGroup = activeSubgroups.length-1;
+    
+    subGroups(activeSubgroups);
+    activate(currentGroup);
+
+    drawChart(activeCountry, active, activeSubgroups);
+}
+
+function subGroups(activeSubgroups){
+
+    var circle = svg4.selectAll("circle")
+    .data(activeSubgroups);
+
+    circle.enter().append("circle")
+        .attr("id", function(d) {return "circle"+(d-1)})
+        .attr("number", function(d) {return (d-1)})
+        .attr("fill", "white")
+        .attr("stroke", "black")
+        .attr("cy", function(d){return d*22})
+        .attr("cx", 20)
+        .attr("r", 10)
+
+    circle.exit().remove();
+}
+
+function activate(vnum){
+    //currentGroup = vnum;
+    svg4.selectAll("circle").attr("fill", "white");
+    svg4.select("#circle"+vnum).attr("fill", "#219A55");
+}
+
+function goChart(d){
+  //console.log(d);
+  if (d.state === false){
+    d.state = true;
+    d.group = currentGroup;
+    active[d.group].child.push({indicator: d.indicator, name: d.name});
+  }
+
+  else if (d.state === true){
+    d.state = false;
+    //d.group = currentGroup;
+    active[d.group].child.splice(active[d.group].child.indexOf(d.indicator),1);
+    //d.group = false;
+  }
+
+  drawChart(activeCountry, active, activeSubgroups);
+ 
+  svg3.selectAll("#nameEnter").attr("fill", colorName);
+}
+
+function color(d) {
+  if (d.state != true) {return d._children ? "#c6dbef" : d.children ? "none" : "none"}
+  else {return d._children ? "#c6dbef" : d.children ? "none" : "none"};
+}
+
+function colorName(d) {
+  if (d.state != true) {return d._children ? "black" : d.children ? "black" : "black"}
+  else {return d._children ? "red" : d.children ? "red" : "red"};
 }
