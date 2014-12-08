@@ -34,14 +34,14 @@ var legendEnter = legend.enter().append("g")
                 .style("font-size", function(d) { if (d === activeCountry) {return "14px"} else {return "11px"} })
         })
 
-    .on("click", function(d) {
+        .on("click", function(d) {
 
-        activeCountry = d;
-      //countryIndex = findIndexByKeyValue(data, "country", activeCountry);
+            activeCountry = d;
+            //countryIndex = findIndexByKeyValue(data, "country", activeCountry);
 
-      legend.selectAll("text")
-        .style("fill", function(d) { if (d === activeCountry) {return "black"} else {return "steelblue"} })
-        .style("font-size", function(d) { if (d === activeCountry) {return "14px"} else {return "11px"} })
+            legend.selectAll("text")
+                .style("fill", function(d) { if (d === activeCountry) {return "black"} else {return "steelblue"} })
+                .style("font-size", function(d) { if (d === activeCountry) {return "14px"} else {return "11px"} })
       
-      drawChart();
-    });
+            drawChart();
+        });

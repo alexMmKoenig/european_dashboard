@@ -2,10 +2,6 @@
 
 var farbe = [["#648888","#64FD88","#538045", "#34723F"], ["#FC8888","#6489FE","#B0A474"], ["#648864","#FA89FD","#F13610"], ["#F13610"]];
 
-var indicatorList = [];
-for (var i=0; i < data[0].child[0].values.length; i++){
-    indicatorList.push(data[0].child[0].values[i].indicator);
-}
 
 var activeCountry = "Germany";
 
@@ -20,7 +16,11 @@ drawChart();
 
 function drawChart(){
 
-    countryIndex = findIndexByKeyValue(data, "country", activeCountry);
+var countryIndex = findIndexByKeyValue(data, "country", activeCountry);
+var indicatorList = [];
+for (var i=0; i < data[countryIndex].child[0].values.length; i++){
+    indicatorList.push(data[countryIndex].child[0].values[i].indicator);
+}
 
     data1 = data[countryIndex].child;
 
@@ -34,6 +34,7 @@ function drawChart(){
                 subgroup: l.subgroup,
                 child: temp.map(function(s,z){
                     //console.log(i,m,z)
+                    console.log(s.indicator);
                     return {
                     subgroup: l.subgroup,
                     indicator: s.indicator,
@@ -62,26 +63,26 @@ function drawChart(){
 function barchart(){
 
 // bar grouping per year
-    var barGroup = d3.select("#barArea").selectAll("#barGroup")
+    var barGroup = d3.select("#barArea").selectAll(".barGroup")
         .data(data1);
 
     barGroup.enter().append("g");
     barGroup.exit().remove();
     
     barGroup
-      .attr("id","barGroup")
-      .attr("class", function(d) { return d.year; })
+      .attr("class","barGroup")
+      .attr("id", function(d) { return d.year; })
       .attr("transform", function(d) { return "translate(" + x(d.year) + ",0)"; })
       .attr("width", x.rangeBand());
 
 // bars grouping per subgroup
-    var barSubGroup = barGroup.selectAll("#subbars")
+    var barSubGroup = barGroup.selectAll(".subbars")
         .data( function(d) { return d.xaz; });
 
     barSubGroup.enter().append("g");
     barSubGroup.exit().remove();
     
-    barSubGroup.attr("id", "subbars");
+    barSubGroup.attr("class", "subbars");
 
 // bars stacking
     var barStack = barSubGroup.selectAll("rect")
@@ -89,6 +90,7 @@ function barchart(){
     
     barStack.enter().append("rect");
     barStack.exit().remove();
+    console.log(barStack);
  
     barStack.transition().duration(500)
         
