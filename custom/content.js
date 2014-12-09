@@ -27,6 +27,8 @@ function save(){
         
         image.onload = function() {
             context.clearRect ( 0 , 0 , 600 , 500 );
+            context.fillStyle="#85898C";
+            context.fillRect(0,0,600,500);
             context.drawImage(image, 0, 0);
 
             var canvasdata = canvas.toDataURL("image/png");
@@ -34,7 +36,7 @@ function save(){
             var pngimg = '<img src="'+canvasdata+'">'; 
 
             var a = document.createElement("a");
-            a.download = "sample.png";
+            a.download = ""+activeCountry+"_"+active[0].child[0].indicator+".png";
             a.href = canvasdata;
             document.body.appendChild(a);
             a.click();

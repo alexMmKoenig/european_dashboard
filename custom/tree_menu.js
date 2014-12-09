@@ -106,3 +106,13 @@ function click(d) {
   svg3.selectAll("#nameEnter").attr("fill", colorName);
 }
 
+
+function color(d) {
+  if (d.state != true) {return d._children ? "#c6dbef" : d.children ? "none" : "none"}
+  else {return d._children ? "#c6dbef" : d.children ? "none" : "none"};
+}
+
+function colorName(d) {
+  if (d.state != true) {return d._children ? "black" : d.children ? "black" : "black"}
+  else {return d._children ? "red" : d.children ? "red" : "red"};
+}

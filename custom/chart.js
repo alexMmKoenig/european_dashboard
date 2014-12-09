@@ -1,7 +1,9 @@
 // global
 
-//var farbe = [["#648888","#64FD88","#538045", "#34723F"], ["#FC8888","#6489FE","#B0A474"], ["#648864","#FA89FD","#F13610"], ["#F13610"]];
-var farbe = [["#648888","#C5D1D1","#2D6060"], ["#FFB0B0","#FC8888","#FFD5D5"], ["#64FD88","#CDFFD8","#91FEA9"], ["#F13610"]];
+var farbe = [["#648888","#64FD88","#538045", "#34723F"], ["#FC8888","#6489FE","#B0A474"], ["#648864","#FA89FD","#F13610"], ["#F13610"]];
+//var farbe = [["#648888","#C5D1D1","#2D6060"], ["#FFB0B0","#FC8888","#FFD5D5"], ["#64FD88","#CDFFD8","#91FEA9"], ["#F13610"]];
+//var farbe = [["#2E9896","#C5D1D1","#2D6060"], ["#FFB0B0", "#FC8888", "#B0A474"], ["#EF982E","#99982E","#FFD5D5"], ["#64FD88","#CDFFD8","#91FEA9"], ["#F13610"]];
+
 
 var activeCountry = "Germany";
 
@@ -9,14 +11,12 @@ var activeSubgroups = [1];
 var currentGroup = "0";
 var active =[{subgroup:1, child: [{indicator:"B1GM", name:"GDP"}]}];
 
-//countryLegend(activeCountry, active, activeSubgroups);
-
 subGroups(activeSubgroups);
 drawChart(activeCountry, active, activeSubgroups);
 
 d3.select("#plus").on("click", addGroup);
 d3.select("#minus").on("click", subtractGroup);
-//d3.select("circle").on("click", selectGroup);
+//d3.select(".circle").on("click", selectGroup);
 
  
 function drawChart(activeCountry, active, activeSubgroups){
@@ -54,7 +54,6 @@ var indicatorList = [];
                 subgroup: l.subgroup,
                 child: temp.map(function(s,z){
                     //console.log(i,m,z)
-                    //console.log(s.indicator);
                     return {
                     subgroup: l.subgroup,
                     indicator: s.indicator,
@@ -68,16 +67,10 @@ var indicatorList = [];
         })
         d.maximum = [];
         for (a = 0; a < d.xaz.length; a++){
-          //  console.log(a);
-           // console.log(d.xaz[a].child.length);
-        //if (d.xaz[a].child.length > 0) {console.log(d.xaz[a].child[0].val);}
-        if (d.xaz[a].child.length > 0) {d.maximum.push(d.xaz[a].child[0].val);}
+            if (d.xaz[a].child.length > 0) {d.maximum.push(d.xaz[a].child[0].val);}
         }
-        //console.log("max:"+d.maximum);
         d.aximum = d3.max(d.maximum);
-        //console.log("ax:"+d.aximum);
     })
-
 }
 
 function barchart(){
@@ -110,14 +103,13 @@ function barchart(){
     
     barStack.enter().append("rect");
     barStack.exit().remove();
-    //console.log(barStack);
  
     barStack.transition().duration(500)
         
-        .attr("x", function(d) { return x1(d.subgroup); })
+        .attr("x", function(d) { if (d.y0 < d.y1) {return x1(d.subgroup);} else {return x1(d.subgroup-1);} })
         .attr("width", x1.rangeBand())
-        .attr("height", function(d) { return y(d.y0) - y(d.y1); })
-        .attr("y", function(d) { return y(d.y1); })
+        .attr("height", function(d) { if (d.y0 < d.y1) {return y(d.y0) - y(d.y1);} else {return y(d.y1) - y(d.y0);} })
+        .attr("y", function(d) { if (d.y0 < d.y1) {return y(d.y1);} else {return y(d.y0)} })
         .style("fill", function(d,i) { return farbe[(d.subgroup-1)][i]; });
 
 }
@@ -138,8 +130,6 @@ function legendIndicators(active){
    
     info.exit().remove();
     
-    console.log(info);
-
     info.text(function(d) { return d })
         .attr("y", function(d, i) { return 10+i*12})
         .style("font-size", "12")
@@ -236,6 +226,7 @@ function subGroups(activeSubgroups){
 
     circle.enter().append("circle")
         .attr("id", function(d) {return "circle"+(d-1)})
+        .attr("class", "circle")
         .attr("number", function(d) {return (d-1)})
         .attr("fill", "white")
         .attr("stroke", "black")
@@ -247,8 +238,8 @@ function subGroups(activeSubgroups){
 }
 
 function activate(vnum){
-    //currentGroup = vnum;
-    svg4.selectAll("circle").attr("fill", "white");
+    currentGroup = vnum;
+    svg4.selectAll(".circle").attr("fill", "white");
     svg4.select("#circle"+vnum).attr("fill", "#219A55");
 }
 
@@ -270,14 +261,4 @@ function goChart(d){
   drawChart(activeCountry, active, activeSubgroups);
  
   svg3.selectAll("#nameEnter").attr("fill", colorName);
-}
-
-function color(d) {
-  if (d.state != true) {return d._children ? "#c6dbef" : d.children ? "none" : "none"}
-  else {return d._children ? "#c6dbef" : d.children ? "none" : "none"};
-}
-
-function colorName(d) {
-  if (d.state != true) {return d._children ? "black" : d.children ? "black" : "black"}
-  else {return d._children ? "red" : d.children ? "red" : "red"};
 }

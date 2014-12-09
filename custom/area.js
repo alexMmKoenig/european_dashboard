@@ -61,7 +61,7 @@ var svg2 = d3.select("#area2").append("svg")
 
     svg2.append("g")
         .attr("id", "legend")
-        .attr("transform", "translate("+ 50 +","+ 420 +")");
+        .attr("transform", "translate("+ 5 +","+ 420 +")");
 
     //svg2.append("rect") // Rahmen
         //.attr("id", "frame").attr("width", "100%").attr("height", "100%").attr("stroke", "grey").attr("fill", "none");
