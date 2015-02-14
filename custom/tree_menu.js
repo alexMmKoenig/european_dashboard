@@ -44,12 +44,13 @@ function update(source) {
   // indicators enter
   var indicatorEnter = nodeEnter.append("g")
       .attr("class", "indicatorEnter")
-      .on("click", goChart);
+      .on("click", makeDataStructure);
 
   indicatorEnter.append("text")
       //.attr("transform", "translate(-18, 0)")
       .attr("dy", 3.5)
       .attr("dx",  function(d) {return -source.y0-25} )
+      .attr("fill", colorName)
       .text(function(d) { if (d.indicator) {return d.indicator} });
 
   // names enter
@@ -69,6 +70,7 @@ function update(source) {
       .attr("id", "nameEnter")
       .attr("dy", 3.5)
       .attr("dx", 5.5)
+      .attr("fill", colorName)
       .text(function(d) {return d.name} );
 
   // Transition nodes to their new position.
@@ -113,6 +115,6 @@ function color(d) {
 }
 
 function colorName(d) {
-  if (d.state != true) {return d._children ? "black" : d.children ? "black" : "black"}
+  if (d.state != true) {return d._children ? "white" : d.children ? "white" : "white"}
   else {return d._children ? "red" : d.children ? "red" : "red"};
 }

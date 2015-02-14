@@ -4,7 +4,7 @@ indicators =
 "children": [
 {"name": "GDP and main components", "description": "GDP and main aggregates. The data are recorded at current and constant prices and include the corresponding implicit price indices.",
   "children": [													
-	{"state": true, "group": 0, "indicator": "B1GM", "name":  "Gross domestic product at market prices",  "description": "GDP at market prices is the final result of the production activity of resident producer units (ESA95, 8.89). It can be defined in three ways:",								
+	{"state": false, "group": 0, "indicator": "B1GM", "name":  "Gross domestic product at market prices",  "description": "GDP at market prices is the final result of the production activity of resident producer units (ESA95, 8.89). It can be defined in three ways:",								
 	  "children": [												
 		{"name": "a. GDP Output approach",  "description": "From the production point of view GDP can be measured as the sum of the following components: GDP = Total gross value added (B1G) + Taxes less subsidies on products (D.21 less D.31)",
 		  "children": [											
@@ -301,22 +301,22 @@ indicators =
 				]}			
 			]}
 		]},					
-		{"state": false, "indicator" : "F","name" : "Transactions in financial assets and liabilities ","description" : "Financial transactions (F) are transactions in financial assets (AF) and liabilities between resident institutional units, and between them and non-resident institutional units.",				
+		{"state": true, "group": 0, "indicator" : "F","name" : "Transactions in financial assets and liabilities ","description" : "Financial transactions (F) are transactions in financial assets (AF) and liabilities between resident institutional units, and between them and non-resident institutional units.",				
 		"children": [					
 			{"state": false, "indicator" : "F1","name" : "Monetary gold and SDRs ","description" : "",			
 			"children": [				
 				{"state": false, "indicator" : "F11","name" : "Monetary gold ","description" : ""},		
-				{"state": false, "indicator" : "F12","name" : "SDRs ","description" : ""}		
+				{"state": false, "indicator" : "F12","name" : "SDRs ","description" : "SDRs are international reserve assets created by the International Monetary Fund (IMF) and which are allocated to its members to supplement existing reserve assets."}		
 			]},				
-			{"state": false, "indicator" : "F2","name" : "Currency and deposits ","description" : "Currency and deposits are currency in circulation and deposits, both in national currency and in foreign currencies.",			
+			{"state": false, "indicator" : "F2","name" : "Currency and deposits ","description" : "Currency and deposits are currency in circulation and deposits, both in national currency and in foreign currencies. deposits are standardised, non-negotiable contracts with the public at large, offered by deposit-taking corporations and, in some cases, by central government as debtors, and allowing the placement and the later withdrawal of the principal amount by the creditor. Deposits usually involve the debtor giving back the full principal amount to the investor.",			
 			"children": [				
-				{"state": false, "indicator" : "F21","name" : "Currency ","description" : ""},		
-				{"state": false, "indicator" : "F22","name" : "Transferable deposits ","description" : "",		
+				{"state": false, "indicator" : "F21","name" : "Currency ","description" : "currency is notes and coins that are issued or authorised by monetary authorities."},		
+				{"state": false, "indicator" : "F22","name" : "Transferable deposits ","description" : "transferable deposits are deposits exchangeable for currency on demand, at par, and which are directly usable for making payments by cheque, draft, giro order, direct debit/credit, or other direct payment facilities, without penalty or restriction.",		
 				"children": [			
 					{"state": false, "indicator" : "F221","name" : "Inter-bank positions ","description" : ""},	
 					{"state": false, "indicator" : "F229","name" : "Other transferable deposits ","description" : ""}	
 				]},			
-				{"state": false, "indicator" : "F29","name" : "Other deposits ","description" : ""}		
+				{"state": false, "indicator" : "F29","name" : "Other deposits ","description" : "other deposits are deposits other than transferable deposits. Other deposits cannot be used to make payments except on maturity or after an agreed period of notice, and they are not exchangeable for currency or for transferable deposits without some significant restriction or penalty."}		
 			]},				
 			{"state": false, "indicator" : "F3","name" : "Debt securities ","description" : "Debt securities are negotiable financial instruments serving as evidence of debt.",			
 			"children": [				

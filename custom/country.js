@@ -1,5 +1,5 @@
-var countryList = ["EU28", "Euro Area", "Austria", "Belgium", "Bulgaria", "Croatia", "Cyprus", "Czech Republic ", "Denmark", "Estonia", "Finland ", "France", "Germany", "Greece", "Hungary", "Ireland", "Italy", "Latvia", "Lithuania", "Luxembourg", "Malta", "Netherlands", "Poland", "Portugal", "Romania", "Slovakia", "Slovenia", "Spain", "Sweden", "United Kingdom"];
-
+var countryList = ["EU28", "Euro Area", "Austria", "Belgium", "Bulgaria", "Croatia", "Cyprus", "Czech Republic ", "Denmark", "Estonia", "Finland", "France", "Germany", "Greece", "Hungary", "Ireland", "Italy", "Latvia", "Lithuania", "Luxembourg", "Malta", "Netherlands", "Poland", "Portugal", "Romania", "Slovakia", "Slovenia", "Spain", "Sweden", "United Kingdom"];
+//var activeCountry = "DE";
 var legend = d3.select("#countryLegend").selectAll("g.legend")
     .data(countryList)
 
@@ -43,5 +43,5 @@ var legendEnter = legend.enter().append("g")
                 .style("fill", function(d) { if (d === activeCountry) {return "black"} else {return "steelblue"} })
                 .style("font-size", function(d) { if (d === activeCountry) {return "14px"} else {return "11px"} })
       
-            drawChart(activeCountry, active, activeSubgroups);
+            goData(activeCountry, active);
         });

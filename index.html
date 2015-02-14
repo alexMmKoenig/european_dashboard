@@ -1,0 +1,83 @@
+<!doctype html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta name="author" content="Alexander Koenig">
+  	<meta name="description" content="Data Visualization Tool">
+  
+    <script type="text/javascript" src="d3/d3.js"></script>
+
+    <script src="js/jquery.js"></script>
+
+    <script type="text/javascript" src="data/bs.json"></script>
+    <script type="text/javascript" src="data/ESA.json"></script>
+  
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <link href="css/style.css" rel="stylesheet">
+
+	<title>EU Dashboard</title>
+
+</head>
+
+<body>
+
+	<header>
+		<nav>main-navigation</nav>
+		<div class="nav">logo</div>
+	</header>
+	
+	<section>
+		<div class="sidebar-left">
+			<div id="country-legend" class="content-box">
+			</div>
+
+			<div class="interface-box">
+				
+                <button id="plus" type="button" class="btn btn-primary"> 
+                    <span class="glyphicon glyphicon-equalizer" aria-hidden="true">
+                    </span>stack mode 
+                </button>
+
+                <div id="control-panel">
+                </div>
+                
+                <button id="minus" type="button" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-arrow-up" aria-hidden="true">
+                    </span>pop JSON
+                </button>
+        	</div>
+		</div>
+
+		<div class="main">
+			<div id="chart-stage" class="stage">
+    		</div>
+
+    		<div class="article">
+    			<div class="panel-heading">
+                    <h4 class="panel-title">Bruttoinlandsprodukt zu Marktpreisen</h4>
+                </div>
+                    
+                <h3 class="panel-body">Das Bruttoinlandsprodukt zu Marktpreisen ist ein Maß für das Ergebnis der Produktionstätigkeit der gebietsansässigen produzierenden Einheiten.
+                </h3>
+    		</div>
+
+    	</div>
+		<div id="indicator-tree" class="sidebar-right">
+		</div>
+		
+	</section>
+
+
+    <script type="text/javascript" src="custom/helpers.js"></script>
+ 
+    <script type="text/javascript" src="custom/area.js"></script>
+
+    <script type="text/javascript" src="custom/chart.js"></script>
+    <script type="text/javascript" src="custom/country.js"></script>
+    
+    <script type="text/javascript" src="custom/tree_menu.js"></script>
+
+</body>
+
+</html>
