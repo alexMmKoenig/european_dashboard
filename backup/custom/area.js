@@ -4,14 +4,14 @@ var width1 = 150;
 var height1 = 600;
 var margin1 = {top: 25, right: 0, bottom: 0, left: 15};
 
-/*var svg1 = d3.select("#country-legend").append("svg")
+var svg1 = d3.select("#country-legend").append("svg")
     .attr("width", width1)
     .attr("height", height1);
 
     svg1.append("g") // Legende
         .attr("id", "countryLegend")
         .attr("transform", "translate("+ margin1.left +","+ margin1.top +")");
-*/
+
 // SVG Chart Stage
 
 var width2 = 400;

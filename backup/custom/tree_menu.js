@@ -54,7 +54,6 @@ function update(source) {
         .on("click", makeDataStructure);
 
     indicatorEnter.append("text")
-    .attr("id","nameEnter")
         //.attr("transform", "translate(-18, 0)")
         .attr("dy", 3.5)
         .attr("dx",  function(d) {return -source.y0-25} )
@@ -66,8 +65,6 @@ function update(source) {
         .attr("class", "nameEnter")
         .on("mouseover", description)
         .on("click", click);
-        //.on("mouseover", tip.show)
-        //.on("mouseout", tip.hide);
 
     nameEnter.append("rect")
         .attr("id", function(d) {return d.indicator})
@@ -116,7 +113,7 @@ function click(d) {
     }
   
     update(d);
-    //svg3.selectAll("#nameEnter").attr("fill", colorName);
+    svg3.selectAll("#nameEnter").attr("fill", colorName);
 }
 
 

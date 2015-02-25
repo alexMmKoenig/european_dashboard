@@ -8,21 +8,14 @@ function findIndexByKeyValue(obj, key, value)
     return null;
 }
 
-function stack(){
-    if (stackMode === false){
-        stackMode = true;
-    }
-    else {
-        stackMode = false;
-    }
-}
-
 var dataFilter = function(activeCountry, indicator){
     
     var filter = data.filter(function(d,i){
      if (d.country === activeCountry && d.indicator === indicator) 
         {return d.values;} 
+    //else {return d=["1"];}
     })
+    console.log(filter[0].country);
     return filter[0].values;
 }
 

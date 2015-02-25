@@ -1,56 +1,72 @@
-// SVG Country Legend
-
-var width1 = 150;
-var height1 = 600;
-var margin1 = {top: 25, right: 0, bottom: 0, left: 15};
-
-// SVG Chart Stage
-
-var width2 = 400;
-var height2 = 400;
-var margin = {top: 100, right: 0, bottom: 50, left: 50};
-var w = width2 - margin.left - margin.right;
-var h = height2 - margin.top - margin.bottom;
-
-
-// SVG Tree Menu Indicators
-
-var width3 = 600;
-//var height3 = 600;
-var marginI = {top: 0, right: 20, bottom: 30, left: 40};
-var barHeight = 28.65;
-var barWidth = 600;
-
-var svg3 = d3.select("#indicator-tree").append("svg")
-    .attr("width", width3)
-    .attr("id","tree");
-
-// Area 4
-var svg4 = d3.select("#control-panel").append("div")
-
 // global
 
-//var tip = d3.tip().attr("class", "d3-tip w").html(function(d) { return ""+d.description+"" });
-
-  // svg3.call(tip) // call tooltip
-
-
-var farbe2 = [["#4C8191", "#8EB0B9", "#1F5361"], ["#F2859A", "#EF518E", "#A0247C"], ["#88E0A6", "#A7C75C", "#F1FFC9"]];
-var farbe = [["#4C8191", "#8EB0B9", "#1F5361"], ["#88E0A6", "#A7C75C", "#F1FFC9"], ["#F2859A", "#EF518E", "#A0247C"]];
+var farbe = [["#4C8191", "#8EB0B9", "#1F5361"], ["#F2859A", "#EF518E", "#A0247C"], ["#88E0A6", "#A7C75C", "#F1FFC9"]];
+var farbe2 = [["#4C8191", "#8EB0B9", "#1F5361"], ["#88E0A6", "#A7C75C", "#F1FFC9"], ["#F2859A", "#EF518E", "#A0247C"]];
 d3.select("#plus").on("click", stack);
 
-var countryList = ["Austria",   "Belgium",   "Bulgaria",  "Croatia",   "Cyprus",    "Czech_Republic",    "Denmark",   "Estonia",   "EU28",  "Finland", "France",    "Germany",   "Greece",    "Hungary",  "Ireland",   "Italy", "Latvia",    "Lithuania", "Luxembourg",    "Malta", "Netherlands",    "Poland",    "Portugal",  "Romania",       "Slovakia",  "Slovenia",  "Spain", "Sweden",     "United_Kingdom",    "United_States",   "Turkey",   "Switzerland",  "Norway", "Japan","Serbia"]
-
 var data1 = [{"year": "2013"},{"year": "2012"},{"year": "2011"},{"year": "2010"},{"year": "2009"},{"year": "2008"},{"year": "2007"},{"year": "2006"},{"year": "2005"},{"year": "2004"},{"year": "2003"},{"year": "2002"},{"year": "2001"},{"year": "2000"}];
-
+var activeCountry = "Germany";
+var currentGroup = "0";
 var stackMode = false;
-var active = [];
 
-var init = [{indicator: "B1GM", 
-            name: "GDP",
-            state: false,
-            group: "0",
-            subgroup: 0 }];
+var active = [
+    {subgroup:1, 
+    child:  
+        [{ 
+        indicator: "B1GM", 
+        name: "Transaction",
+        subgroup: currentGroup
+        }]
+    }
+];
+
+goData(activeCountry, active,"-a", w, h, "48", "none",2.5);
+
+function stack(){
+    if (stackMode === false){
+        stackMode = true;
+    }
+    else {
+        stackMode = false;
+    }
+}
+
+function goData(activeCountry, active,tile, rangewidth, rangeheight, labelsize, labelFill, labelOutline){
+
+                    //var xemp = dataFilter(activeCountry, active[m].child[z].indicator);
+    data1.forEach(function(d,i){
+
+        d.xaz = active.map(function(l,m){
+            var y0 = 0;
+            temp = active[m].child;
+            
+            return {
+                subgroup: l.subgroup,
+                child: temp.map(function(s,z){
+                    //console.log(z,m,i);
+                    return {
+                        subgroup: l.subgroup,
+                        indicator: s.indicator,
+                        name: s.name,
+                        val: dataFilter(activeCountry, active[m].child[z].indicator)[i], //filter soll dann hier hin
+                        y0: y0,
+                        y1: y0 += +dataFilter(activeCountry, active[m].child[z].indicator)[i]
+                    }
+                })
+            }
+        })
+
+       if(active.length!=0) {d.maximum = data1[i].xaz[0].child[data1[0].xaz[0].child.length-1].y1;};
+
+    })
+
+
+    subGroups(active);
+    axis(active, tile, rangewidth, rangeheight);
+    barchart(tile);
+    label(activeCountry,tile, labelsize, labelFill,labelOutline);
+
+}
 
 function makeDataStructure(d){
 
@@ -74,23 +90,24 @@ function makeDataStructure(d){
         else if (d.state === false) {
                 active.pop();
         }
+        currentGroup = active.length-1;
     };
 
     //add indicators to groups
     if (d.state === true) {
 
-        d.group = active.length-1;;
+        d.group = currentGroup;
 
         active[d.group].child.push({
             indicator: d.indicator, 
             name: d.name,
-            subgroup: d.group
+            subgroup: currentGroup
         });
     };
 
     if (stackMode === true){
 
-        if ((d.state === false)&&(active[d.group].child.length === 1 )){
+        if ((d.state === false)&&(active[currentGroup].child.length === 1 )){
             active.pop();
             stack();
         }
@@ -99,76 +116,22 @@ function makeDataStructure(d){
             active[d.group].child.splice(active[d.group].child.indexOf(d.indicator),1);
         };
     };
+
+    goData(activeCountry, active,"-a", w, h, "48", "none",2.5);
+
     for (var i=0; i<countryList.length;i++){
         
-        addValues(d,countryList[i], active, countryList[i], 180, 100, 20, "grey", 0);
-    };
+       //if (dataFilter(countryList[i], d.indicator) != undefined){
 
-}
-
-
-function addValues(d, activeCountry, active, tile, rangewidth, rangeheight, labelsize, labelFill, labelOutline){
+            //console.log(dataFilter(countryList[i], d.indicator));
+            goData(countryList[i], active,countryList[i],180,100,20,"grey",0);
+       //}
+    }
  
-    data1.forEach(function(d,i){
-
-        d.xaz = active.map(function(l,m){
-            var y0 = 0;
-            temp = active[m].child;
-        
-            
-            return {
-                subgroup: l.subgroup,
-                child: temp.map(function(s,z){
-            
-                var xemp = dataFilter(activeCountry, active[m].child[z].indicator)[i];
-
-                    return {
-                        subgroup: l.subgroup,
-                        indicator: s.indicator,
-                        name: s.name,
-                        val: xemp, //filter soll dann hier hin
-                        y0: y0,
-                        y1: y0 += +xemp
-                    }
-                })
-            }
-        })
-
-       if(active.length!=0) {d.maximum = data1[i].xaz[0].child[data1[0].xaz[0].child.length-1].y1;};
-
-    })
-
-    subGroups(active);
-    axis(active, tile, rangewidth, rangeheight);
-    barchart(tile);
-    label(activeCountry,tile, labelsize, labelFill,labelOutline);
-
     svg3.selectAll("#nameEnter").attr("fill", colorName);
 }
 
 function barchart(tile){
-
-    var area = d3.select("#area").selectAll("div")
-        .data(countryList);
-
-    var div = area.enter().append("div");
-
-        div
-        .attr("class", "mini-stage")
-        .attr("id", function(d,i) { return "area"+i+"" });
-
-    var svg = div.append("svg")
-        .attr("id", function(d,i) { return d })
-        .attr("width", 200)
-        .attr("height", 200);
-
-    svg.append("g") // Bar - Chart
-        .attr("id",  function(d,i) { return "barArea"+d+""})
-        .attr("transform", "translate(20,75)");
-
-    svg.append("g")
-        .attr("id",  function(d,i) { return "label"+d+""})
-        .attr("transform", "translate(20,195)");
 
 // bar grouping per year
     var barGroup = d3.select("#barArea"+tile+"").selectAll(".barGroup")
@@ -205,11 +168,11 @@ function barchart(tile){
         .attr("x", function(d) { 
             if (d.y0 < d.y1) {
                 return x1(d.subgroup);
-            }
+            } 
             
             else {
                 return x1(d.subgroup-1);
-            }
+            } 
         })
         .attr("width", x1.rangeBand())
         .attr("height", function(d) { 
