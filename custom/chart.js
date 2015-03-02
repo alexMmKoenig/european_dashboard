@@ -12,7 +12,6 @@ var margin = {top: 100, right: 0, bottom: 50, left: 50};
 var w = width2 - margin.left - margin.right;
 var h = height2 - margin.top - margin.bottom;
 
-
 // SVG Tree Menu Indicators
 
 var width3 = 600;
@@ -29,11 +28,6 @@ var svg3 = d3.select("#indicator-tree").append("svg")
 var svg4 = d3.select("#control-panel").append("div")
 
 // global
-
-//var tip = d3.tip().attr("class", "d3-tip w").html(function(d) { return ""+d.description+"" });
-
-  // svg3.call(tip) // call tooltip
-
 
 var farbe2 = [["#4C8191", "#8EB0B9", "#1F5361"], ["#F2859A", "#EF518E", "#A0247C"], ["#88E0A6", "#A7C75C", "#F1FFC9"]];
 var farbe = [["#4C8191", "#8EB0B9", "#1F5361"], ["#88E0A6", "#A7C75C", "#F1FFC9"], ["#F2859A", "#EF518E", "#A0247C"]];
@@ -103,9 +97,7 @@ function makeDataStructure(d){
         
         addValues(d,countryList[i], active, countryList[i], 180, 100, 20, "grey", 0);
     };
-
 }
-
 
 function addValues(d, activeCountry, active, tile, rangewidth, rangeheight, labelsize, labelFill, labelOutline){
  
@@ -114,8 +106,7 @@ function addValues(d, activeCountry, active, tile, rangewidth, rangeheight, labe
         d.xaz = active.map(function(l,m){
             var y0 = 0;
             temp = active[m].child;
-        
-            
+               
             return {
                 subgroup: l.subgroup,
                 child: temp.map(function(s,z){
@@ -162,9 +153,30 @@ function barchart(tile){
         .attr("width", 200)
         .attr("height", 200);
 
+        svg.append("rect") // Rahmen
+            .attr("class","frame")
+            .attr("width", "100%")
+            .attr("height", "100%")
+            .attr("fill", "#F66A69")
+            .attr("fill-opacity", "0");
+
+        svg
+        .on("mouseover", function(d) {
+
+            d3.select(this).selectAll(".frame")
+                .attr("fill", "#F66A69")
+                .attr("fill-opacity", "0.5");
+        })
+                
+        .on("mouseout", function(d) {
+            d3.select(this).selectAll(".frame")
+               .transition().duration(250)
+                .attr("fill-opacity", "0");
+        });
+
     svg.append("g") // Bar - Chart
         .attr("id",  function(d,i) { return "barArea"+d+""})
-        .attr("transform", "translate(20,75)");
+        .attr("transform", "translate(20,75)")
 
     svg.append("g")
         .attr("id",  function(d,i) { return "label"+d+""})
