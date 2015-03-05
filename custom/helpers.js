@@ -21,8 +21,9 @@ var dataFilter = function(activeCountry, indicator){
     
     var filter = data.filter(function(d,i){
      if (d.country === activeCountry && d.indicator === indicator) 
-        {return d.values;} 
+        {return d.values};
     })
+    console.log(filter[0]);
     return filter[0].values;
 }
 
