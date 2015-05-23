@@ -1,0 +1,2920 @@
+{"name": "Statement of Financial Position",                     
+"children": [
+{
+   "indicator":"LiabilitiesAndStockholdersEquity",
+   "name":"Liabilities and Equity",
+   "children":[
+      {
+         "indicator":"Liabilities",
+         "name":"Liabilities",
+         "children":[
+            {
+               "indicator":"LiabilitiesCurrent",
+               "name":"Liabilities, Current",
+               "children":[
+                  {
+                     "indicator":"AccountsPayableAndAccruedLiabilitiesCurrent",
+                     "name":"Accounts Payable and Accrued Liabilities, Current",
+                     "children":[
+                        {
+                           "indicator":"AccountsPayableCurrent",
+                           "name":"Accounts Payable, Current",
+                           "children":[
+                              {
+                                 "indicator":"AccountsPayableTradeCurrent",
+                                 "name":"Accounts Payable, Trade, Current"
+                              },
+                              {
+                                 "indicator":"AccountsPayableInterestBearingCurrent",
+                                 "name":"Accounts Payable, Interest-bearing, Current"
+                              },
+                              {
+                                 "indicator":"ConstructionPayableCurrent",
+                                 "name":"Construction Payable, Current"
+                              },
+                              {
+                                 "indicator":"OilAndGasSalesPayableCurrent",
+                                 "name":"Oil and Gas Sales Payable, Current"
+                              },
+                              {
+                                 "indicator":"GasPurchasePayableCurrent",
+                                 "name":"Gas Purchase Payable, Current"
+                              },
+                              {
+                                 "indicator":"EnergyMarketingAccountsPayable",
+                                 "name":"Energy Marketing Accounts Payable"
+                              },
+                              {
+                                 "indicator":"GasImbalancePayableCurrent",
+                                 "name":"Gas Balancing Payable, Current"
+                              },
+                              {
+                                 "indicator":"AccountsPayableUnderwritersPromotersAndEmployeesOtherThanSalariesAndWagesCurrent",
+                                 "name":"Accounts Payable, Underwriters, Promoters, and Employees (Other than Salaries and Wages), Current"
+                              },
+                              {
+                                 "indicator":"RetentionPayableDueOneYearOrLess",
+                                 "name":"Retention Payable, Due in Next Twelve Months"
+                              },
+                              {
+                                 "indicator":"AccountsPayableOtherCurrent",
+                                 "name":"Accounts Payable, Other, Current"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"AccruedLiabilitiesCurrent",
+                           "name":"Accrued Liabilities, Current",
+                           "children":[
+                              {
+                                 "indicator":"AccruedInsuranceCurrent",
+                                 "name":"Accrued Insurance, Current"
+                              },
+                              {
+                                 "indicator":"AccruedRentCurrent",
+                                 "name":"Accrued Rent, Current"
+                              },
+                              {
+                                 "indicator":"LeaseIncentivePayableCurrent",
+                                 "name":"Lease Incentive, Payable, Current"
+                              },
+                              {
+                                 "indicator":"AccruedRoyaltiesCurrent",
+                                 "name":"Accrued Royalties, Current"
+                              },
+                              {
+                                 "indicator":"AccruedUtilitiesCurrent",
+                                 "name":"Accrued Utilities, Current"
+                              },
+                              {
+                                 "indicator":"AccruedSalesCommissionCurrent",
+                                 "name":"Accrued Sales Commission, Current"
+                              },
+                              {
+                                 "indicator":"AccruedProfessionalFeesCurrent",
+                                 "name":"Accrued Professional Fees, Current"
+                              },
+                              {
+                                 "indicator":"AccruedAdvertisingCurrent",
+                                 "name":"Accrued Advertising, Current"
+                              },
+                              {
+                                 "indicator":"AccruedExchangeFeeRebateCurrent",
+                                 "name":"Accrued Exchange Fee Rebate, Current"
+                              },
+                              {
+                                 "indicator":"AccruedLiabilitiesForUnredeeemedGiftCards",
+                                 "name":"Gift Card Liability, Current"
+                              },
+                              {
+                                 "indicator":"ProductWarrantyAccrualClassifiedCurrent",
+                                 "name":"Product Warranty Accrual, Current",
+                                 "children":[
+                                    {
+                                       "indicator":"StandardProductWarrantyAccrualCurrent",
+                                       "name":"Standard Product Warranty Accrual, Current"
+                                    },
+                                    {
+                                       "indicator":"ExtendedProductWarrantyAccrualCurrent",
+                                       "name":"Extended Product Warranty Accrual, Current"
+                                    }
+                                 ]
+                              },
+                              {
+                                 "indicator":"OtherAccruedLiabilitiesCurrent",
+                                 "name":"Other Accrued Liabilities, Current"
+                              },
+                              {
+                                 "indicator":"AccruedMarketingCostsCurrent",
+                                 "name":"Accrued Marketing Costs, Current"
+                              },
+                              {
+                                 "indicator":"OtherAccruedLiabilitiesCurrent",
+                                 "name":"Other Accrued Liabilities, Current"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"EmployeeRelatedLiabilitiesCurrent",
+                           "name":"Employee-related Liabilities, Current",
+                           "children":[
+                              {
+                                 "indicator":"AccruedSalariesCurrent",
+                                 "name":"Accrued Salaries, Current"
+                              },
+                              {
+                                 "indicator":"AccruedVacationCurrent",
+                                 "name":"Accrued Vacation, Current"
+                              },
+                              {
+                                 "indicator":"AccruedBonusesCurrent",
+                                 "name":"Accrued Bonuses, Current"
+                              },
+                              {
+                                 "indicator":"AccruedPayrollTaxesCurrent",
+                                 "name":"Accrued Payroll Taxes, Current"
+                              },
+                              {
+                                 "indicator":"AccruedEmployeeBenefitsCurrent",
+                                 "name":"Accrued Employee Benefits, Current"
+                              },
+                              {
+                                 "indicator":"WorkersCompensationLiabilityCurrent",
+                                 "name":"Workers' Compensation Liability, Current"
+                              },
+                              {
+                                 "indicator":"PensionAndOtherPostretirementDefinedBenefitPlansCurrentLiabilities",
+                                 "name":"Pension and Other Postretirement Defined Benefit Plans, Current Liabilities"
+                              },
+                              {
+                                 "indicator":"PensionAndOtherPostretirementAndPostemploymentBenefitPlansLiabilitiesCurrent",
+                                 "name":"Pension and Other Postretirement and Postemployment Benefit Plans, Liabilities, Current"
+                              },
+                              {
+                                 "indicator":"OtherEmployeeRelatedLiabilitiesCurrent",
+                                 "name":"Other Employee Related Liabilities, Current"
+                              },
+                              {
+                                 "indicator":"DefinedBenefitPensionPlanLiabilitiesCurrent",
+                                 "name":"Defined Benefit Pension Plan Liabilities, Current"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"TaxesPayableCurrent",
+                           "name":"Taxes Payable, Current",
+                           "children":[
+                              {
+                                 "indicator":"SalesAndExciseTaxPayableCurrent",
+                                 "name":"Sales and Excise Tax Payable, Current"
+                              },
+                              {
+                                 "indicator":"AccruedIncomeTaxesCurrent",
+                                 "name":"Accrued Income Taxes, Current"
+                              },
+                              {
+                                 "indicator":"AccrualForTaxesOtherThanIncomeTaxesCurrent",
+                                 "name":"Accrual for Taxes Other than Income Taxes, Current"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"InterestAndDividendsPayableCurrent",
+                           "name":"Interest and Dividends Payable, Current",
+                           "children":[
+                              {
+                                 "indicator":"DividendsPayableCurrent",
+                                 "name":"Dividends Payable, Current"
+                              },
+                              {
+                                 "indicator":"InterestPayableCurrent",
+                                 "name":"Interest Payable, Current"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"SettlementLiabilitiesCurrent",
+                           "name":"Settlement Liabilities, Current"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"DebtCurrent",
+                     "name":"Debt, Current",
+                     "children":[
+                        {
+                           "indicator":"ShortTermBorrowings",
+                           "name":"Short-term Debt",
+                           "children":[
+                              {
+                                 "indicator":"BankOverdrafts",
+                                 "name":"Bank Overdrafts"
+                              },
+                              {
+                                 "indicator":"CommercialPaper",
+                                 "name":"Commercial Paper"
+                              },
+                              {
+                                 "indicator":"BridgeLoan",
+                                 "name":"Bridge Loan"
+                              },
+                              {
+                                 "indicator":"ConstructionLoan",
+                                 "name":"Construction Loan"
+                              },
+                              {
+                                 "indicator":"ShortTermBankLoansAndNotesPayable",
+                                 "name":"Short-term Bank Loans and Notes Payable"
+                              },
+                              {
+                                 "indicator":"ShortTermNonBankLoansAndNotesPayable",
+                                 "name":"Short-term Non-bank Loans and Notes Payable"
+                              },
+                              {
+                                 "indicator":"SecuritiesSoldUnderAgreementsToRepurchase",
+                                 "name":"Securities Sold under Agreements to Repurchase"
+                              },
+                              {
+                                 "indicator":"FederalHomeLoanBankAdvancesMaturitiesSummaryDueWithinOneYearOfBalanceSheetDate",
+                                 "name":"Federal Home Loan Bank, Advances, Maturities Summary, Due in Next Twelve Months"
+                              },
+                              {
+                                 "indicator":"WarehouseAgreementBorrowings",
+                                 "name":"Warehouse Agreement Borrowings"
+                              },
+                              {
+                                 "indicator":"OtherShortTermBorrowings",
+                                 "name":"Other Short-term Borrowings"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"LongTermDebtAndCapitalLeaseObligationsCurrent",
+                           "name":"Long-term Debt and Capital Lease Obligations, Current",
+                           "children":[
+                              {
+                                 "indicator":"LongTermDebtCurrent",
+                                 "name":"Long-term Debt, Current Maturities",
+                                 "children":[
+                                    {
+                                       "indicator":"SecuredDebtCurrent",
+                                       "name":"Secured Debt, Current"
+                                    },
+                                    {
+                                       "indicator":"ConvertibleDebtCurrent",
+                                       "name":"Convertible Debt, Current"
+                                    },
+                                    {
+                                       "indicator":"UnsecuredDebtCurrent",
+                                       "name":"Unsecured Debt, Current"
+                                    },
+                                    {
+                                       "indicator":"SubordinatedDebtCurrent",
+                                       "name":"Subordinated Debt, Current"
+                                    },
+                                    {
+                                       "indicator":"ConvertibleSubordinatedDebtCurrent",
+                                       "name":"Convertible Subordinated Debt, Current"
+                                    },
+                                    {
+                                       "indicator":"LongTermCommercialPaperCurrent",
+                                       "name":"Long-term Commercial Paper, Current"
+                                    },
+                                    {
+                                       "indicator":"LongTermConstructionLoanCurrent",
+                                       "name":"Long-term Construction Loan, Current"
+                                    },
+                                    {
+                                       "indicator":"LongtermTransitionBondCurrent",
+                                       "name":"Long-term Transition Bond, Current"
+                                    },
+                                    {
+                                       "indicator":"LongtermPollutionControlBondCurrent",
+                                       "name":"Long-term Pollution Control Bond, Current"
+                                    },
+                                    {
+                                       "indicator":"JuniorSubordinatedDebentureOwedToUnconsolidatedSubsidiaryTrustCurrent",
+                                       "name":"Junior Subordinated Debenture Owed to Unconsolidated Subsidiary Trust, Current"
+                                    },
+                                    {
+                                       "indicator":"OtherLongTermDebtCurrent",
+                                       "name":"Other Long-term Debt, Current"
+                                    },
+                                    {
+                                       "indicator":"LinesOfCreditCurrent",
+                                       "name":"Line of Credit, Current"
+                                    },
+                                    {
+                                       "indicator":"NotesAndLoansPayableCurrent",
+                                       "name":"Notes and Loans Payable, Current",
+                                       "children":[
+                                          {
+                                             "indicator":"NotesPayableCurrent",
+                                             "name":"Notes Payable, Current",
+                                             "children":[
+                                                {
+                                                   "indicator":"MediumtermNotesCurrent",
+                                                   "name":"Medium-term Notes, Current"
+                                                },
+                                                {
+                                                   "indicator":"ConvertibleNotesPayableCurrent",
+                                                   "name":"Convertible Notes Payable, Current"
+                                                },
+                                                {
+                                                   "indicator":"NotesPayableToBankCurrent",
+                                                   "name":"Notes Payable to Bank, Current"
+                                                },
+                                                {
+                                                   "indicator":"SeniorNotesCurrent",
+                                                   "name":"Senior Notes, Current"
+                                                },
+                                                {
+                                                   "indicator":"JuniorSubordinatedNotesCurrent",
+                                                   "name":"Junior Subordinated Notes, Current"
+                                                },
+                                                {
+                                                   "indicator":"OtherNotesPayableCurrent",
+                                                   "name":"Other Notes Payable, Current"
+                                                }
+                                             ]
+                                          },
+                                          {
+                                             "indicator":"LoansPayableCurrent",
+                                             "name":"Loans Payable, Current",
+                                             "children":[
+                                                {
+                                                   "indicator":"LoansPayableToBankCurrent",
+                                                   "name":"Loans Payable to Bank, Current"
+                                                },
+                                                {
+                                                   "indicator":"OtherLoansPayableCurrent",
+                                                   "name":"Other Loans Payable, Current"
+                                                }
+                                             ]
+                                          }
+                                       ]
+                                    },
+                                    {
+                                       "indicator":"SpecialAssessmentBondCurrent",
+                                       "name":"Special Assessment Bond, Current"
+                                    },
+                                    {
+                                       "indicator":"FederalHomeLoanBankAdvancesCurrent",
+                                       "name":"Long-term Federal Home Loan Bank Advances, Current"
+                                    }
+                                 ]
+                              },
+                              {
+                                 "indicator":"CapitalLeaseObligationsCurrent",
+                                 "name":"Capital Lease Obligations, Current"
+                              }
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"CustomerAdvancesAndDepositsCurrent",
+                     "name":"Customer Advances and Deposits, Current",
+                     "children":[
+                        {
+                           "indicator":"CustomerAdvancesCurrent",
+                           "name":"Customer Advances, Current"
+                        },
+                        {
+                           "indicator":"CustomerDepositsCurrent",
+                           "name":"Customer Deposits, Current"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"DeferredCompensationLiabilityCurrent",
+                     "name":"Deferred Compensation Liability, Current",
+                     "children":[
+                        {
+                           "indicator":"DeferredCompensationShareBasedArrangementsLiabilityCurrent",
+                           "name":"Deferred Compensation Share-based Arrangements, Liability, Current"
+                        },
+                        {
+                           "indicator":"DeferredCompensationCashBasedArrangementsLiabilityCurrent",
+                           "name":"Deferred Compensation Cash-based Arrangements, Liability, Current"
+                        },
+                        {
+                           "indicator":"OtherDeferredCompensationArrangementsLiabilityCurrent",
+                           "name":"Other Deferred Compensation Arrangements, Liability, Current"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"DeferredRevenueAndCreditsCurrent",
+                     "name":"Deferred Revenue and Credits, Current",
+                     "children":[
+                        {
+                           "indicator":"DeferredRevenueCurrent",
+                           "name":"Deferred Revenue, Current"
+                        },
+                        {
+                           "indicator":"DeferredRevenueLeasesCurrent",
+                           "name":"Deferred Revenue, Leases, Current"
+                        },
+                        {
+                           "indicator":"DeferredAirTrafficRevenue",
+                           "name":"Deferred Air Traffic Revenue, Current",
+                           "children":[
+                              {
+                                 "indicator":"AirTrafficLiabilityCurrent",
+                                 "name":"Air Traffic Liability, Current"
+                              },
+                              {
+                                 "indicator":"FrequentFlierLiabilityCurrent",
+                                 "name":"Frequent Flier Liability, Current"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"CustomerLoyaltyProgramLiabilityCurrent",
+                           "name":"Customer Loyalty Program Liability, Current"
+                        },
+                        {
+                           "indicator":"OtherDeferredCreditsCurrent",
+                           "name":"Other Deferred Credits, Current"
+                        },
+                        {
+                           "indicator":"DeferredRentCreditCurrent",
+                           "name":"Deferred Rent Credit, Current"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"BillingsInExcessOfCostCurrent",
+                     "name":"Billings in Excess of Cost, Current"
+                  },
+                  {
+                     "indicator":"DerivativeInstrumentsAndHedgesLiabilities",
+                     "name":"Derivative Instruments and Hedges, Liabilities",
+                     "children":[
+                        {
+                           "indicator":"DerivativeLiabilitiesCurrent",
+                           "name":"Derivative Liability, Current"
+                        },
+                        {
+                           "indicator":"EnergyMarketingContractLiabilitiesCurrent",
+                           "name":"Energy Marketing Contract Liabilities, Current"
+                        },
+                        {
+                           "indicator":"HedgingLiabilitiesCurrent",
+                           "name":"Hedging Liabilities, Current"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"RestructuringReserveCurrent",
+                     "name":"Restructuring Reserve, Current"
+                  },
+                  {
+                     "indicator":"DeferredTaxLiabilitiesCurrent",
+                     "name":"Deferred Tax Liabilities, Net, Current"
+                  },
+                  {
+                     "indicator":"LiabilityForUncertainTaxPositionsCurrent",
+                     "name":"Liability for Uncertain Tax Positions, Current"
+                  },
+                  {
+                     "indicator":"PostemploymentBenefitsLiabilityCurrent",
+                     "name":"Postemployment Benefits Liability, Current"
+                  },
+                  {
+                     "indicator":"SecuritiesLoaned",
+                     "name":"Securities Loaned"
+                  },
+                  {
+                     "indicator":"RegulatoryLiabilityCurrent",
+                     "name":"Regulatory Liability, Current"
+                  },
+                  {
+                     "indicator":"ProvisionForLossOnContracts",
+                     "name":"Provision for Loss on Contracts"
+                  },
+                  {
+                     "indicator":"LitigationReserveCurrent",
+                     "name":"Estimated Litigation Liability, Current"
+                  },
+                  {
+                     "indicator":"AccruedEnvironmentalLossContingenciesCurrent",
+                     "name":"Accrued Environmental Loss Contingencies, Current"
+                  },
+                  {
+                     "indicator":"AssetRetirementObligationCurrent",
+                     "name":"Asset Retirement Obligation, Current"
+                  },
+                  {
+                     "indicator":"AccruedCappingClosurePostClosureAndEnvironmentalCosts",
+                     "name":"Accrued Capping, Closure, Post-closure and Environmental Costs"
+                  },
+                  {
+                     "indicator":"AccruedReclamationCostsCurrent",
+                     "name":"Accrued Reclamation Costs, Current"
+                  },
+                  {
+                     "indicator":"DeferredGasPurchasesCurrent",
+                     "name":"Deferred Gas Purchases, Current"
+                  },
+                  {
+                     "indicator":"DueToRelatedPartiesCurrent",
+                     "name":"Due to Related Parties, Current",
+                     "children":[
+                        {
+                           "indicator":"AccountsPayableRelatedPartiesCurrent",
+                           "name":"Accounts Payable, Related Parties, Current"
+                        },
+                        {
+                           "indicator":"NotesPayableRelatedPartiesClassifiedCurrent",
+                           "name":"Notes Payable, Related Parties, Current"
+                        },
+                        {
+                           "indicator":"DueToEmployeesCurrent",
+                           "name":"Due to Employees, Current"
+                        },
+                        {
+                           "indicator":"DueToOfficersOrStockholdersCurrent",
+                           "name":"Due to Officers or Stockholders, Current"
+                        },
+                        {
+                           "indicator":"DueToAffiliateCurrent",
+                           "name":"Due to Affiliate, Current"
+                        },
+                        {
+                           "indicator":"DueToOtherRelatedPartiesClassifiedCurrent",
+                           "name":"Due to Other Related Parties, Classified, Current"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"LiabilitiesOfDisposalGroupIncludingDiscontinuedOperationCurrent",
+                     "name":"Disposal Group, Including Discontinued Operation, Liabilities, Current",
+                     "children":[
+                        {
+                           "indicator":"DisposalGroupIncludingDiscontinuedOperationAccountsPayableAndAccruedLiabilitiesCurrent",
+                           "name":"Disposal Group, Including Discontinued Operation, Accounts Payable and Accrued Liabilities, Current",
+                           "children":[
+                              {
+                                 "indicator":"DisposalGroupIncludingDiscontinuedOperationAccountsPayableCurrent",
+                                 "name":"Disposal Group, Including Discontinued Operation, Accounts Payable, Current"
+                              },
+                              {
+                                 "indicator":"DisposalGroupIncludingDiscontinuedOperationAccruedLiabilitiesCurrent",
+                                 "name":"Disposal Group, Including Discontinued Operation, Accrued Liabilities, Current"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"DisposalGroupIncludingDiscontinuedOperationDeferredRevenueCurrent",
+                           "name":"Disposal Group, Including Discontinued Operation, Deferred Revenue, Current"
+                        },
+                        {
+                           "indicator":"DisposalGroupIncludingDiscontinuedOperationAccruedIncomeTaxesPayable",
+                           "name":"Disposal Group, Including Discontinued Operation, Accrued Income Tax Payable, Current"
+                        },
+                        {
+                           "indicator":"DisposalGroupIncludingDiscontinuedOperationOtherCurrentLiabilities",
+                           "name":"Disposal Group, Including Discontinued Operation, Other Liabilities, Current"
+                        },
+                        {
+                           "indicator":"DisposalGroupIncludingDiscontinuedOperationDeferredTaxLiabilitiesCurrent",
+                           "name":"Disposal Group, Including Discontinued Operation, Deferred Tax Liabilities, Current"
+                        },
+                        {
+                           "indicator":"DisposalGroupIncludingDiscontinuedOperationPensionPlanBenefitObligationCurrent",
+                           "name":"Disposal Group, Including Discontinued Operation, Pension Plan Benefit Obligation, Current"
+                        },
+                        {
+                           "indicator":"DisposalGroupIncludingDiscontinuedOperationPostretirementPlanBenefitObligationCurrent",
+                           "name":"Disposal Group, Including Discontinued Operation, Postretirement Plan Benefit Obligation, Current"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"LiabilitiesOfBusinessTransferredUnderContractualArrangementCurrent",
+                     "name":"Liabilities of Business Transferred under Contractual Arrangement, Current"
+                  },
+                  {
+                     "indicator":"SharesSubjectToMandatoryRedemptionSettlementTermsAmountCurrent",
+                     "name":"Financial Instruments Subject to Mandatory Redemption, Settlement Terms, Share Value, Amount, Current"
+                  },
+                  {
+                     "indicator":"CustomerRefundLiabilityCurrent",
+                     "name":"Customer Refund Liability, Current"
+                  },
+                  {
+                     "indicator":"SelfInsuranceReserveCurrent",
+                     "name":"Self Insurance Reserve, Current"
+                  },
+                  {
+                     "indicator":"ProgramRightsObligationsCurrent",
+                     "name":"Program Rights Obligations, Current"
+                  },
+                  {
+                     "indicator":"BusinessCombinationContingentConsiderationLiabilityCurrent",
+                     "name":"Business Combination, Contingent Consideration, Liability, Current"
+                  },
+                  {
+                     "indicator":"OtherLiabilitiesCurrent",
+                     "name":"Other Liabilities, Current"
+                  }
+               ]
+            },
+            {
+               "indicator":"LiabilitiesNoncurrent",
+               "name":"Liabilities, Noncurrent",
+               "children":[
+                  {
+                     "indicator":"LongTermDebtAndCapitalLeaseObligations",
+                     "name":"Long-term Debt and Capital Lease Obligations",
+                     "children":[
+                        {
+                           "indicator":"LongTermDebtNoncurrent",
+                           "name":"Long-term Debt, Excluding Current Maturities",
+                           "children":[
+                              {
+                                 "indicator":"LongTermLineOfCredit",
+                                 "name":"Long-term Line of Credit, Noncurrent"
+                              },
+                              {
+                                 "indicator":"CommercialPaperNoncurrent",
+                                 "name":"Long-term Commercial Paper, Noncurrent"
+                              },
+                              {
+                                 "indicator":"ConstructionLoanNoncurrent",
+                                 "name":"Long-term Construction Loan, Noncurrent"
+                              },
+                              {
+                                 "indicator":"SecuredLongTermDebt",
+                                 "name":"Secured Long-term Debt, Noncurrent"
+                              },
+                              {
+                                 "indicator":"SubordinatedLongTermDebt",
+                                 "name":"Subordinated Long-term Debt, Noncurrent"
+                              },
+                              {
+                                 "indicator":"UnsecuredLongTermDebt",
+                                 "name":"Unsecured Long-term Debt, Noncurrent"
+                              },
+                              {
+                                 "indicator":"ConvertibleDebtNoncurrent",
+                                 "name":"Convertible Debt, Noncurrent"
+                              },
+                              {
+                                 "indicator":"ConvertibleSubordinatedDebtNoncurrent",
+                                 "name":"Convertible Subordinated Debt, Noncurrent"
+                              },
+                              {
+                                 "indicator":"LongTermTransitionBond",
+                                 "name":"Long-term Transition Bond, Noncurrent"
+                              },
+                              {
+                                 "indicator":"LongTermPollutionControlBond",
+                                 "name":"Long-term Pollution Control Bond, Noncurrent"
+                              },
+                              {
+                                 "indicator":"JuniorSubordinatedDebentureOwedToUnconsolidatedSubsidiaryTrustNoncurrent",
+                                 "name":"Junior Subordinated Debenture Owed to Unconsolidated Subsidiary Trust, Noncurrent"
+                              },
+                              {
+                                 "indicator":"LongTermNotesAndLoans",
+                                 "name":"Notes and Loans, Noncurrent",
+                                 "children":[
+                                    {
+                                       "indicator":"LongTermNotesPayable",
+                                       "name":"Notes Payable, Noncurrent",
+                                       "children":[
+                                          {
+                                             "indicator":"MediumtermNotesNoncurrent",
+                                             "name":"Medium-term Notes, Noncurrent"
+                                          },
+                                          {
+                                             "indicator":"JuniorSubordinatedLongTermNotes",
+                                             "name":"Junior Subordinated Notes, Noncurrent"
+                                          },
+                                          {
+                                             "indicator":"SeniorLongTermNotes",
+                                             "name":"Senior Notes, Noncurrent"
+                                          },
+                                          {
+                                             "indicator":"ConvertibleLongTermNotesPayable",
+                                             "name":"Convertible Notes Payable, Noncurrent"
+                                          },
+                                          {
+                                             "indicator":"NotesPayableToBankNoncurrent",
+                                             "name":"Notes Payable to Bank, Noncurrent"
+                                          },
+                                          {
+                                             "indicator":"OtherLongTermNotesPayable",
+                                             "name":"Other Notes Payable, Noncurrent"
+                                          }
+                                       ]
+                                    },
+                                    {
+                                       "indicator":"LongTermLoansPayable",
+                                       "name":"Loans Payable, Noncurrent",
+                                       "children":[
+                                          {
+                                             "indicator":"LongTermLoansFromBank",
+                                             "name":"Loans Payable to Bank, Noncurrent"
+                                          },
+                                          {
+                                             "indicator":"OtherLoansPayableLongTerm",
+                                             "name":"Other Loans Payable, Long-term, Noncurrent"
+                                          }
+                                       ]
+                                    }
+                                 ]
+                              },
+                              {
+                                 "indicator":"SpecialAssessmentBondNoncurrent",
+                                 "name":"Special Assessment Bond, Noncurrent"
+                              },
+                              {
+                                 "indicator":"LongtermFederalHomeLoanBankAdvancesNoncurrent",
+                                 "name":"Long-term Federal Home Loan Bank Advances, Noncurrent"
+                              },
+                              {
+                                 "indicator":"OtherLongTermDebtNoncurrent",
+                                 "name":"Other Long-term Debt, Noncurrent"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"CapitalLeaseObligationsNoncurrent",
+                           "name":"Capital Lease Obligations, Noncurrent"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"LiabilitiesOtherThanLongtermDebtNoncurrent",
+                     "name":"Liabilities, Other than Long-term Debt, Noncurrent",
+                     "children":[
+                        {
+                           "indicator":"AccountsPayableAndAccruedLiabilitiesNoncurrent",
+                           "name":"Accounts Payable and Accrued Liabilities, Noncurrent",
+                           "children":[
+                              {
+                                 "indicator":"AccruedInsuranceNoncurrent",
+                                 "name":"Accrued Insurance, Noncurrent"
+                              },
+                              {
+                                 "indicator":"RetentionPayableDueAfterOneYear",
+                                 "name":"Retention Payable, Due after One Year"
+                              },
+                              {
+                                 "indicator":"AccruedIncomeTaxesNoncurrent",
+                                 "name":"Accrued Income Taxes, Noncurrent"
+                              },
+                              {
+                                 "indicator":"AccruedRentNoncurrent",
+                                 "name":"Accrued Rent, Noncurrent"
+                              },
+                              {
+                                 "indicator":"ProductWarrantyAccrualNoncurrent",
+                                 "name":"Product Warranty Accrual, Noncurrent",
+                                 "children":[
+                                    {
+                                       "indicator":"ExtendedProductWarrantyAccrualNoncurrent",
+                                       "name":"Extended Product Warranty Accrual, Noncurrent"
+                                    },
+                                    {
+                                       "indicator":"StandardProductWarrantyAccrualNoncurrent",
+                                       "name":"Standard Product Warranty Accrual, Noncurrent"
+                                    }
+                                 ]
+                              },
+                              {
+                                 "indicator":"AccountsPayableInterestBearingNoncurrent",
+                                 "name":"Accounts Payable, Interest-bearing, Noncurrent"
+                              },
+                              {
+                                 "indicator":"OtherAccruedLiabilitiesNoncurrent",
+                                 "name":"Other Accrued Liabilities, Noncurrent"
+                              },
+                              {
+                                 "indicator":"WorkersCompensationLiabilityNoncurrent",
+                                 "name":"Workers' Compensation Liability, Noncurrent"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"DeferredCompensationLiabilityClassifiedNoncurrent",
+                           "name":"Deferred Compensation Liability, Classified, Noncurrent",
+                           "children":[
+                              {
+                                 "indicator":"DeferredCompensationSharebasedArrangementsLiabilityClassifiedNoncurrent",
+                                 "name":"Deferred Compensation Share-based Arrangements, Liability, Classified, Noncurrent"
+                              },
+                              {
+                                 "indicator":"DeferredCompensationCashbasedArrangementsLiabilityClassifiedNoncurrent",
+                                 "name":"Deferred Compensation Cash-based Arrangements, Liability, Classified, Noncurrent"
+                              },
+                              {
+                                 "indicator":"OtherDeferredCompensationArrangementsLiabilityClassifiedNoncurrent",
+                                 "name":"Other Deferred Compensation Arrangements, Liability, Classified, Noncurrent"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"DeferredRevenueAndCreditsNoncurrent",
+                           "name":"Deferred Revenue and Credits, Noncurrent",
+                           "children":[
+                              {
+                                 "indicator":"DeferredRevenueNoncurrent",
+                                 "name":"Deferred Revenue, Noncurrent"
+                              },
+                              {
+                                 "indicator":"DeferredRevenueLeasesNetNoncurrent",
+                                 "name":"Deferred Revenue, Leases, Net, Noncurrent",
+                                 "children":[
+                                    {
+                                       "indicator":"DeferredRevenueLeasesGrossNoncurrent",
+                                       "name":"Deferred Revenue, Leases, Gross, Noncurrent"
+                                    },
+                                    {
+                                       "indicator":"DeferredRevenueLeasesAccumulatedAmortization",
+                                       "name":"Deferred Revenue, Leases, Accumulated Amortization"
+                                    }
+                                 ]
+                              },
+                              {
+                                 "indicator":"DeferredGainOnSaleOfProperty",
+                                 "name":"Deferred Gain on Sale of Property"
+                              },
+                              {
+                                 "indicator":"CustomerLoyaltyProgramLiabilityNoncurrent",
+                                 "name":"Customer Loyalty Program Liability, Noncurrent"
+                              },
+                              {
+                                 "indicator":"DeferredRentCreditNoncurrent",
+                                 "name":"Deferred Rent Credit, Noncurrent"
+                              },
+                              {
+                                 "indicator":"OtherDeferredCreditsNoncurrent",
+                                 "name":"Other Deferred Credits, Noncurrent"
+                              },
+                              {
+                                 "indicator":"IncentiveFromLessor",
+                                 "name":"Incentive from Lessor"
+                              },
+                              {
+                                 "indicator":"AccumulatedDeferredInvestmentTaxCredit",
+                                 "name":"Accumulated Deferred Investment Tax Credit"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"BillingsInExcessOfCostNoncurrent",
+                           "name":"Billings in Excess of Cost, Noncurrent"
+                        },
+                        {
+                           "indicator":"AssetRetirementObligationsNoncurrent",
+                           "name":"Asset Retirement Obligations, Noncurrent",
+                           "children":[
+                              {
+                                 "indicator":"MineReclamationAndClosingLiabilityNoncurrent",
+                                 "name":"Mine Reclamation and Closing Liability, Noncurrent"
+                              },
+                              {
+                                 "indicator":"OilAndGasReclamationLiabilityNoncurrent",
+                                 "name":"Oil and Gas Reclamation Liability, Noncurrent"
+                              },
+                              {
+                                 "indicator":"AccruedCappingClosurePostClosureAndEnvironmentalCostsNoncurrent",
+                                 "name":"Accrued Capping, Closure, Post-closure and Environmental Costs, Noncurrent"
+                              },
+                              {
+                                 "indicator":"DecommissioningLiabilityNoncurrent",
+                                 "name":"Decommissioning Liability, Noncurrent"
+                              },
+                              {
+                                 "indicator":"SpentNuclearFuelObligationNoncurrent",
+                                 "name":"Spent Nuclear Fuel Obligation, Noncurrent"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"CustomerAdvancesOrDepositsNoncurrent",
+                           "name":"Customer Advances or Deposits, Noncurrent",
+                           "children":[
+                              {
+                                 "indicator":"CustomerAdvancesNoncurrent",
+                                 "name":"Customer Advances, Noncurrent"
+                              },
+                              {
+                                 "indicator":"CustomerAdvancesForConstruction",
+                                 "name":"Customer Advances for Construction"
+                              },
+                              {
+                                 "indicator":"CustomerDepositsNoncurrent",
+                                 "name":"Customer Deposits, Noncurrent"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"DeferredTaxLiabilitiesNoncurrent",
+                           "name":"Deferred Tax Liabilities, Net, Noncurrent"
+                        },
+                        {
+                           "indicator":"LiabilityForUncertainTaxPositionsNoncurrent",
+                           "name":"Liability for Uncertain Tax Positions, Noncurrent"
+                        },
+                        {
+                           "indicator":"PensionAndOtherPostretirementAndPostemploymentBenefitPlansLiabilitiesNoncurrent",
+                           "name":"Pension and Other Postretirement and Postemployment Benefit Plans, Liabilities, Noncurrent",
+                           "children":[
+                              {
+                                 "indicator":"PensionAndOtherPostretirementDefinedBenefitPlansLiabilitiesNoncurrent",
+                                 "name":"Pension and Other Postretirement Defined Benefit Plans, Liabilities, Noncurrent",
+                                 "children":[
+                                    {
+                                       "indicator":"DefinedBenefitPensionPlanLiabilitiesNoncurrent",
+                                       "name":"Defined Benefit Pension Plan, Liabilities, Noncurrent"
+                                    },
+                                    {
+                                       "indicator":"OtherPostretirementDefinedBenefitPlanLiabilitiesNoncurrent",
+                                       "name":"Other Postretirement Defined Benefit Plan, Liabilities, Noncurrent"
+                                    },
+                                    {
+                                       "indicator":"OtherPostretirementBenefitsPayableNoncurrent",
+                                       "name":"Other Postretirement Benefits Payable, Noncurrent"
+                                    }
+                                 ]
+                              },
+                              {
+                                 "indicator":"PostemploymentBenefitsLiabilityNoncurrent",
+                                 "name":"Postemployment Benefits Liability, Noncurrent"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"AccruedEnvironmentalLossContingenciesNoncurrent",
+                           "name":"Accrued Environmental Loss Contingencies, Noncurrent"
+                        },
+                        {
+                           "indicator":"CoalSupplyAgreementObligationNoncurrent",
+                           "name":"Coal Supply Agreement Obligation, Noncurrent"
+                        },
+                        {
+                           "indicator":"CustomerRefundLiabilityNoncurrent",
+                           "name":"Customer Refund Liability, Noncurrent"
+                        },
+                        {
+                           "indicator":"OffMarketLeaseUnfavorable",
+                           "name":"Off-market Lease, Unfavorable"
+                        },
+                        {
+                           "indicator":"SharesSubjectToMandatoryRedemptionSettlementTermsAmountNoncurrent",
+                           "name":"Financial Instruments Subject to Mandatory Redemption, Settlement Terms, Share Value, Amount, Noncurrent"
+                        },
+                        {
+                           "indicator":"LitigationReserveNoncurrent",
+                           "name":"Estimated Litigation Liability, Noncurrent"
+                        },
+                        {
+                           "indicator":"RegulatoryLiabilityNoncurrent",
+                           "name":"Regulatory Liability, Noncurrent"
+                        },
+                        {
+                           "indicator":"RestructuringReserveNoncurrent",
+                           "name":"Restructuring Reserve, Noncurrent"
+                        },
+                        {
+                           "indicator":"DueToRelatedPartiesNoncurrent",
+                           "name":"Due to Related Parties, Noncurrent",
+                           "children":[
+                              {
+                                 "indicator":"NotesPayableRelatedPartiesNoncurrent",
+                                 "name":"Notes Payable, Related Parties, Noncurrent"
+                              },
+                              {
+                                 "indicator":"DueToEmployeesNoncurrent",
+                                 "name":"Due to Employees, Noncurrent"
+                              },
+                              {
+                                 "indicator":"DueToOfficersOrStockholdersNoncurrent",
+                                 "name":"Due to Officers or Stockholders, Noncurrent"
+                              },
+                              {
+                                 "indicator":"DueToAffiliateNoncurrent",
+                                 "name":"Due to Affiliate, Noncurrent"
+                              },
+                              {
+                                 "indicator":"DueToOtherRelatedPartiesNoncurrent",
+                                 "name":"Due to Other Related Parties, Noncurrent"
+                              },
+                              {
+                                 "indicator":"AccountsPayableRelatedPartiesNoncurrent",
+                                 "name":"Accounts Payable, Related Parties, Noncurrent"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"LiabilitiesOfDisposalGroupIncludingDiscontinuedOperationNoncurrent",
+                           "name":"Disposal Group, Including Discontinued Operation, Liabilities, Noncurrent",
+                           "children":[
+                              {
+                                 "indicator":"DisposalGroupIncludingDiscontinuedOperationDeferredTaxLiabilitiesNoncurrent",
+                                 "name":"Disposal Group, Including Discontinued Operation, Deferred Tax Liabilities, Noncurrent"
+                              },
+                              {
+                                 "indicator":"DisposalGroupIncludingDiscontinuedOperationDeferredRevenueNoncurrent",
+                                 "name":"Disposal Group, Including Discontinued Operation, Deferred Revenue, Noncurrent"
+                              },
+                              {
+                                 "indicator":"DisposalGroupIncludingDiscontinuedOperationOtherNoncurrentLiabilities",
+                                 "name":"Disposal Group, Including Discontinued Operation, Other Liabilities, Noncurrent"
+                              },
+                              {
+                                 "indicator":"DisposalGroupIncludingDiscontinuedOperationPensionPlanBenefitObligationNoncurrent",
+                                 "name":"Disposal Group, Including Discontinued Operation, Pension Plan Benefit Obligation, Noncurrent"
+                              },
+                              {
+                                 "indicator":"DisposalGroupIncludingDiscontinuedOperationPostretirementPlanBenefitObligationNoncurrent",
+                                 "name":"Disposal Group, Including Discontinued Operation, Postretirement Plan Benefit Obligation, Noncurrent"
+                              },
+                              {
+                                 "indicator":"DisposalGroupIncludingDiscontinuedOperationAccruedIncomeTaxPayableNoncurrent",
+                                 "name":"Disposal Group, Including Discontinued Operation, Accrued Income Tax Payable, Noncurrent"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"LiabilitiesOfBusinessTransferredUnderContractualArrangementNoncurrent",
+                           "name":"Liabilities of Business Transferred under Contractual Arrangement, Noncurrent"
+                        },
+                        {
+                           "indicator":"OtherLiabilitiesNoncurrent",
+                           "name":"Other Liabilities, Noncurrent"
+                        },
+                        {
+                           "indicator":"SelfInsuranceReserveNoncurrent",
+                           "name":"Self Insurance Reserve, Noncurrent"
+                        },
+                        {
+                           "indicator":"ProgramRightsObligationsNoncurrent",
+                           "name":"Program Rights Obligations, Noncurrent"
+                        },
+                        {
+                           "indicator":"BusinessCombinationContingentConsiderationLiabilityNoncurrent",
+                           "name":"Business Combination, Contingent Consideration, Liability, Noncurrent"
+                        },
+                        {
+                           "indicator":"DerivativeInstrumentsAndHedgesLiabilitiesNoncurrent",
+                           "name":"Derivative Instruments and Hedges, Liabilities, Noncurrent",
+                           "children":[
+                              {
+                                 "indicator":"DerivativeLiabilitiesNoncurrent",
+                                 "name":"Derivative Liability, Noncurrent"
+                              },
+                              {
+                                 "indicator":"HedgingLiabilitiesNoncurrent",
+                                 "name":"Hedging Liabilities, Noncurrent"
+                              },
+                              {
+                                 "indicator":"EnergyMarketingContractLiabilitiesNoncurrent",
+                                 "name":"Energy Marketing Contract Liabilities, Noncurrent"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"QualifiedAffordableHousingProjectInvestmentsCommitment",
+                           "name":"Qualified Affordable Housing Project Investments, Commitment"
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "indicator":"CommitmentsAndContingencies",
+         "name":"Commitments and Contingencies"
+      },
+      {
+         "indicator":"TemporaryEquityCarryingAmountIncludingPortionAttributableToNoncontrollingInterests",
+         "name":"Temporary Equity, Carrying Amount, Including Portion Attributable to Noncontrolling Interests",
+         "children":[
+            {
+               "indicator":"TemporaryEquityCarryingAmountAttributableToParent",
+               "name":"Temporary Equity, Carrying Amount, Attributable to Parent"
+            },
+            {
+               "indicator":"RedeemableNoncontrollingInterestEquityCarryingAmount",
+               "name":"Redeemable Noncontrolling Interest, Equity, Carrying Amount",
+               "children":[
+                  {
+                     "indicator":"RedeemableNoncontrollingInterestEquityCommonCarryingAmount",
+                     "name":"Redeemable Noncontrolling Interest, Equity, Common, Carrying Amount"
+                  },
+                  {
+                     "indicator":"RedeemableNoncontrollingInterestEquityPreferredCarryingAmount",
+                     "name":"Redeemable Noncontrolling Interest, Equity, Preferred, Carrying Amount"
+                  },
+                  {
+                     "indicator":"RedeemableNoncontrollingInterestEquityOtherCarryingAmount",
+                     "name":"Redeemable Noncontrolling Interest, Equity, Other, Carrying Amount"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "indicator":"StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+         "name":"Stockholders' Equity, Including Portion Attributable to Noncontrolling Interest",
+         "children":[
+            {
+               "indicator":"StockholdersEquity",
+               "name":"Stockholders' Equity Attributable to Parent",
+               "children":[
+                  {
+                     "indicator":"PreferredStockValue",
+                     "name":"Preferred Stock, Value, Issued"
+                  },
+                  {
+                     "indicator":"PreferredStockSharesSubscribedButUnissuedSubscriptionsReceivable",
+                     "name":"Preferred Stock, Shares Subscribed but Unissued, Subscriptions Receivable"
+                  },
+                  {
+                     "indicator":"CommonStockValue",
+                     "name":"Common Stock, Value, Issued"
+                  },
+                  {
+                     "indicator":"TreasuryStockValue",
+                     "name":"Treasury Stock, Value"
+                  },
+                  {
+                     "indicator":"CommonStockHeldBySubsidiary",
+                     "name":"Common Stock Held by Subsidiary"
+                  },
+                  {
+                     "indicator":"CommonStockShareSubscribedButUnissuedSubscriptionsReceivable",
+                     "name":"Common Stock, Share Subscribed but Unissued, Subscriptions Receivable"
+                  },
+                  {
+                     "indicator":"CommonStockSharesSubscriptions",
+                     "name":"Common Stock, Value, Subscriptions"
+                  },
+                  {
+                     "indicator":"AdditionalPaidInCapital",
+                     "name":"Additional Paid in Capital",
+                     "children":[
+                        {
+                           "indicator":"AdditionalPaidInCapitalCommonStock",
+                           "name":"Additional Paid in Capital, Common Stock"
+                        },
+                        {
+                           "indicator":"AdditionalPaidInCapitalPreferredStock",
+                           "name":"Additional Paid in Capital, Preferred Stock"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"TreasuryStockDeferredEmployeeStockOwnershipPlan",
+                     "name":"Deferred Employee Stock Ownership Plan, Issuance of Shares or Sale of Treasury Shares"
+                  },
+                  {
+                     "indicator":"DeferredCompensationEquity",
+                     "name":"Deferred Compensation Equity"
+                  },
+                  {
+                     "indicator":"AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+                     "name":"Accumulated Other Comprehensive Income (Loss), Net of Tax",
+                     "children":[
+                        {
+                           "indicator":"AccumulatedOtherComprehensiveIncomeLossForeignCurrencyTranslationAdjustmentNetOfTax",
+                           "name":"Accumulated Other Comprehensive Income (Loss), Foreign Currency Translation Adjustment, Net of Tax"
+                        },
+                        {
+                           "indicator":"AccumulatedOtherComprehensiveIncomeLossAvailableForSaleSecuritiesAdjustmentNetOfTax",
+                           "name":"Accumulated Other Comprehensive Income (Loss), Available-for-sale Securities Adjustment, Net of Tax"
+                        },
+                        {
+                           "indicator":"AccumulatedOtherComprehensiveIncomeLossOtherThanTemporaryImpairmentNotCreditLossNetOfTaxDebtSecurities",
+                           "name":"Accumulated Other Comprehensive Income (Loss), Other than Temporary Impairment, Not Credit Loss, Net of Tax, Debt Securities",
+                           "children":[
+                              {
+                                 "indicator":"AccumulatedOtherComprehensiveIncomeLossOtherThanTemporaryImpairmentNotCreditLossNetOfTaxAvailableforsaleDebtSecurities",
+                                 "name":"Accumulated Other Comprehensive Income (Loss), Other than Temporary Impairment, Not Credit Loss, Net of Tax, Available-for-sale, Debt Securities"
+                              },
+                              {
+                                 "indicator":"AccumulatedOtherComprehensiveIncomeLossOtherThanTemporaryImpairmentNotCreditLossNetOfTaxHeldtomaturityDebtSecurities",
+                                 "name":"Accumulated Other Comprehensive Income (Loss), Other than Temporary Impairment, Not Credit Loss, Net of Tax, Held-to-maturity, Debt Securities"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"AccumulatedOtherComprehensiveIncomeLossCumulativeChangesInNetGainLossFromCashFlowHedgesEffectNetOfTax",
+                           "name":"Accumulated Other Comprehensive Income (Loss), Cumulative Changes in Net Gain (Loss) from Cash Flow Hedges, Effect Net of Tax"
+                        },
+                        {
+                           "indicator":"AccumulatedOtherComprehensiveIncomeLossDefinedBenefitPensionAndOtherPostretirementPlansNetOfTax",
+                           "name":"Accumulated Other Comprehensive Income (Loss), Pension and Other Postretirement Benefit Plans, Net of Tax",
+                           "children":[
+                              {
+                                 "indicator":"DefinedBenefitPlanAccumulatedOtherComprehensiveIncomeNetGainsLossesAfterTax",
+                                 "name":"Defined Benefit Plan, Accumulated Other Comprehensive Income Net Gains (Losses), after Tax"
+                              },
+                              {
+                                 "indicator":"DefinedBenefitPlanAccumulatedOtherComprehensiveIncomeNetPriorServiceCostCreditAfterTax",
+                                 "name":"Defined Benefit Plan, Accumulated Other Comprehensive Income Net Prior Service Cost (Credit), after Tax"
+                              },
+                              {
+                                 "indicator":"DefinedBenefitPlanAccumulatedOtherComprehensiveIncomeMinimumPensionLiabilityAfterTax",
+                                 "name":"Defined Benefit Plan, Accumulated Other Comprehensive Income Minimum Pension Liability, after Tax"
+                              },
+                              {
+                                 "indicator":"DefinedBenefitPlanAccumulatedOtherComprehensiveIncomeNetTransitionAssetsObligationsAfterTax",
+                                 "name":"Defined Benefit Plan, Accumulated Other Comprehensive Income Net Transition Assets (Obligations), after Tax"
+                              }
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"RetainedEarningsAccumulatedDeficit",
+                     "name":"Retained Earnings (Accumulated Deficit)",
+                     "children":[
+                        {
+                           "indicator":"RetainedEarningsAppropriated",
+                           "name":"Retained Earnings, Appropriated"
+                        },
+                        {
+                           "indicator":"RetainedEarningsUnappropriated",
+                           "name":"Retained Earnings, Unappropriated"
+                        },
+                        {
+                           "indicator":"UndistributedIncomeFromOtherThanGainOrLossOnSaleOfProperties",
+                           "name":"Undistributed Income from Other than Gain (Loss) on Sale of Properties"
+                        },
+                        {
+                           "indicator":"UndistributedNetRealizedGainOrLossOnSaleOfProperties",
+                           "name":"Undistributed Net Realized Gain (Loss) on Sale of Properties"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"UnearnedESOPShares",
+                     "name":"Unearned ESOP Shares"
+                  },
+                  {
+                     "indicator":"OtherAdditionalCapital",
+                     "name":"Other Additional Capital"
+                  },
+                  {
+                     "indicator":"ReceivableFromOfficersAndDirectorsForIssuanceOfCapitalStock",
+                     "name":"Receivable from Officers and Directors for Issuance of Capital Stock"
+                  },
+                  {
+                     "indicator":"ReceivableFromShareholdersOrAffiliatesForIssuanceOfCapitalStock",
+                     "name":"Receivable from Shareholders or Affiliates for Issuance of Capital Stock"
+                  },
+                  {
+                     "indicator":"WarrantsAndRightsOutstanding",
+                     "name":"Warrants and Rights Outstanding"
+                  }
+               ]
+            },
+            {
+               "indicator":"MinorityInterest",
+               "name":"Stockholders' Equity Attributable to Noncontrolling Interest",
+               "children":[
+                  {
+                     "indicator":"MinorityInterestInLimitedPartnerships",
+                     "name":"Noncontrolling Interest in Limited Partnerships"
+                  },
+                  {
+                     "indicator":"MinorityInterestInOperatingPartnerships",
+                     "name":"Noncontrolling Interest in Operating Partnerships"
+                  },
+                  {
+                     "indicator":"MinorityInterestInPreferredUnitHolders",
+                     "name":"Noncontrolling Interest in Preferred Unit Holders"
+                  },
+                  {
+                     "indicator":"MinorityInterestInJointVentures",
+                     "name":"Noncontrolling Interest in Joint Ventures"
+                  },
+                  {
+                     "indicator":"OtherMinorityInterests",
+                     "name":"Other Noncontrolling Interests"
+                  },
+                  {
+                     "indicator":"NonredeemableNoncontrollingInterest",
+                     "name":"Nonredeemable Noncontrolling Interest"
+                  },
+                  {
+                     "indicator":"NoncontrollingInterestInVariableInterestEntity",
+                     "name":"Noncontrolling Interest in Variable Interest Entity"
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+},
+{
+   "indicator":"Assets",
+   "name":"Assets",
+   "children":[
+      {
+         "indicator":"AssetsCurrent",
+         "name":"Assets, Current",
+         "children":[
+            {
+               "indicator":"CashCashEquivalentsAndShortTermInvestments",
+               "name":"Cash, Cash Equivalents, and Short-term Investments",
+               "children":[
+                  {
+                     "indicator":"CashAndCashEquivalentsAtCarryingValue",
+                     "name":"Cash and Cash Equivalents, at Carrying Value",
+                     "children":[
+                        {
+                           "indicator":"CashAndDueFromBanks",
+                           "name":"Cash and Due from Banks",
+                           "children":[
+                              {
+                                 "indicator":"Cash",
+                                 "name":"Cash",
+                                 "children":[
+                                    {
+                                       "indicator":"CashFDICInsuredAmount",
+                                       "name":"Cash, FDIC Insured Amount"
+                                    },
+                                    {
+                                       "indicator":"CashUninsuredAmount",
+                                       "name":"Cash, Uninsured Amount"
+                                    }
+                                 ]
+                              },
+                              {
+                                 "indicator":"DueFromBanks",
+                                 "name":"Due from Banks"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"InterestBearingDepositsInBanks",
+                           "name":"Interest-bearing Deposits in Banks and Other Financial Institutions"
+                        },
+                        {
+                           "indicator":"CashEquivalentsAtCarryingValue",
+                           "name":"Cash Equivalents, at Carrying Value",
+                           "children":[
+                              {
+                                 "indicator":"AssetBackedSecuritiesAtCarryingValue",
+                                 "name":"Asset-Backed Securities, at Carrying Value"
+                              },
+                              {
+                                 "indicator":"CertificatesOfDepositAtCarryingValue",
+                                 "name":"Certificates of Deposit, at Carrying Value"
+                              },
+                              {
+                                 "indicator":"CommercialPaperAtCarryingValue",
+                                 "name":"Commercial Paper, at Carrying Value"
+                              },
+                              {
+                                 "indicator":"CreditAndDebitCardReceivablesAtCarryingValue",
+                                 "name":"Credit and Debit Card Receivables, at Carrying Value"
+                              },
+                              {
+                                 "indicator":"MoneyMarketFundsAtCarryingValue",
+                                 "name":"Money Market Funds, at Carrying Value"
+                              },
+                              {
+                                 "indicator":"MunicipalDebtSecuritiesAtCarryingValue",
+                                 "name":"Municipal Debt Securities, at Carrying Value"
+                              },
+                              {
+                                 "indicator":"TimeDepositsAtCarryingValue",
+                                 "name":"Time Deposits, at Carrying Value"
+                              },
+                              {
+                                 "indicator":"USGovernmentSecuritiesAtCarryingValue",
+                                 "name":"US Government Securities, at Carrying Value"
+                              },
+                              {
+                                 "indicator":"USGovernmentAgenciesSecuritiesAtCarryingValue",
+                                 "name":"US Government Agencies Securities, at Carrying Value"
+                              },
+                              {
+                                 "indicator":"OtherCashEquivalentsAtCarryingValue",
+                                 "name":"Other Cash Equivalents, at Carrying Value"
+                              }
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"ShortTermInvestments",
+                     "name":"Short-term Investments",
+                     "children":[
+                        {
+                           "indicator":"MarketableSecuritiesCurrent",
+                           "name":"Marketable Securities, Current",
+                           "children":[
+                              {
+                                 "indicator":"TradingSecurities",
+                                 "name":"Trading Securities",
+                                 "children":[
+                                    {
+                                       "indicator":"TradingSecuritiesDebt",
+                                       "name":"Trading Securities, Debt"
+                                    },
+                                    {
+                                       "indicator":"TradingSecuritiesEquity",
+                                       "name":"Trading Securities, Equity"
+                                    },
+                                    {
+                                       "indicator":"TradingSecuritiesOther",
+                                       "name":"Trading Securities, Other"
+                                    }
+                                 ]
+                              },
+                              {
+                                 "indicator":"AvailableForSaleSecuritiesCurrent",
+                                 "name":"Available-for-sale Securities, Current",
+                                 "children":[
+                                    {
+                                       "indicator":"AvailableForSaleSecuritiesDebtSecuritiesCurrent",
+                                       "name":"Available-for-sale Securities, Debt Securities, Current"
+                                    },
+                                    {
+                                       "indicator":"AvailableForSaleSecuritiesEquitySecuritiesCurrent",
+                                       "name":"Available-for-sale Securities, Equity Securities, Current"
+                                    }
+                                 ]
+                              },
+                              {
+                                 "indicator":"HeldToMaturitySecuritiesCurrent",
+                                 "name":"Held-to-maturity Securities, Current"
+                              },
+                              {
+                                 "indicator":"OtherMarketableSecuritiesCurrent",
+                                 "name":"Other Marketable Securities, Current"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"OtherShortTermInvestments",
+                           "name":"Other Short-term Investments"
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "indicator":"RestrictedCashAndInvestmentsCurrent",
+               "name":"Restricted Cash and Investments, Current",
+               "children":[
+                  {
+                     "indicator":"RestrictedCashAndCashEquivalentsAtCarryingValue",
+                     "name":"Restricted Cash and Cash Equivalents, Current"
+                  },
+                  {
+                     "indicator":"MarketableSecuritiesRestrictedCurrent",
+                     "name":"Marketable Securities, Restricted, Current",
+                     "children":[
+                        {
+                           "indicator":"TradingSecuritiesRestricted",
+                           "name":"Trading Securities, Restricted"
+                        },
+                        {
+                           "indicator":"AvailableforsaleSecuritiesRestrictedCurrent",
+                           "name":"Available-for-sale Securities, Restricted, Current"
+                        },
+                        {
+                           "indicator":"HeldtomaturitySecuritiesRestrictedCurrent",
+                           "name":"Held-to-maturity Securities, Restricted, Current"
+                        },
+                        {
+                           "indicator":"OtherMarketableSecuritiesRestrictedCurrent",
+                           "name":"Other Marketable Securities, Restricted, Current"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"RestrictedInvestmentsCurrent",
+                     "name":"Restricted Investments, Current"
+                  },
+                  {
+                     "indicator":"OtherRestrictedAssetsCurrent",
+                     "name":"Other Restricted Assets, Current"
+                  }
+               ]
+            },
+            {
+               "indicator":"ReceivablesNetCurrent",
+               "name":"Receivables, Net, Current",
+               "children":[
+                  {
+                     "indicator":"AccountsNotesAndLoansReceivableNetCurrent",
+                     "name":"Accounts, Notes, Loans and Financing Receivable, Net, Current",
+                     "children":[
+                        {
+                           "indicator":"AccountsReceivableNetCurrent",
+                           "name":"Accounts Receivable, Net, Current",
+                           "children":[
+                              {
+                                 "indicator":"AccountsReceivableGrossCurrent",
+                                 "name":"Accounts Receivable, Gross, Current",
+                                 "children":[
+                                    {
+                                       "indicator":"ContractReceivableDueOneYearOrLess",
+                                       "name":"Contract Receivable, Due in Next Twelve Months"
+                                    }
+                                 ]
+                              },
+                              {
+                                 "indicator":"AllowanceForDoubtfulAccountsReceivableCurrent",
+                                 "name":"Allowance for Doubtful Accounts Receivable, Current"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"NotesAndLoansReceivableNetCurrent",
+                           "name":"Notes, Loans and Financing Receivable, Net, Current",
+                           "children":[
+                              {
+                                 "indicator":"NotesAndLoansReceivableGrossCurrent",
+                                 "name":"Notes, Loans and Financing Receivable, Gross, Current"
+                              },
+                              {
+                                 "indicator":"AllowanceForNotesAndLoansReceivableCurrent",
+                                 "name":"Allowance for Notes, Loans and Financing Receivable, Current"
+                              }
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"NontradeReceivablesCurrent",
+                     "name":"Nontrade Receivables, Current",
+                     "children":[
+                        {
+                           "indicator":"InterestReceivableCurrent",
+                           "name":"Interest Receivable, Current"
+                        },
+                        {
+                           "indicator":"IncomeTaxesReceivable",
+                           "name":"Income Taxes Receivable, Current"
+                        },
+                        {
+                           "indicator":"ValueAddedTaxReceivableCurrent",
+                           "name":"Value Added Tax Receivable, Current"
+                        },
+                        {
+                           "indicator":"ReceivableForRecoveryOfImportDutiesNetCurrent",
+                           "name":"Receivable for Recovery of Import Duties, Net, Current"
+                        },
+                        {
+                           "indicator":"InsuranceSettlementsReceivableCurrent",
+                           "name":"Insurance Settlements Receivable, Current"
+                        },
+                        {
+                           "indicator":"GrantsReceivableCurrent",
+                           "name":"Grants Receivable, Current"
+                        },
+                        {
+                           "indicator":"InsuranceReceivableForMalpracticeCurrent",
+                           "name":"Insurance Receivable for Malpractice, Current"
+                        },
+                        {
+                           "indicator":"LeaseIncentiveReceivableCurrent",
+                           "name":"Lease Incentive Receivable, Current"
+                        },
+                        {
+                           "indicator":"OilAndGasJointInterestBillingReceivablesCurrent",
+                           "name":"Oil and Gas Joint Interest Billing Receivables, Current"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"UnbilledReceivablesCurrent",
+                     "name":"Unbilled Receivables, Current"
+                  },
+                  {
+                     "indicator":"DueFromRelatedPartiesCurrent",
+                     "name":"Due from Related Parties, Current",
+                     "children":[
+                        {
+                           "indicator":"AccountsReceivableRelatedPartiesCurrent",
+                           "name":"Accounts Receivable, Related Parties, Current"
+                        },
+                        {
+                           "indicator":"NotesReceivableRelatedPartiesCurrent",
+                           "name":"Notes Receivable, Related Parties, Current"
+                        },
+                        {
+                           "indicator":"DueFromEmployeesCurrent",
+                           "name":"Due from Employees, Current"
+                        },
+                        {
+                           "indicator":"DueFromOfficersOrStockholdersCurrent",
+                           "name":"Due from Officers or Stockholders, Current"
+                        },
+                        {
+                           "indicator":"DueFromAffiliateCurrent",
+                           "name":"Due from Affiliate, Current"
+                        },
+                        {
+                           "indicator":"DueFromJointVenturesCurrent",
+                           "name":"Due from Joint Ventures, Current"
+                        },
+                        {
+                           "indicator":"DueFromOtherRelatedPartiesCurrent",
+                           "name":"Due from Other Related Parties, Current"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"ReceivablesLongTermContractsOrPrograms",
+                     "name":"Receivables, Long-term Contracts or Programs"
+                  },
+                  {
+                     "indicator":"AccountsReceivableFromSecuritization",
+                     "name":"Accounts Receivable from Securitization"
+                  },
+                  {
+                     "indicator":"OtherReceivablesNetCurrent",
+                     "name":"Other Receivables, Net, Current",
+                     "children":[
+                        {
+                           "indicator":"AllowanceForDoubtfulOtherReceivablesCurrent",
+                           "name":"Allowance for Doubtful Other Receivables, Current"
+                        },
+                        {
+                           "indicator":"OtherReceivablesGrossCurrent",
+                           "name":"Other Receivables, Gross, Current"
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "indicator":"InventoryNetOfAllowancesCustomerAdvancesAndProgressBillings",
+               "name":"Inventory, Net of Allowances, Customer Advances and Progress Billings",
+               "children":[
+                  {
+                     "indicator":"InventoryNet",
+                     "name":"Inventory, Net",
+                     "children":[
+                        {
+                           "indicator":"InventoryGross",
+                           "name":"Inventory, Gross",
+                           "children":[
+                              {
+                                 "indicator":"AirlineRelatedInventory",
+                                 "name":"Airline Related Inventory, Gross",
+                                 "children":[
+                                    {
+                                       "indicator":"AirlineRelatedInventoryAircraftFuel",
+                                       "name":"Airline Related Inventory, Aircraft Fuel, Gross"
+                                    },
+                                    {
+                                       "indicator":"AirlineRelatedInventoryAircraftParts",
+                                       "name":"Airline Related Inventory, Aircraft Parts, Gross"
+                                    }
+                                 ]
+                              },
+                              {
+                                 "indicator":"RetailRelatedInventory",
+                                 "name":"Retail Related Inventory",
+                                 "children":[
+                                    {
+                                       "indicator":"RetailRelatedInventoryMerchandise",
+                                       "name":"Retail Related Inventory, Merchandise"
+                                    },
+                                    {
+                                       "indicator":"RetailRelatedInventoryPackagingAndOtherSupplies",
+                                       "name":"Retail Related Inventory, Packaging and Other Supplies"
+                                    }
+                                 ]
+                              },
+                              {
+                                 "indicator":"EnergyRelatedInventory",
+                                 "name":"Energy Related Inventory",
+                                 "children":[
+                                    {
+                                       "indicator":"EnergyRelatedInventoryPetroleum",
+                                       "name":"Energy Related Inventory, Petroleum"
+                                    },
+                                    {
+                                       "indicator":"EnergyRelatedInventoryNaturalGasLiquids",
+                                       "name":"Energy Related Inventory, Natural Gas Liquids"
+                                    },
+                                    {
+                                       "indicator":"EnergyRelatedInventoryNaturalGasInStorage",
+                                       "name":"Energy Related Inventory, Natural Gas in Storage"
+                                    },
+                                    {
+                                       "indicator":"EnergyRelatedInventoryGasStoredUnderground",
+                                       "name":"Energy Related Inventory, Gas Stored Underground"
+                                    },
+                                    {
+                                       "indicator":"EnergyRelatedInventoryPropaneGas",
+                                       "name":"Energy Related Inventory, Propane Gas"
+                                    },
+                                    {
+                                       "indicator":"EnergyRelatedInventoryCoal",
+                                       "name":"Energy Related Inventory, Coal"
+                                    },
+                                    {
+                                       "indicator":"EnergyRelatedInventoryChemicals",
+                                       "name":"Energy Related Inventory, Chemicals"
+                                    },
+                                    {
+                                       "indicator":"EnergyRelatedInventoryOtherFossilFuel",
+                                       "name":"Energy Related Inventory, Other Fossil Fuel"
+                                    },
+                                    {
+                                       "indicator":"CrudeOilAndNaturalGasLiquids",
+                                       "name":"Energy Related Inventory, Crude Oil and Natural Gas Liquids"
+                                    },
+                                    {
+                                       "indicator":"InventoryCrudeOilProductsAndMerchandise",
+                                       "name":"Energy Related Inventory, Crude Oil, Products and Merchandise"
+                                    }
+                                 ]
+                              },
+                              {
+                                 "indicator":"AgriculturalRelatedInventory",
+                                 "name":"Agricultural Related Inventory",
+                                 "children":[
+                                    {
+                                       "indicator":"AgriculturalRelatedInventoryPlantMaterial",
+                                       "name":"Agricultural Related Inventory, Plant Material"
+                                    },
+                                    {
+                                       "indicator":"AgriculturalRelatedInventoryGrowingCrops",
+                                       "name":"Agricultural Related Inventory, Growing Crops"
+                                    },
+                                    {
+                                       "indicator":"AgriculturalRelatedInventoryFeedAndSupplies",
+                                       "name":"Agricultural Related Inventory, Feed and Supplies"
+                                    }
+                                 ]
+                              },
+                              {
+                                 "indicator":"PublicUtilitiesInventory",
+                                 "name":"Public Utilities, Inventory"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"InventoryAdjustments",
+                           "name":"Inventory Adjustments",
+                           "children":[
+                              {
+                                 "indicator":"InventoryValuationReserves",
+                                 "name":"Inventory Valuation Reserves"
+                              },
+                              {
+                                 "indicator":"InventoryLIFOReserve",
+                                 "name":"Inventory, LIFO Reserve"
+                              }
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"ProgressPaymentsNettedAgainstInventoryForLongTermContractsOrPrograms",
+                     "name":"Progress Payments Netted Against Inventory for Long-term Contracts or Programs"
+                  }
+               ]
+            },
+            {
+               "indicator":"PrepaidExpenseCurrent",
+               "name":"Prepaid Expense, Current",
+               "children":[
+                  {
+                     "indicator":"PrepaidInsurance",
+                     "name":"Prepaid Insurance"
+                  },
+                  {
+                     "indicator":"PrepaidRent",
+                     "name":"Prepaid Rent"
+                  },
+                  {
+                     "indicator":"PrepaidAdvertising",
+                     "name":"Prepaid Advertising"
+                  },
+                  {
+                     "indicator":"PrepaidRoyalties",
+                     "name":"Prepaid Royalties"
+                  },
+                  {
+                     "indicator":"Supplies",
+                     "name":"Prepaid Supplies"
+                  },
+                  {
+                     "indicator":"PrepaidInterest",
+                     "name":"Prepaid Interest"
+                  },
+                  {
+                     "indicator":"PrepaidTaxes",
+                     "name":"Prepaid Taxes"
+                  },
+                  {
+                     "indicator":"OtherPrepaidExpenseCurrent",
+                     "name":"Other Prepaid Expense, Current"
+                  }
+               ]
+            },
+            {
+               "indicator":"DeferredCostsCurrent",
+               "name":"Deferred Costs, Current",
+               "children":[
+                  {
+                     "indicator":"DeferredFinanceCostsCurrentNet",
+                     "name":"Deferred Finance Costs, Current, Net",
+                     "children":[
+                        {
+                           "indicator":"DeferredFinanceCostsCurrentGross",
+                           "name":"Deferred Finance Costs, Current, Gross"
+                        },
+                        {
+                           "indicator":"AccumulatedAmortizationOfCurrentDeferredFinanceCosts",
+                           "name":"Accumulated Amortization of Current Deferred Finance Costs"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"DeferredCostsLeasingNetCurrent",
+                     "name":"Deferred Costs, Leasing, Net, Current"
+                  },
+                  {
+                     "indicator":"DeferredFuelCost",
+                     "name":"Deferred Fuel Cost",
+                     "children":[
+                        {
+                           "indicator":"DeferredElectricCost",
+                           "name":"Deferred Electric Cost"
+                        },
+                        {
+                           "indicator":"DeferredGasCost",
+                           "name":"Deferred Gas Cost"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"DeferredStormAndPropertyReserveDeficiencyCurrent",
+                     "name":"Deferred Storm and Property Reserve Deficiency, Current"
+                  },
+                  {
+                     "indicator":"DeferredSetUpCostsCurrent",
+                     "name":"Deferred Set-up Costs, Current"
+                  },
+                  {
+                     "indicator":"DeferredSubscriberAcquisitionCostsCurrent",
+                     "name":"Deferred Subscriber Acquisition Costs, Current"
+                  },
+                  {
+                     "indicator":"OtherDeferredCostsNet",
+                     "name":"Other Deferred Costs, Net",
+                     "children":[
+                        {
+                           "indicator":"OtherDeferredCostsGross",
+                           "name":"Other Deferred Costs, Gross"
+                        },
+                        {
+                           "indicator":"AccumulatedAmortizationOfOtherDeferredCosts",
+                           "name":"Accumulated Amortization of Other Deferred Costs"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"DeferredOfferingCosts",
+                     "name":"Deferred Offering Costs"
+                  }
+               ]
+            },
+            {
+               "indicator":"DerivativeInstrumentsAndHedges",
+               "name":"Derivative Instruments and Hedges, Assets",
+               "children":[
+                  {
+                     "indicator":"DerivativeAssetsCurrent",
+                     "name":"Derivative Asset, Current"
+                  },
+                  {
+                     "indicator":"HedgingAssetsCurrent",
+                     "name":"Hedging Assets, Current"
+                  },
+                  {
+                     "indicator":"CommodityContractAssetCurrent",
+                     "name":"Commodity Contract Asset, Current"
+                  },
+                  {
+                     "indicator":"EnergyMarketingContractsAssetsCurrent",
+                     "name":"Energy Marketing Contracts Assets, Current"
+                  }
+               ]
+            },
+            {
+               "indicator":"CapitalLeasesLessorBalanceSheetNetInvestmentInDirectFinancingAndSalesTypeLeasesCurrent",
+               "name":"Capital Leases, Lessor Balance Sheet, Net Investment in Direct Financing and Sales Type Leases, Current",
+               "children":[
+                  {
+                     "indicator":"CapitalLeasesLessorBalanceSheetNetInvestmentInDirectFinancingLeasesCurrent",
+                     "name":"Capital Leases, Lessor Balance Sheet, Net Investment in Direct Financing Leases, Current"
+                  },
+                  {
+                     "indicator":"CapitalLeasesLessorBalanceSheetNetInvestmentInSalesTypeLeasesCurrent",
+                     "name":"Capital Leases, Lessor Balance Sheet, Net Investment in Sales Type Leases, Current"
+                  }
+               ]
+            },
+            {
+               "indicator":"RegulatoryAssetsCurrent",
+               "name":"Regulatory Assets, Current"
+            },
+            {
+               "indicator":"AssetRecoveryDamagedPropertyCostsCurrent",
+               "name":"Asset Recovery Damaged Property Costs, Current"
+            },
+            {
+               "indicator":"FundsHeldForClients",
+               "name":"Funds Held for Clients"
+            },
+            {
+               "indicator":"DeferredRentAssetNetCurrent",
+               "name":"Deferred Rent Asset, Net, Current"
+            },
+            {
+               "indicator":"AssetsHeldInTrustCurrent",
+               "name":"Assets Held-in-trust, Current"
+            },
+            {
+               "indicator":"AdvancesOnInventoryPurchases",
+               "name":"Advances on Inventory Purchases"
+            },
+            {
+               "indicator":"AdvanceRoyaltiesCurrent",
+               "name":"Advance Royalties, Current"
+            },
+            {
+               "indicator":"CostsInExcessOfBillingsOnUncompletedContractsOrProgramsExpectedToBeCollectedWithinOneYear",
+               "name":"Costs in Excess of Billings, Current"
+            },
+            {
+               "indicator":"HealthCareTrustFundAssetsLimitedAsToUseCurrent",
+               "name":"Health Care Trust Fund, Assets Limited as to Use, Current"
+            },
+            {
+               "indicator":"AssetsOfDisposalGroupIncludingDiscontinuedOperationCurrent",
+               "name":"Disposal Group, Including Discontinued Operation, Assets, Current",
+               "children":[
+                  {
+                     "indicator":"DisposalGroupIncludingDiscontinuedOperationCashAndCashEquivalents",
+                     "name":"Disposal Group, Including Discontinued Operation, Cash and Cash Equivalents"
+                  },
+                  {
+                     "indicator":"DisposalGroupIncludingDiscontinuedOperationInventoryCurrent",
+                     "name":"Disposal Group, Including Discontinued Operation, Inventory, Current"
+                  },
+                  {
+                     "indicator":"DisposalGroupIncludingDiscontinuedOperationDeferredTaxAssetCurrent",
+                     "name":"Disposal Group, Including Discontinued Operation, Deferred Tax Asset, Current"
+                  },
+                  {
+                     "indicator":"DisposalGroupIncludingDiscontinuedOperationOtherCurrentAssets",
+                     "name":"Disposal Group, Including Discontinued Operation, Other Assets, Current"
+                  },
+                  {
+                     "indicator":"DisposalGroupIncludingDiscontinuedOperationAccountsNotesAndLoansReceivableNet",
+                     "name":"Disposal Group, Including Discontinued Operation, Accounts, Notes and Loans Receivable, Net"
+                  },
+                  {
+                     "indicator":"DisposalGroupIncludingDiscontinuedOperationGoodwillCurrent",
+                     "name":"Disposal Group, Including Discontinued Operation, Goodwill, Current"
+                  },
+                  {
+                     "indicator":"DisposalGroupIncludingDiscontinuedOperationPropertyPlantAndEquipmentCurrent",
+                     "name":"Disposal Group, Including Discontinued Operation, Property, Plant and Equipment, Current"
+                  },
+                  {
+                     "indicator":"DisposalGroupIncludingDiscontinuedOperationCapitalLeasedAssetsCurrent",
+                     "name":"Disposal Group, Including Discontinued Operation, Capital Leased Assets, Current"
+                  },
+                  {
+                     "indicator":"DisposalGroupIncludingDiscontinuedOperationIntangibleAssetsCurrent",
+                     "name":"Disposal Group, Including Discontinued Operation, Intangible Assets, Current"
+                  }
+               ]
+            },
+            {
+               "indicator":"AssetsHeldForSaleNotPartOfDisposalGroupCurrent",
+               "name":"Assets Held-for-sale, Not Part of Disposal Group, Current",
+               "children":[
+                  {
+                     "indicator":"TradeAndLoansReceivablesHeldForSaleNetNotPartOfDisposalGroup",
+                     "name":"Trade and Loans Receivables Held-for-sale, Net, Not Part of Disposal Group"
+                  },
+                  {
+                     "indicator":"AssetsHeldForSaleNotPartOfDisposalGroupCurrentOther",
+                     "name":"Assets Held-for-sale, Not Part of Disposal Group, Current, Other"
+                  }
+               ]
+            },
+            {
+               "indicator":"DepositsAssetsCurrent",
+               "name":"Deposits Assets, Current"
+            },
+            {
+               "indicator":"DeferredTaxAssetsLiabilitiesNetCurrent",
+               "name":"Deferred Tax Assets, Net, Current"
+            },
+            {
+               "indicator":"IntangibleAssetsCurrent",
+               "name":"Intangible Assets, Current"
+            },
+            {
+               "indicator":"BusinessCombinationContingentConsiderationAssetCurrent",
+               "name":"Business Combination, Contingent Consideration, Asset, Current"
+            },
+            {
+               "indicator":"OtherAssetsCurrent",
+               "name":"Other Assets, Current"
+            }
+         ]
+      },
+      {
+         "indicator":"AssetsNoncurrent",
+         "name":"Assets, Noncurrent",
+         "children":[
+            {
+               "indicator":"InventoryNoncurrent",
+               "name":"Inventory, Noncurrent",
+               "children":[
+                  {
+                     "indicator":"InventoryDrillingNoncurrent",
+                     "name":"Inventory, Drilling, Noncurrent"
+                  },
+                  {
+                     "indicator":"InventoryGasInStorageUndergroundNoncurrent",
+                     "name":"Inventory, Gas in Storage Underground, Noncurrent"
+                  },
+                  {
+                     "indicator":"OtherInventoryNoncurrent",
+                     "name":"Other Inventory, Noncurrent"
+                  }
+               ]
+            },
+            {
+               "indicator":"InventoryRealEstate",
+               "name":"Inventory, Real Estate",
+               "children":[
+                  {
+                     "indicator":"InventoryRealEstateImprovements",
+                     "name":"Inventory, Real Estate, Improvements"
+                  },
+                  {
+                     "indicator":"InventoryRealEstateHeldForSale",
+                     "name":"Inventory, Real Estate, Held-for-sale"
+                  },
+                  {
+                     "indicator":"InventoryRealEstateLandAndLandDevelopmentCosts",
+                     "name":"Inventory, Real Estate, Land and Land Development Costs"
+                  },
+                  {
+                     "indicator":"InventoryRealEstateConstructionInProcess",
+                     "name":"Inventory, Real Estate, Construction in Process"
+                  },
+                  {
+                     "indicator":"InventoryRealEstateMortgageLoansHeldInInventory",
+                     "name":"Inventory, Real Estate, Mortgage Loans Held in Inventory"
+                  },
+                  {
+                     "indicator":"InventoryOperativeBuilders",
+                     "name":"Inventory, Operative Builders",
+                     "children":[
+                        {
+                           "indicator":"InventoryHomesUnderConstruction",
+                           "name":"Inventory, Homes under Construction"
+                        },
+                        {
+                           "indicator":"InventoryFinishedHomes",
+                           "name":"Inventory, Finished Homes"
+                        },
+                        {
+                           "indicator":"InventoryLandHeldForDevelopmentAndSale",
+                           "name":"Inventory, Land Held for Development and Sale"
+                        },
+                        {
+                           "indicator":"InventoryBuildingsAndImprovements",
+                           "name":"Inventory, Buildings and Improvements"
+                        },
+                        {
+                           "indicator":"RealEstateInventoryCapitalizedInterestCosts",
+                           "name":"Real Estate Inventory, Capitalized Interest Costs"
+                        },
+                        {
+                           "indicator":"LandUnderPurchaseOptionsRecorded",
+                           "name":"Land under Purchase Options, Recorded"
+                        },
+                        {
+                           "indicator":"RealEstateInventoryConstructionMaterials",
+                           "name":"Real Estate Inventory, Construction Materials"
+                        },
+                        {
+                           "indicator":"InventoryLandHeldForSale",
+                           "name":"Inventory, Land Held-for-sale"
+                        },
+                        {
+                           "indicator":"InventoryOperativeBuildersOther",
+                           "name":"Inventory, Operative Builders, Other"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"InventoryRealEstateRentalFurnitureNet",
+                     "name":"Inventory, Real Estate, Rental Furniture, Net"
+                  },
+                  {
+                     "indicator":"InventoryRealEstateTimeshareAvailableForSale",
+                     "name":"Inventory, Real Estate, Timeshare Available-for-sale"
+                  },
+                  {
+                     "indicator":"InventoryRealEstateOther",
+                     "name":"Inventory, Real Estate, Other"
+                  }
+               ]
+            },
+            {
+               "indicator":"NontradeReceivablesNoncurrent",
+               "name":"Nontrade Receivables, Noncurrent",
+               "children":[
+                  {
+                     "indicator":"InterestReceivableNoncurrent",
+                     "name":"Interest Receivable, Noncurrent"
+                  },
+                  {
+                     "indicator":"IncomeTaxesReceivableNoncurrent",
+                     "name":"Income Taxes Receivable, Noncurrent"
+                  },
+                  {
+                     "indicator":"ValueAddedTaxReceivableNoncurrent",
+                     "name":"Value Added Tax Receivable, Noncurrent"
+                  },
+                  {
+                     "indicator":"ReceivableForRecoveryOfImportDutiesNetNoncurrent",
+                     "name":"Receivable for Recovery of Import Duties, Net, Noncurrent"
+                  },
+                  {
+                     "indicator":"InsuranceSettlementsReceivableNoncurrent",
+                     "name":"Insurance Settlements Receivable, Noncurrent"
+                  },
+                  {
+                     "indicator":"GrantsReceivableNoncurrent",
+                     "name":"Grants Receivable, Noncurrent"
+                  },
+                  {
+                     "indicator":"InsuranceReceivableForMalpracticeNoncurrent",
+                     "name":"Insurance Receivable for Malpractice, Noncurrent"
+                  },
+                  {
+                     "indicator":"LeaseIncentiveReceivableNoncurrent",
+                     "name":"Lease Incentive Receivable, Noncurrent"
+                  },
+                  {
+                     "indicator":"OilAndGasJointInterestBillingReceivablesNoncurrent",
+                     "name":"Oil and Gas Joint Interest Billing Receivables, Noncurrent"
+                  }
+               ]
+            },
+            {
+               "indicator":"PropertyPlantAndEquipmentNet",
+               "name":"Property, Plant and Equipment, Net",
+               "children":[
+                  {
+                     "indicator":"PropertyPlantAndEquipmentGross",
+                     "name":"Property, Plant and Equipment, Gross",
+                     "children":[
+                        {
+                           "indicator":"LandAndLandImprovements",
+                           "name":"Land and Land Improvements",
+                           "children":[
+                              {
+                                 "indicator":"Land",
+                                 "name":"Land"
+                              },
+                              {
+                                 "indicator":"LandImprovements",
+                                 "name":"Land Improvements"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"BuildingsAndImprovementsGross",
+                           "name":"Buildings and Improvements, Gross"
+                        },
+                        {
+                           "indicator":"MachineryAndEquipmentGross",
+                           "name":"Machinery and Equipment, Gross"
+                        },
+                        {
+                           "indicator":"FurnitureAndFixturesGross",
+                           "name":"Furniture and Fixtures, Gross"
+                        },
+                        {
+                           "indicator":"FixturesAndEquipmentGross",
+                           "name":"Fixtures and Equipment, Gross"
+                        },
+                        {
+                           "indicator":"CapitalizedComputerSoftwareGross",
+                           "name":"Capitalized Computer Software, Gross"
+                        },
+                        {
+                           "indicator":"ConstructionInProgressGross",
+                           "name":"Construction in Progress, Gross"
+                        },
+                        {
+                           "indicator":"LeaseholdImprovementsGross",
+                           "name":"Leasehold Improvements, Gross"
+                        },
+                        {
+                           "indicator":"CapitalLeasedAssetsGross",
+                           "name":"Capital Leased Assets, Gross"
+                        },
+                        {
+                           "indicator":"PropertySubjectToOrAvailableForOperatingLeaseGross",
+                           "name":"Property Subject to or Available for Operating Lease, Gross"
+                        },
+                        {
+                           "indicator":"TimberAndTimberlands",
+                           "name":"Timber and Timberlands"
+                        },
+                        {
+                           "indicator":"PropertyPlantAndEquipmentOther",
+                           "name":"Property, Plant and Equipment, Other, Gross"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"AccumulatedDepreciationDepletionAndAmortizationPropertyPlantAndEquipment",
+                     "name":"Accumulated Depreciation, Depletion and Amortization, Property, Plant, and Equipment"
+                  }
+               ]
+            },
+            {
+               "indicator":"OilAndGasPropertySuccessfulEffortMethodNet",
+               "name":"Oil and Gas Property, Successful Effort Method, Net",
+               "children":[
+                  {
+                     "indicator":"OilAndGasPropertySuccessfulEffortMethodGross",
+                     "name":"Oil and Gas Property, Successful Effort Method, Gross",
+                     "children":[
+                        {
+                           "indicator":"UnprovedOilAndGasPropertySuccessfulEffortMethod",
+                           "name":"Unproved Oil and Gas Property, Successful Effort Method"
+                        },
+                        {
+                           "indicator":"ProvedOilAndGasPropertySuccessfulEffortMethod",
+                           "name":"Proved Oil and Gas Property, Successful Effort Method"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"OilAndGasPropertySuccessfulEffortMethodAccumulatedDepreciationDepletionAmortizationAndImpairment",
+                     "name":"Oil and Gas Property, Successful Effort Method, Accumulated Depreciation, Depletion Amortization and Impairment",
+                     "children":[
+                        {
+                           "indicator":"OilAndGasPropertySuccessfulEffortMethodAccumulatedImpairment",
+                           "name":"Oil and Gas Property, Successful Effort Method, Accumulated Impairment"
+                        },
+                        {
+                           "indicator":"OilAndGasPropertySuccessfulEffortMethodAccumulatedDepreciationDepletionAndAmortization",
+                           "name":"Oil and Gas Property, Successful Effort Method, Accumulated Depreciation, Depletion and Amortization"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"OtherOilAndGasPropertySuccessfulEffortMethod",
+                     "name":"Other Oil and Gas Property, Successful Effort Method"
+                  }
+               ]
+            },
+            {
+               "indicator":"OilAndGasPropertyFullCostMethodNet",
+               "name":"Oil and Gas Property, Full Cost Method, Net",
+               "children":[
+                  {
+                     "indicator":"OilAndGasPropertyFullCostMethodGross",
+                     "name":"Oil and Gas Property, Full Cost Method, Gross"
+                  },
+                  {
+                     "indicator":"OilAndGasPropertyFullCostMethodDepletion",
+                     "name":"Oil and Gas Property, Full Cost Method, Depletion"
+                  }
+               ]
+            },
+            {
+               "indicator":"LongTermInvestmentsAndReceivablesNet",
+               "name":"Long-term Investments and Receivables, Net",
+               "children":[
+                  {
+                     "indicator":"LongTermInvestments",
+                     "name":"Long-term Investments",
+                     "children":[
+                        {
+                           "indicator":"InvestmentsInAffiliatesSubsidiariesAssociatesAndJointVentures",
+                           "name":"Investments in and Advance to Affiliates, Subsidiaries, Associates, and Joint Ventures",
+                           "children":[
+                              {
+                                 "indicator":"EquityMethodInvestments",
+                                 "name":"Equity Method Investments"
+                              },
+                              {
+                                 "indicator":"CostMethodInvestments",
+                                 "name":"Cost Method Investments"
+                              },
+                              {
+                                 "indicator":"AdvancesToAffiliate",
+                                 "name":"Advances to Affiliate"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"MarketableSecuritiesNoncurrent",
+                           "name":"Marketable Securities, Noncurrent",
+                           "children":[
+                              {
+                                 "indicator":"AvailableForSaleSecuritiesNoncurrent",
+                                 "name":"Available-for-sale Securities, Noncurrent",
+                                 "children":[
+                                    {
+                                       "indicator":"AvailableForSaleSecuritiesDebtSecuritiesNoncurrent",
+                                       "name":"Available-for-sale Securities, Debt Securities, Noncurrent"
+                                    },
+                                    {
+                                       "indicator":"AvailableForSaleSecuritiesEquitySecuritiesNoncurrent",
+                                       "name":"Available-for-sale Securities, Equity Securities, Noncurrent"
+                                    }
+                                 ]
+                              },
+                              {
+                                 "indicator":"HeldToMaturitySecuritiesNoncurrent",
+                                 "name":"Held-to-maturity Securities, Noncurrent"
+                              },
+                              {
+                                 "indicator":"OtherMarketableSecuritiesNoncurrent",
+                                 "name":"Other Marketable Securities, Noncurrent"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"InvestmentInPhysicalCommodities",
+                           "name":"Investment in Physical Commodities"
+                        },
+                        {
+                           "indicator":"HealthCareTrustFundAssetsLimitedAsToUseNoncurrent",
+                           "name":"Health Care Trust Fund, Assets Limited as to Use, Noncurrent"
+                        },
+                        {
+                           "indicator":"OtherLongTermInvestments",
+                           "name":"Other Long-term Investments"
+                        },
+                        {
+                           "indicator":"AuctionRateSecuritiesNoncurrent",
+                           "name":"Auction Rate Securities, Noncurrent"
+                        },
+                        {
+                           "indicator":"LeveragedLeaseInvestment",
+                           "name":"Leveraged Lease Investment"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"UnbilledChangeOrdersAmountExpectedToBeCollectedAfterOneYear",
+                     "name":"Unbilled Change Orders, Amount Expected to be Collected after One Year"
+                  },
+                  {
+                     "indicator":"LongTermAccountsNotesAndLoansReceivableNetNoncurrent",
+                     "name":"Accounts, Notes, Loans and Financing Receivable, Net, Noncurrent",
+                     "children":[
+                        {
+                           "indicator":"AccountsReceivableNetNoncurrent",
+                           "name":"Accounts Receivable, Net, Noncurrent",
+                           "children":[
+                              {
+                                 "indicator":"AccountsReceivableGrossNoncurrent",
+                                 "name":"Accounts Receivable, Gross, Noncurrent",
+                                 "children":[
+                                    {
+                                       "indicator":"ContractReceivableDueAfterOneYear",
+                                       "name":"Contract Receivable, Due after Year One",
+                                       "children":[
+                                          {
+                                             "indicator":"ContractReceivableDueFiveYearsOrMore",
+                                             "name":"Contract Receivable, Due after Year Five"
+                                          },
+                                          {
+                                             "indicator":"ContractReceivableDueFourToFiveYears",
+                                             "name":"Contract Receivable, Due in Year Five"
+                                          },
+                                          {
+                                             "indicator":"ContractReceivableDueOneToTwoYears",
+                                             "name":"Contract Receivable, Due in Year Two"
+                                          },
+                                          {
+                                             "indicator":"ContractReceivableDueThreeToFourYears",
+                                             "name":"Contract Receivable, Due in Year Four"
+                                          },
+                                          {
+                                             "indicator":"ContractReceivableDueTwoToThreeYears",
+                                             "name":"Contract Receivable, Due in Year Three"
+                                          }
+                                       ]
+                                    }
+                                 ]
+                              },
+                              {
+                                 "indicator":"AllowanceForDoubtfulAccountsReceivableNoncurrent",
+                                 "name":"Allowance for Doubtful Accounts Receivable, Noncurrent"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"NotesAndLoansReceivableNetNoncurrent",
+                           "name":"Notes, Loans and Financing Receivable, Net, Noncurrent",
+                           "children":[
+                              {
+                                 "indicator":"NotesAndLoansReceivableGrossNoncurrent",
+                                 "name":"Notes, Loans and Financing Receivable, Gross, Noncurrent"
+                              },
+                              {
+                                 "indicator":"AllowanceForNotesAndLoansReceivableNoncurrent",
+                                 "name":"Allowance for Notes, Loans and Financing Receivable, Noncurrent"
+                              }
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"DueFromRelatedPartiesNoncurrent",
+                     "name":"Due from Related Parties, Noncurrent",
+                     "children":[
+                        {
+                           "indicator":"AccountsReceivableRelatedPartiesNoncurrent",
+                           "name":"Accounts Receivable, Related Parties, Noncurrent"
+                        },
+                        {
+                           "indicator":"NotesReceivableRelatedPartiesNoncurrent",
+                           "name":"Notes Receivable, Related Parties, Noncurrent"
+                        },
+                        {
+                           "indicator":"DueFromEmployeesNoncurrent",
+                           "name":"Due from Employees, Noncurrent"
+                        },
+                        {
+                           "indicator":"DueFromOfficersOrStockholdersNoncurrent",
+                           "name":"Due from Officers or Stockholders, Noncurrent"
+                        },
+                        {
+                           "indicator":"DueFromJointVenturesNoncurrent",
+                           "name":"Due from Joint Ventures, Noncurrent"
+                        },
+                        {
+                           "indicator":"DueFromAffiliateNoncurrent",
+                           "name":"Due from Affiliate, Noncurrent"
+                        },
+                        {
+                           "indicator":"DueFromOtherRelatedPartiesNoncurrent",
+                           "name":"Due from Other Related Parties, Noncurrent"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"CapitalLeasesLessorBalanceSheetNetInvestmentInDirectFinancingAndSalesTypeLeasesNoncurrent",
+                     "name":"Capital Leases, Lessor Balance Sheet, Net Investment in Direct Financing and Sales Type Leases, Noncurrent",
+                     "children":[
+                        {
+                           "indicator":"CapitalLeasesLessorBalanceSheetNetInvestmentInDirectFinancingLeasesNoncurrent",
+                           "name":"Capital Leases, Lessor Balance Sheet, Net Investment in Direct Financing Leases, Noncurrent"
+                        },
+                        {
+                           "indicator":"CapitalLeasesLessorBalanceSheetNetInvestmentInSalesTypeLeasesNoncurrent",
+                           "name":"Capital Leases, Lessor Balance Sheet, Net Investment in Sales Type Leases, Noncurrent"
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "indicator":"IntangibleAssetsNetIncludingGoodwill",
+               "name":"Intangible Assets, Net (Including Goodwill)",
+               "children":[
+                  {
+                     "indicator":"Goodwill",
+                     "name":"Goodwill",
+                     "children":[
+                        {
+                           "indicator":"GoodwillGross",
+                           "name":"Goodwill, Gross"
+                        },
+                        {
+                           "indicator":"GoodwillImpairedAccumulatedImpairmentLoss",
+                           "name":"Goodwill, Impaired, Accumulated Impairment Loss"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"IntangibleAssetsNetExcludingGoodwill",
+                     "name":"Intangible Assets, Net (Excluding Goodwill)",
+                     "children":[
+                        {
+                           "indicator":"FiniteLivedIntangibleAssetsNet",
+                           "name":"Finite-Lived Intangible Assets, Net",
+                           "children":[
+                              {
+                                 "indicator":"FiniteLivedIntangibleAssetsAccumulatedAmortization",
+                                 "name":"Finite-Lived Intangible Assets, Accumulated Amortization"
+                              },
+                              {
+                                 "indicator":"FiniteLivedIntangibleAssetsGross",
+                                 "name":"Finite-Lived Intangible Assets, Gross",
+                                 "children":[
+                                    {
+                                       "indicator":"FiniteLivedContractualRightsGross",
+                                       "name":"Finite-Lived Contractual Rights, Gross"
+                                    },
+                                    {
+                                       "indicator":"FiniteLivedCustomerListsGross",
+                                       "name":"Finite-Lived Customer Lists, Gross"
+                                    },
+                                    {
+                                       "indicator":"FiniteLivedCustomerRelationshipsGross",
+                                       "name":"Finite-Lived Customer Relationships, Gross"
+                                    },
+                                    {
+                                       "indicator":"FiniteLivedLicenseAgreementsGross",
+                                       "name":"Finite-Lived License Agreements, Gross"
+                                    },
+                                    {
+                                       "indicator":"FiniteLivedNoncompeteAgreementsGross",
+                                       "name":"Finite-Lived Noncompete Agreements, Gross"
+                                    },
+                                    {
+                                       "indicator":"FiniteLivedIntangibleAssetOffMarketLeaseFavorableGross",
+                                       "name":"Finite-Lived Intangible Asset, Off-market Lease, Favorable, Gross"
+                                    },
+                                    {
+                                       "indicator":"FiniteLivedPatentsGross",
+                                       "name":"Finite-Lived Patents, Gross"
+                                    },
+                                    {
+                                       "indicator":"FiniteLivedTrademarksGross",
+                                       "name":"Finite-Lived Trademarks, Gross"
+                                    },
+                                    {
+                                       "indicator":"FiniteLivedTradeNamesGross",
+                                       "name":"Finite-Lived Trade Names, Gross"
+                                    },
+                                    {
+                                       "indicator":"FiniteLivedIntangibleAssetAcquiredInPlaceLeases",
+                                       "name":"Finite-Lived Intangible Asset, Acquired-in-Place Leases"
+                                    },
+                                    {
+                                       "indicator":"FiniteLivedCoreDepositsGross",
+                                       "name":"Finite-Lived Core Deposits, Gross"
+                                    },
+                                    {
+                                       "indicator":"OtherFiniteLivedIntangibleAssetsGross",
+                                       "name":"Other Finite-Lived Intangible Assets, Gross"
+                                    }
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"IndefiniteLivedIntangibleAssetsExcludingGoodwill",
+                           "name":"Indefinite-Lived Intangible Assets (Excluding Goodwill)",
+                           "children":[
+                              {
+                                 "indicator":"IndefiniteLivedContractualRights",
+                                 "name":"Indefinite-Lived Contractual Rights"
+                              },
+                              {
+                                 "indicator":"IndefiniteLivedFranchiseRights",
+                                 "name":"Indefinite-Lived Franchise Rights"
+                              },
+                              {
+                                 "indicator":"IndefiniteLivedLicenseAgreements",
+                                 "name":"Indefinite-Lived License Agreements"
+                              },
+                              {
+                                 "indicator":"IndefiniteLivedTrademarks",
+                                 "name":"Indefinite-Lived Trademarks"
+                              },
+                              {
+                                 "indicator":"IndefiniteLivedTradeNames",
+                                 "name":"Indefinite-Lived Trade Names"
+                              },
+                              {
+                                 "indicator":"OtherIndefiniteLivedIntangibleAssets",
+                                 "name":"Other Indefinite-lived Intangible Assets"
+                              }
+                           ]
+                        },
+                        {
+                           "indicator":"OtherIntangibleAssetsNet",
+                           "name":"Other Intangible Assets, Net"
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "indicator":"PrepaidExpenseNoncurrent",
+               "name":"Prepaid Expense, Noncurrent",
+               "children":[
+                  {
+                     "indicator":"PrepaidExpenseOtherNoncurrent",
+                     "name":"Prepaid Expense Other, Noncurrent"
+                  },
+                  {
+                     "indicator":"PrepaidMineralRoyaltiesNoncurrent",
+                     "name":"Prepaid Mineral Royalties, Noncurrent"
+                  }
+               ]
+            },
+            {
+               "indicator":"DerivativeInstrumentsAndHedgesNoncurrent",
+               "name":"Derivative Instruments and Hedges, Noncurrent",
+               "children":[
+                  {
+                     "indicator":"DerivativeAssetsNoncurrent",
+                     "name":"Derivative Asset, Noncurrent"
+                  },
+                  {
+                     "indicator":"HedgingAssetsNoncurrent",
+                     "name":"Hedging Assets, Noncurrent"
+                  },
+                  {
+                     "indicator":"CommodityContractAssetNoncurrent",
+                     "name":"Commodity Contract Asset, Noncurrent"
+                  },
+                  {
+                     "indicator":"EnergyMarketingContractsAssetsNoncurrent",
+                     "name":"Energy Marketing Contracts Assets, Noncurrent"
+                  },
+                  {
+                     "indicator":"GasPurchaseContractNet",
+                     "name":"Gas Purchase Contract, Noncurrent"
+                  }
+               ]
+            },
+            {
+               "indicator":"RegulatedEntityOtherAssetsNoncurrent",
+               "name":"Regulated Entity, Other Assets, Noncurrent",
+               "children":[
+                  {
+                     "indicator":"RegulatoryAssetsNoncurrent",
+                     "name":"Regulatory Assets, Noncurrent"
+                  },
+                  {
+                     "indicator":"CompetitiveTransitionChargeNoncurrent",
+                     "name":"Competitive Transition Charge, Noncurrent"
+                  },
+                  {
+                     "indicator":"SecuritizedRegulatoryTransitionAssetsNoncurrent",
+                     "name":"Securitized Regulatory Transition Assets, Noncurrent"
+                  },
+                  {
+                     "indicator":"DemandSideManagementProgramCostsNoncurrent",
+                     "name":"Demand Side Management Program Costs, Noncurrent"
+                  },
+                  {
+                     "indicator":"UnamortizedLossReacquiredDebtNoncurrent",
+                     "name":"Unamortized Loss Reacquired Debt, Noncurrent"
+                  },
+                  {
+                     "indicator":"DecommissioningFundInvestments",
+                     "name":"Decommissioning Fund Investments"
+                  },
+                  {
+                     "indicator":"AssetRecoveryDamagedPropertyCostsNoncurrent",
+                     "name":"Asset Recovery Damaged Property Costs, Noncurrent"
+                  },
+                  {
+                     "indicator":"DeferredStormAndPropertyReserveDeficiencyNoncurrent",
+                     "name":"Deferred Storm and Property Reserve Deficiency, Noncurrent"
+                  },
+                  {
+                     "indicator":"InvestmentsInPowerAndDistributionProjects",
+                     "name":"Investments in Power and Distribution Projects"
+                  },
+                  {
+                     "indicator":"UnamortizedDebtIssuanceExpense",
+                     "name":"Unamortized Debt Issuance Expense"
+                  },
+                  {
+                     "indicator":"PhaseInPlanAmountOfCostsDeferredForRateMakingPurposes",
+                     "name":"Phase-in Plan, Amount of Costs Deferred for Rate-making Purposes"
+                  }
+               ]
+            },
+            {
+               "indicator":"PrepaidPensionCosts",
+               "name":"Prepaid Pension Costs"
+            },
+            {
+               "indicator":"DepositsAssetsNoncurrent",
+               "name":"Deposits Assets, Noncurrent"
+            },
+            {
+               "indicator":"CostsInExcessOfBillingsOnUncompletedContractsOrProgramsExpectedToBeCollectedAfterOneYear",
+               "name":"Costs in Excess of Billings, Noncurrent"
+            },
+            {
+               "indicator":"DeferredRentReceivablesNetNoncurrent",
+               "name":"Deferred Rent Receivables, Net, Noncurrent"
+            },
+            {
+               "indicator":"AssetsHeldInTrustNoncurrent",
+               "name":"Assets Held-in-trust, Noncurrent"
+            },
+            {
+               "indicator":"DefinedBenefitPlanAssetsForPlanBenefitsNoncurrent",
+               "name":"Defined Benefit Plan, Assets for Plan Benefits, Noncurrent"
+            },
+            {
+               "indicator":"RestrictedCashAndInvestmentsNoncurrent",
+               "name":"Restricted Cash and Investments, Noncurrent",
+               "children":[
+                  {
+                     "indicator":"RestrictedCashAndCashEquivalentsNoncurrent",
+                     "name":"Restricted Cash and Cash Equivalents, Noncurrent"
+                  },
+                  {
+                     "indicator":"MarketableSecuritiesRestrictedNoncurrent",
+                     "name":"Marketable Securities, Restricted, Noncurrent",
+                     "children":[
+                        {
+                           "indicator":"AvailableforsaleSecuritiesRestrictedNoncurrent",
+                           "name":"Available-for-sale Securities, Restricted, Noncurrent"
+                        },
+                        {
+                           "indicator":"HeldtomaturitySecuritiesRestrictedNoncurrent",
+                           "name":"Held-to-maturity Securities, Restricted, Noncurrent"
+                        },
+                        {
+                           "indicator":"OtherMarketableSecuritiesRestrictedNoncurrent",
+                           "name":"Other Marketable Securities, Restricted, Noncurrent"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"RestrictedInvestmentsNoncurrent",
+                     "name":"Restricted Investments, Noncurrent"
+                  },
+                  {
+                     "indicator":"OtherRestrictedAssetsNoncurrent",
+                     "name":"Other Restricted Assets, Noncurrent"
+                  }
+               ]
+            },
+            {
+               "indicator":"DisposalGroupIncludingDiscontinuedOperationAssetsNoncurrent",
+               "name":"Disposal Group, Including Discontinued Operation, Assets, Noncurrent",
+               "children":[
+                  {
+                     "indicator":"DisposalGroupIncludingDiscontinuedOperationOtherNoncurrentAssets",
+                     "name":"Disposal Group, Including Discontinued Operation, Other Assets, Noncurrent"
+                  },
+                  {
+                     "indicator":"DisposalGroupIncludingDiscontinuedOperationInventoryNoncurrent",
+                     "name":"Disposal Group, Including Discontinued Operation, Inventory, Noncurrent"
+                  },
+                  {
+                     "indicator":"DisposalGroupIncludingDiscontinuedOperationDeferredTaxAssetsNoncurrent",
+                     "name":"Disposal Group, Including Discontinued Operation, Deferred Tax Assets, Noncurrent"
+                  },
+                  {
+                     "indicator":"DisposalGroupIncludingDiscontinuedOperationIntangibleAssetsNoncurrent",
+                     "name":"Disposal Group, Including Discontinued Operation, Intangible Assets, Noncurrent"
+                  },
+                  {
+                     "indicator":"DisposalGroupIncludingDiscontinuedOperationGoodwillNoncurrent",
+                     "name":"Disposal Group, Including Discontinued Operation, Goodwill, Noncurrent"
+                  },
+                  {
+                     "indicator":"DisposalGroupIncludingDiscontinuedOperationCapitalLeasedAssetsNoncurrent",
+                     "name":"Disposal Group, Including Discontinued Operation, Capital Leased Assets, Noncurrent"
+                  },
+                  {
+                     "indicator":"DisposalGroupIncludingDiscontinuedOperationPropertyPlantAndEquipmentNoncurrent",
+                     "name":"Disposal Group, Including Discontinued Operation, Property, Plant and Equipment, Noncurrent"
+                  }
+               ]
+            },
+            {
+               "indicator":"AdvanceRoyaltiesNoncurrent",
+               "name":"Advance Royalties, Noncurrent"
+            },
+            {
+               "indicator":"EstimatedInsuranceRecoveries",
+               "name":"Estimated Insurance Recoveries"
+            },
+            {
+               "indicator":"CustomerFunds",
+               "name":"Customer Funds"
+            },
+            {
+               "indicator":"DeferredCosts",
+               "name":"Deferred Costs, Noncurrent",
+               "children":[
+                  {
+                     "indicator":"DeferredFinanceCostsNoncurrentNet",
+                     "name":"Deferred Finance Costs, Noncurrent, Net",
+                     "children":[
+                        {
+                           "indicator":"DeferredFinanceCostsNoncurrentGross",
+                           "name":"Deferred Finance Costs, Noncurrent, Gross"
+                        },
+                        {
+                           "indicator":"AccumulatedAmortizationOfNoncurrentDeferredFinanceCosts",
+                           "name":"Accumulated Amortization of Noncurrent Deferred Finance Costs"
+                        }
+                     ]
+                  },
+                  {
+                     "indicator":"DeferredCostsLeasingNetNoncurrent",
+                     "name":"Deferred Costs, Leasing, Net, Noncurrent"
+                  },
+                  {
+                     "indicator":"DeferredSetUpCostsNoncurrent",
+                     "name":"Deferred Set-up Costs, Noncurrent"
+                  },
+                  {
+                     "indicator":"DeferredSubscriberAcquisitionCostsNoncurrent",
+                     "name":"Deferred Subscriber Acquisition Costs, Noncurrent"
+                  },
+                  {
+                     "indicator":"IncentiveToLessee",
+                     "name":"Incentive to Lessee"
+                  },
+                  {
+                     "indicator":"DeferredSalesCommission",
+                     "name":"Deferred Sales Commission"
+                  },
+                  {
+                     "indicator":"DeferredAdvertisingCosts",
+                     "name":"Deferred Advertising Costs"
+                  },
+                  {
+                     "indicator":"CapitalizedSoftwareDevelopmentCostsForSoftwareSoldToCustomers",
+                     "name":"Capitalized Software Development Costs for Software Sold to Customers"
+                  },
+                  {
+                     "indicator":"DeferredCompensationPlanAssets",
+                     "name":"Deferred Compensation Plan Assets"
+                  }
+               ]
+            },
+            {
+               "indicator":"DeferredTaxAssetsLiabilitiesNetNoncurrent",
+               "name":"Deferred Tax Assets, Net, Noncurrent"
+            },
+            {
+               "indicator":"BusinessCombinationContingentConsiderationAssetNoncurrent",
+               "name":"Business Combination, Contingent Consideration, Asset, Noncurrent"
+            },
+            {
+               "indicator":"OtherAssetsNoncurrent",
+               "name":"Other Assets, Noncurrent"
+            },
+            {
+               "indicator":"AmortizationMethodQualifiedAffordableHousingProjectInvestments",
+               "name":"Amortization Method Qualified Affordable Housing Project Investments"
+            }
+         ]
+      }
+   ]
+}
+]
+}

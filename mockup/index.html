@@ -35,6 +35,9 @@
                         <a href="#">Income Statement</a>
                         <a href="#">Cash-Flow Statement</a>
                     </nav>
+                    <div id="indicators">
+
+                    </div>
                 </div>
                 <div  class="col-xs-6">
 
@@ -58,18 +61,17 @@
                         <ul>
                             <li data-row="1" data-col="1" data-sizex="4" data-sizey="1"></li>
                             <li data-row="2" data-col="1" data-sizex="4" data-sizey="5"></li>
-                            
+
                             <li data-row="7" data-col="1" data-sizex="2" data-sizey="2"></li>
                             <li data-row="7" data-col="3" data-sizex="2" data-sizey="2"></li>
-                            
+
                             <li data-row="9" data-col="1" data-sizex="2" data-sizey="2"></li>
-                            
+
                             <li data-row="9" data-col="3" data-sizex="1" data-sizey="1"></li>
                             <li data-row="9" data-col="4" data-sizex="1" data-sizey="1"></li>
                             <li data-row="10" data-col="3" data-sizex="1" data-sizey="1"></li>
                             <li data-row="10" data-col="4" data-sizex="1" data-sizey="1"></li>
-                            
-                            
+
                             <li data-row="1" data-col="5" data-sizex="4" data-sizey="2"></li>
                             <li data-row="3" data-col="5" data-sizex="4" data-sizey="2"></li>
                             <li data-row="5" data-col="5" data-sizex="4" data-sizey="2"></li>
@@ -93,20 +95,55 @@
 
         <script type="text/javascript">
 			$(function() {
-			    var width = $(".gridster").width();
-			    var margins = 10;
-			    var base_dimension = width / 8 - 2 * margins;
-			    
+				var width = $(".gridster").width();
+				var margins = 10;
+				var base_dimension = width / 8 - 2 * margins;
+
 				var gridster = $(".gridster ul").gridster({
 					widget_margins : [margins, margins],
 					widget_base_dimensions : [base_dimension, base_dimension],
 					resize : {
 						enabled : true
 					},
-					autogenerate_stylesheet: true
+					autogenerate_stylesheet : true
 				}).data('gridster');
 			});
         </script>
 
+        <script type="text/javascript">
+			$.getJSON("../data/finpos.json", function(data) {
+				console.log(data);
+
+				var elements = [];
+
+				elements.push('<h2>' + data.name + '</h2>');
+
+				handleChildren(elements, data.children);
+				/*
+				 var items = [];
+				 $.each(data, function(key, val) {
+				 items.push("<li id='" + key + "'>" + val + "</li>");
+				 });
+
+				 $("<ul/>", {
+				 "class" : "my-new-list",
+				 html : items.join("")
+				 }).appendTo("body");
+				 */
+
+				$("#indicators").html(elements.join(""));
+			});
+
+			function handleChildren(elements, children) {
+				elements.push("<ul>");
+				children.forEach(function(child) {
+					elements.push('<li>', '<a href="#" data-indicator="', child.indicator, '">', child.name, '</a>');
+					if (child.hasOwnProperty('children')) {
+						handleChildren(elements, child.children);
+					}
+				});
+				elements.push('</ul>')
+			}
+        </script>
     </body>
 </html>
