@@ -111,6 +111,10 @@
         </script>
 
         <script type="text/javascript">
+            var classes = {
+                folded : "folded"
+            }
+        
 			$.getJSON("../data/finpos.json", function(data) {
 				console.log(data);
 
@@ -137,13 +141,17 @@
 			function handleChildren(elements, children) {
 				elements.push("<ul>");
 				children.forEach(function(child) {
-					elements.push('<li>', '<a href="#" data-indicator="', child.indicator, '">', child.name, '</a>');
+					elements.push('<li class="' + classes.folded + '">', '<a href="#" data-indicator="', child.indicator, '">', child.name, '</a>');
 					if (child.hasOwnProperty('children')) {
 						handleChildren(elements, child.children);
 					}
 				});
 				elements.push('</ul>')
 			}
+			
+			$("#indicators").on("click", "a", function(){
+			    $(this).parent().toggleClass("folded");
+			});
         </script>
     </body>
 </html>
