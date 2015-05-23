@@ -1,0 +1,72 @@
+html, body {
+  height: 100%;
+}
+
+div {
+  outline: 1px solid black;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+main {
+  min-height: 100%;
+  position: relative;
+    
+  > .row {
+    position: absolute;
+    top: 70px;
+    bottom: 0;
+    width: 100%;
+    
+    > div {
+      height: 100%;
+    }
+  }
+}
+
+
+.gridster {
+  width: 100%;
+  
+  > * {
+    margin: 0;
+  }
+  
+  [hidden] {
+    display: none;
+  }
+  
+  ul, ol {
+    list-style: outside none none;
+  }
+  
+  .gs-w {
+    background: #FFF;
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    
+    &.try {
+      background-image: url(../img/sprite.png);
+      background-repeat: no-repeat;
+      background-position: 37px -169px;
+    }
+  }
+
+  .player {
+    -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+  }
+
+  .preview-holder {
+    border: none!important;
+    border-radius: 0!important;
+    background: rgba(255,255,255,.2)!important;
+  }
+}
+
+// @import "gridster.less";
